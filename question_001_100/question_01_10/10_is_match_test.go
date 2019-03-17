@@ -16,7 +16,9 @@ func Test_isMatch(t *testing.T) {
 		{"test#2", args{"aa", "a*"}, true},
 		{"test#3", args{"ab", ".*"}, true},
 		{"test#4", args{"aab", "c*a*b"}, true},
-		{"test#5", args{"mississippi", "mis*is*p*."}, false},
+		{"test#5", args{"mississippi", "mis*is*ip*."}, true},
+		{"test#6", args{"aaca", "ab*a*c*a"}, true},
+		{"test#7", args{"a", "ab*"}, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

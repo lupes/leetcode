@@ -1,55 +1,54 @@
 package question_01_10
 
-import "fmt"
-
 func isMatch(s string, p string) bool {
-	if s == "" && p == "" {
+	if (s == "" && p == "") || p == ".*" {
 		return true
 	}
 	if s != "" && p == "" {
 		return false
 	}
-	sHead, sLen, pHead, pLen := 0, len(s), 0, len(p)
-	fmt.Printf("%d %d\n", sHead, sLen)
-	var tmp []string
-	for pHead < pLen {
-		if ('a' <= p[pHead] && p[pHead] <= 'z') || p[pHead] == '.' {
-			if pHead+1 < pLen && p[pHead+1] == '*' {
-				if len(tmp) == 0 || tmp[len(tmp)-1] != p[pHead:pHead+2] {
-					tmp = append(tmp, p[pHead:pHead+2])
-				}
-				pHead += 2
-			} else {
-				tmp = append(tmp, p[pHead:pHead+1])
-				tLen := len(tmp)
-				if tLen >= 2 && tmp[tLen-1][:1] == p[pHead:pHead+1] {
-					tmp[tLen-2], tmp[tLen-1] = tmp[tLen-1], tmp[tLen-2]
-				}
-				pHead += 1
-			}
-		}
-	}
-	for _, t := range tmp {
-		if len(t) > 1 {
-			for {
-				if s[sHead] == t[0] && sHead+1 < sLen {
-					sHead += 1
-				} else {
-					break
-				}
-			}
+	sLen, pLen := len(s), len(p)
+	var t []string
+	for i := 0; i < pLen; {
+		if i < pLen-1 && p[i+1] == '*' {
+			t = append(t, p[i:i+2])
+			i += 2
 		} else {
-			if t == "." {
-				sHead += 1
-			} else {
-				if s[sHead] == t[0] {
-					sHead += 1
-				} else {
-					return false
-				}
-			}
+			t = append(t, p[i:i+1])
+			i += 1
 		}
 	}
-	fmt.Printf("%v\n", tmp)
-	return false
+	tLen := len(t)
+	flags := make([][]bool, tLen+1)
+	for i := range flags {
+		flags[i] = make([]bool, sLen+1)
+	}
+	flags[0][0] = true
+	// 初始化零匹配
+	for i, v := range t {
+		if flags[i][0] && len(v) > 1 {
+			flags[i+1][0] = true
+		}
+	}
+	for i, v := range t {
+		r := false
+		for j, c := range s {
+			// 零匹配
+			if len(v) > 1 && flags[i][j+1] {
+				r, flags[i+1][j+1] = true, true
+			}
+			// 多匹配
+			if len(v) > 1 && (int32(v[0]) == c || v[0] == '.') && (flags[i][j] || flags[i+1][j]) {
+				r, flags[i+1][j+1] = true, true
+			}
+			// 单匹配
+			if (int32(v[0]) == c || v[0] == '.') && flags[i][j] {
+				r, flags[i+1][j+1] = true, true
+			}
+		}
+		if !r && !flags[i][0] {
+			return false
+		}
+	}
+	return flags[tLen][sLen]
 }
