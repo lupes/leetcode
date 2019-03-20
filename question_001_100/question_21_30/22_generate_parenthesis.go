@@ -5,22 +5,22 @@ import (
 )
 
 func generateParenthesis(n int) []string {
-	return recursive(n, n, "")
+	res := &[]string{}
+	recursive(res, n, n, "")
+	return *res
 }
 
-func recursive(n, m int, str string) []string {
+func recursive(res *[]string, n, m int, str string) {
 	var i int
 	if n == m {
 		i = 1
 	}
-	var res []string
 	for ; i < n+1; i++ {
 		t := str + strings.Repeat("(", i)
 		if n == i {
-			res = append(res, t+strings.Repeat(")", m))
+			*res = append(*res, t+strings.Repeat(")", m))
 		} else {
-			res = append(res, recursive(n-i, m-1, t+")")...)
+			recursive(res, n-i, m-1, t+")")
 		}
 	}
-	return res
 }
