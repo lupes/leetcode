@@ -47,10 +47,13 @@ func Test_reverseKGroup(t *testing.T) {
 			want := tt.want
 			var arr1 []int
 			var arr2 []int
-			for got != nil && want != nil {
+			for got != nil {
 				arr1 = append(arr1, got.Val)
-				arr2 = append(arr2, want.Val)
 				got = got.Next
+			}
+
+			for want != nil {
+				arr2 = append(arr2, want.Val)
 				want = want.Next
 			}
 
