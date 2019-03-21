@@ -34,8 +34,19 @@ func Test_swapPairs(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := swapPairs(tt.head); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("swapPairs() = %v, want %v", got, tt.want)
+			got := swapPairs(tt.head)
+			want := tt.want
+			var arr1 []int
+			var arr2 []int
+			for got != nil && want != nil {
+				arr1 = append(arr1, got.Val)
+				arr2 = append(arr2, want.Val)
+				got = got.Next
+				want = want.Next
+			}
+
+			if !reflect.DeepEqual(arr1, arr2) {
+				t.Errorf("swapPairs() = %v, want %v", arr1, arr2)
 			}
 		})
 	}
