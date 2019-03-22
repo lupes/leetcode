@@ -1,7 +1,6 @@
 package question_31_40
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -42,7 +41,7 @@ func nextPermutation(nums []int) {
 			big = nums[i]
 		}
 	}
-	fmt.Printf("min[%d]=%d max[%d]=%d\n", minIndex, min, bigIndex, big)
+
 	nums[minIndex], nums[bigIndex] = nums[bigIndex], nums[minIndex]
 	sort.Ints(nums[minIndex+1:])
 }
