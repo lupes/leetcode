@@ -22,6 +22,10 @@ func Test_mergeTwoLists(t *testing.T) {
 		t3l1 = &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4}}}
 		t3l2 = &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}
 		t3w  = &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4}}}}}}
+
+		t4l1 = &ListNode{Val: 1, Next: &ListNode{Val: 3}}
+		t4l2 = &ListNode{Val: 2, Next: &ListNode{Val: 4}}
+		t4w  = &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}}
 	)
 	tests := []struct {
 		name string
@@ -33,6 +37,7 @@ func Test_mergeTwoLists(t *testing.T) {
 		{"test#1", t1l1, t1l2, t1w},
 		{"test#2", t2l1, t2l2, t2w},
 		{"test#3", t3l1, t3l2, t3w},
+		{"test#4", t4l1, t4l2, t4w},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -50,7 +55,7 @@ func Test_mergeTwoLists(t *testing.T) {
 				want = want.Next
 			}
 			if !reflect.DeepEqual(arr1, arr2) {
-				t.Errorf("mergeTwoLists() = %v, want %v", got, tt.want)
+				t.Errorf("mergeTwoLists() = %v, want %v", arr1, arr2)
 			}
 		})
 	}
