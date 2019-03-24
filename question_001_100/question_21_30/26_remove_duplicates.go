@@ -5,13 +5,15 @@ func removeDuplicates(nums []int) int {
 	if size < 2 {
 		return size
 	}
-	offset := 0
-	for i := 1; i < size; i++ {
-		if nums[i] == nums[i-1-offset] {
-			offset += 1
-		} else {
-			nums[i-offset] = nums[i]
+	index := 0
+	for i, v := range nums {
+		if i == 0 || v == nums[index] {
+			continue
+		}
+		index++
+		if i != index {
+			nums[index] = v
 		}
 	}
-	return size - offset
+	return index + 1
 }
