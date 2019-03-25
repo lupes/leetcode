@@ -13,8 +13,8 @@ func Test_removeElement(t *testing.T) {
 		want int
 	}{
 		{"test#0", args{nil, 1}, 0},
-		{"test#1", args{[]int{2}, 1}, 0},
-		{"test#2", args{[]int{1, 2}, 1}, 0},
+		{"test#1", args{[]int{2}, 1}, 1},
+		{"test#2", args{[]int{1, 2}, 1}, 1},
 		{"test#3", args{[]int{3, 2, 2, 3}, 3}, 2},
 		{"test#4", args{[]int{0, 1, 2, 2, 3, 0, 4, 2}, 2}, 5},
 	}
