@@ -21,7 +21,9 @@ func Test_findSubstring(t *testing.T) {
 		{"test#3", args{"i", []string{"i"}}, []int{0}},
 		{"test#4", args{"ii", []string{"i"}}, []int{0, 1}},
 		{"test#5", args{"barfoothefoobarman", []string{"foo", "bar"}}, []int{0, 9}},
-		{"test#6", args{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "word"}}, []int{}},
+		{"test#6", args{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "word"}}, nil},
+		{"test#7", args{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "good"}}, []int{8}},
+		{"test#8", args{"aaaaaaaa", []string{"aa", "aa", "aa"}}, []int{0, 1, 2}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
