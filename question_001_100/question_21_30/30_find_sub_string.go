@@ -20,16 +20,18 @@ func findSubstring(s string, words []string) []int {
 	size := len(s)
 	wordCount := len(words)
 	wordLen := len(words[0])
-	wordsLen := wordCount * wordLen
 	tmp := make([]string, wordCount, wordCount)
-	for i := 0; i < size-wordsLen+1; i++ {
-		for j := 0; j < wordCount; j++ {
-			start := i + j*wordLen
-			tmp[j] = s[start : start+wordLen]
+	for i := 0; i < wordLen; i++ {
+		var ss []string
+		for j := 0; i+(j+1)*wordLen <= size; j++ {
+			ss = append(ss, s[i+j*wordLen:i+(j+1)*wordLen])
 		}
-		sort.Strings(tmp)
-		if reflect.DeepEqual(tmp, words) {
-			res = append(res, i)
+		for j := 0; j <= len(ss)-wordCount; j++ {
+			copy(tmp, ss[j:j+wordCount])
+			sort.Strings(tmp)
+			if reflect.DeepEqual(tmp, words) {
+				res = append(res, i+j*wordLen)
+			}
 		}
 	}
 	return res
