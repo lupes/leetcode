@@ -1,6 +1,8 @@
 package question_41_50
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_multiply(t *testing.T) {
 	tests := []struct {
@@ -18,11 +20,14 @@ func Test_multiply(t *testing.T) {
 		{"test#6", "1", "1", "1"},
 		{"test#7", "2", "3", "6"},
 		{"test#8", "123", "456", "56088"},
+		{"test#9", "124", "45", "5580"},
+		{"test#10", "999", "999", "998001"},
+		{"test#11", "9999999", "9999999", "99999980000001"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := multiply(tt.num1, tt.num2); got != tt.want {
-				t.Errorf("multiply() = %v, want %v", got, tt.want)
+				t.Errorf("multiply(%s, %s) = %v, want %v", tt.num1, tt.num2, got, tt.want)
 			}
 		})
 	}
