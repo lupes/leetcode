@@ -10,7 +10,7 @@ func isValidSudoku(board [][]byte) bool {
 				continue
 			}
 			num = num - '1'
-			k := (i/3)*3 + (j / 3)
+			k := i/3*3 + j/3
 			if flagsRow[i][num] || flagsCol[j][num] || flagsSqu[k][num] {
 				return false
 			}
