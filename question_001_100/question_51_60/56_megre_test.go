@@ -15,6 +15,8 @@ func Test_merge(t *testing.T) {
 		{"test#1", []Interval{{1, 2}}, []Interval{{1, 2}}},
 		{"test#2", []Interval{{1, 3}, {2, 6}, {8, 10}, {15, 18}}, []Interval{{1, 6}, {8, 10}, {15, 18}}},
 		{"test#3", []Interval{{1, 4}, {4, 5}}, []Interval{{1, 5}}},
+		{"test#4", []Interval{{1, 4}, {1, 5}}, []Interval{{1, 5}}},
+		{"test#5", []Interval{{1, 4}, {2, 3}}, []Interval{{1, 4}}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
