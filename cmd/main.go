@@ -1,37 +1,21 @@
-package cmd
+package main
 
 import (
 	"fmt"
+	"net/http"
 )
 
+func Print(w http.ResponseWriter, req *http.Request) {
+	query := req.URL.Query()
+	for key, value := range query {
+		fmt.Printf("%s=%+v\n", key, value)
+	}
+}
+
 func main() {
-	fmt.Println(fib1(50))
-	//for i := 1; i < 50; i++ {
-	//	fmt.Println(fib2(int64(i)))
-	//}
-}
-
-func fib1(n int32) int32 {
-	if n > 2 {
-		return fib1(n-1) + fib1(n-2)
-	} else if n == 1 || n == 2 {
-		return 1
-	} else {
-		panic("must bigger 0")
+	http.HandleFunc("/test", Print)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		fmt.Printf("%s\n", err)
 	}
-}
-
-func fib2(n int64) int64 {
-	if n == 1 || n == 2 {
-		return 1
-	}
-	var (
-		i int64 = 3
-		a int64 = 1
-		b int64 = 1
-	)
-	for ; i <= n; i++ {
-		a, b = b, a+b
-	}
-	return b
 }
