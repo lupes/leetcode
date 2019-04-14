@@ -1,27 +1,17 @@
 package question_41_50
 
 func permute(nums []int) [][]int {
-	flag := make([]bool, len(nums))
-	return dfs1(nums, flag)
-}
-
-func dfs1(nums []int, flag []bool) [][]int {
 	var res [][]int
+	if len(nums) == 1 {
+		return [][]int{nums}
+	}
 	for i, num := range nums {
-		if !flag[i] {
-			var newFlag = make([]bool, len(flag))
-			copy(newFlag, flag)
-			newFlag[i] = true
-			tmp := dfs1(nums, newFlag)
-			newArr := []int{num}
-			if tmp == nil {
-				res = append(res, newArr)
-			}
-			for _, t := range tmp {
-				r := append(newArr, t...)
-				res = append(res, r)
-			}
+		nums[0], nums[i] = nums[i], nums[0]
+		for _, t := range permute(nums[1:]) {
+			r := append([]int{num}, t...)
+			res = append(res, r)
 		}
+		nums[0], nums[i] = nums[i], nums[0]
 	}
 	return res
 }
