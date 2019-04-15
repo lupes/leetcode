@@ -1,6 +1,8 @@
-package questtion_41_50
+package question_41_50
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_firstMissingPositive(t *testing.T) {
 	tests := []struct {

@@ -1,4 +1,4 @@
-package questtion_41_50
+package question_41_50
 
 import (
 	"sort"
