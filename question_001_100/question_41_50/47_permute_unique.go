@@ -15,13 +15,8 @@ Continue:
 			}
 		}
 		nums[0], nums[i] = nums[i], nums[0]
-		if len(nums[1:]) == 1 {
-			res = append(res, []int{num, nums[1]})
-		} else {
-			for _, t := range permuteUnique(nums[1:]) {
-				r := append([]int{num}, t...)
-				res = append(res, r)
-			}
+		for _, t := range permuteUnique(nums[1:]) {
+			res = append(res, append(t, num))
 		}
 		nums[0], nums[i] = nums[i], nums[0]
 	}
