@@ -11,7 +11,7 @@ func Test_myPow(t *testing.T) {
 	}{
 		{"test#0", 2, 0, 1},
 		{"test#1", 2, 10, 1024},
-		{"test#2", 2.1, 3, 9.261},
+		{"test#2", 2.1, 3, 9.261000000000001},
 		{"test#3", 2, -2, 0.25},
 	}
 	for _, tt := range tests {
