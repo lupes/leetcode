@@ -1,7 +1,7 @@
 package question_41_50
 
 func rotate(matrix [][]int) {
-	size := len(matrix[0])
+	size := len(matrix)
 	for i := 0; i < size; i++ {
 		l := size - i*2 - 1
 		for j := 0; j < l; j++ {
