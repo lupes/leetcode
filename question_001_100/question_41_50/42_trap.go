@@ -13,7 +13,7 @@ func trap(height []int) int {
 	var l, r, res int
 	for i := 0; i < size; i++ {
 		l = max(l, height[i])
-		r = max(l, height[size-1-i])
+		r = max(r, height[size-1-i])
 		res += l + r - height[i]
 	}
 	return res - size*l
