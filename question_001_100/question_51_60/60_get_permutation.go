@@ -12,21 +12,18 @@ func getPermutation(n int, k int) string {
 		return ""
 	}
 	var flag = make([]bool, n)
-	return getPermutationDfs(flag, nums, n, k)
-}
-
-func getPermutationDfs(flag []bool, nums, n, k int) string {
-	if n == 1 {
-		return getKNum(flag, 1)
+	var res = ""
+	for n > 1 {
+		i, d := k/nums, k%nums
+		if k%nums != 0 {
+			i++
+		} else {
+			d = nums
+		}
+		res += getKNum(flag, i)
+		nums, n, k = nums/(n-1), n-1, d
 	}
-	i := k / nums
-	d := k % nums
-	if k%nums != 0 {
-		i++
-	} else {
-		d = nums
-	}
-	return getKNum(flag, i) + getPermutationDfs(flag, nums/(n-1), n-1, d)
+	return res + getKNum(flag, 1)
 }
 
 func getKNum(flag []bool, k int) string {
