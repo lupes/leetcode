@@ -1,18 +1,30 @@
 package question_121_130
 
-func isPalindrome(s string) bool {
-	str := ""
-	for _, c := range s {
-		if (c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') {
-			str += string(c)
-		} else if c >= 'A' && c <= 'Z' {
-			str += string(c - 'A' + 'a')
-		}
+func isValid(b byte) bool {
+	if (b >= '0' && b <= '9') || (b >= 'a' && b <= 'z') || (b >= 'A' && b <= 'Z') {
+		return true
 	}
-	l := len(str)
-	for i := 0; i < l/2; i++ {
-		if str[i] != str[l-i-1] {
-			return false
+	return false
+}
+
+func isPalindrome(s string) bool {
+	l, r := 0, len(s)-1
+	for r > l {
+		vr, vl := isValid(s[r]), isValid(s[l])
+		if vr && vl {
+			if s[r] == s[l] || (s[r] >= 'a' && s[r]-32 == s[l]) || (s[l] >= 'a' && s[l]-32 == s[r]) {
+				r--
+				l++
+			} else {
+				return false
+			}
+		} else {
+			if !vr {
+				r--
+			}
+			if !vl {
+				l++
+			}
 		}
 	}
 	return true
