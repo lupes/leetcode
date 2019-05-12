@@ -1,12 +1,10 @@
 package question_141_150
 
 import (
-	"go/types"
 	"testing"
 )
 
 func Test_evalRPN(t *testing.T) {
-	types.Eval()
 	tests := []struct {
 		name   string
 		tokens []string
