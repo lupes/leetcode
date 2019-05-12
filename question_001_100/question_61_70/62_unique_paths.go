@@ -1,11 +1,15 @@
 package question_61_70
 
 func uniquePaths(m int, n int) int {
-	if m == 1 {
-		return 1
+	if n > m {
+		n, m = m, n
 	}
-	if n == 1 {
-		return 1
+	r1, r2 := 1, 1
+	for i := m; i < m+n-1; i++ {
+		r1 *= i
 	}
-	return uniquePaths(m-1, n) + uniquePaths(m, n-1)
+	for i := 2; i < n; i++ {
+		r2 *= i
+	}
+	return r1 / r2
 }
