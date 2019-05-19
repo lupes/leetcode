@@ -16,7 +16,7 @@ func deleteDuplicates2(head *ListNode) *ListNode {
 		} else {
 			last.Next = now.Next
 		}
-		now = last.Next
+		now = now.Next
 	}
 	return res.Next
 }
