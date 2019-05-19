@@ -2,33 +2,21 @@ package question_81_90
 
 func deleteDuplicates2(head *ListNode) *ListNode {
 	var (
-		next = head
-		last *ListNode
-		res  *ListNode
-		n    *ListNode
-		flag bool
+		res  = &ListNode{Next: head}
+		last = res
+		now  = head
 	)
 
-	for next != nil {
-		for n = next.Next; n != nil; n = n.Next {
-			if next.Val == n.Val {
-				flag = true
-			} else {
-				break
-			}
+	for now != nil {
+		for now.Next != nil && now.Val == now.Next.Val {
+			now = now.Next
 		}
-		if !flag {
-			if last == nil {
-				last = next
-				res = next
-			} else {
-				last.Next = next
-				last = next
-			}
-			last.Next = nil
+		if last.Next == now {
+			last = last.Next
+		} else {
+			last.Next = now.Next
 		}
-		flag = false
-		next = n
+		now = last.Next
 	}
-	return res
+	return res.Next
 }
