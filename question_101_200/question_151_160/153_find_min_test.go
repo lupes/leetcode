@@ -8,7 +8,6 @@ func Test_findMin(t *testing.T) {
 		nums []int
 		want int
 	}{
-		{"test", nil, 0},
 		{"test", []int{0}, 0},
 		{"test", []int{0, 1}, 0},
 		{"test", []int{1, 0}, 0},
