@@ -1,6 +1,8 @@
 package question_161_170
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_findPeakElement(t *testing.T) {
 	tests := []struct {
@@ -14,7 +16,7 @@ func Test_findPeakElement(t *testing.T) {
 		{"test", []int{0, 1}, 1},
 		{"test", []int{0, 1, 0}, 1},
 		{"test", []int{1, 2, 3, 1}, 2},
-		{"test", []int{1, 2, 1, 3, 5, 6, 4}, 1},
+		{"test", []int{1, 2, 1, 3, 5, 6, 4}, 5},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
