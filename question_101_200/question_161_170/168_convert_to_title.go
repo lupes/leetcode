@@ -12,3 +12,7 @@ func convertToTitle(n int) string {
 	}
 	return res
 }
+
+func ConvertToTitle(n int) string {
+	return convertToTitle(n)
+}
