@@ -14,6 +14,8 @@ func Test_generate(t *testing.T) {
 		{1, 4, 6, 4, 1},
 		{1, 5, 10, 10, 5, 1},
 		{1, 6, 15, 20, 15, 6, 1},
+		{1, 7, 21, 35, 35, 21, 7, 1},
+		{1, 8, 28, 56, 70, 56, 28, 8, 1},
 	}
 	tests := []struct {
 		name    string
@@ -28,6 +30,7 @@ func Test_generate(t *testing.T) {
 		{"test", 4, want[0:4]},
 		{"test", 5, want[0:5]},
 		{"test", 6, want[0:6]},
+		{"test", 7, want[0:7]},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

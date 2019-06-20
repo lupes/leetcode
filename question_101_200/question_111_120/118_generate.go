@@ -1,5 +1,8 @@
 package question_111_120
 
+// 118. 杨辉三角
+// https://leetcode-cn.com/problems/pascals-triangle/
+
 func generate(numRows int) [][]int {
 	if numRows < 1 {
 		return nil
