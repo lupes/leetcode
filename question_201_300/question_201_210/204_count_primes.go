@@ -4,20 +4,19 @@ package question_201_210
 // https://leetcode-cn.com/problems/count-primes
 
 func countPrimes(n int) int {
+	if n < 3 {
+		return 0
+	}
 	flags := make([]bool, n)
-	for i := 2; i < n-1; i++ {
+	count := n / 2
+	for i := 3; i*i < n; i += 2 {
 		if !flags[i] {
-			for j := i + 1; j < n; j++ {
+			for j := i * i; j < n; j += 2 * i {
 				if !flags[j] && j%i == 0 {
+					count--
 					flags[j] = true
 				}
 			}
-		}
-	}
-	count := 0
-	for i := 2; i < n; i++ {
-		if !flags[i] {
-			count++
 		}
 	}
 	return count
