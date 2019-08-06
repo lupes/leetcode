@@ -4,24 +4,25 @@ package question_301_310
 // https://leetcode-cn.com/problems/range-sum-query-immutable/
 
 type NumArray struct {
-	Nums []int
+	Sums []int
 	Len  int
 }
 
 func Constructor(nums []int) NumArray {
-	return NumArray{
-		Nums: nums,
-		Len:  len(nums),
+	a := NumArray{
+		Len: len(nums),
 	}
+	a.Sums = make([]int, a.Len+1)
+	a.Sums[0] = 0
+	for i, n := range nums {
+		a.Sums[i+1] = n + a.Sums[i]
+	}
+	return a
 }
 
 func (this *NumArray) SumRange(i int, j int) int {
 	if i < 0 || j >= this.Len {
 		return 0
 	}
-	res := 0
-	for _, n := range this.Nums[i : j+1] {
-		res += n
-	}
-	return res
+	return this.Sums[j+1] - this.Sums[i]
 }
