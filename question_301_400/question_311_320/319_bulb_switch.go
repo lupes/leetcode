@@ -1,16 +1,10 @@
 package question_311_320
 
+import "math"
+
 // 319. 灯泡开关
 // https://leetcode-cn.com/problems/bulb-switcher/
 
 func bulbSwitch(n int) int {
-	res := 0
-	for i := 1; i <= n; i++ {
-		if i*i <= n {
-			res++
-		} else {
-			break
-		}
-	}
-	return res
+	return int(math.Sqrt(float64(n)))
 }
