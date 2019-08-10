@@ -4,13 +4,5 @@ package question_321_330
 // https://leetcode-cn.com/problems/power-of-three/
 
 func isPowerOfThree(n int) bool {
-	if n == 0 {
-		return false
-	}
-	for ; n > 1; n /= 3 {
-		if n%3 != 0 {
-			return false
-		}
-	}
-	return n == 1
+	return n > 0 && 4052555153018976267%n == 0
 }
