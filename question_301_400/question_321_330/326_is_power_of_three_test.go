@@ -9,7 +9,7 @@ func Test_isPowerOfThree(t *testing.T) {
 		want bool
 	}{
 		{"test", 0, false},
-		{"test", 1, false},
+		{"test", 1, true},
 		{"test", 3, true},
 		{"test", 27, true},
 		{"test", 45, false},
