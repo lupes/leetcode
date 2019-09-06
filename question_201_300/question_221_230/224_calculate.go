@@ -16,7 +16,7 @@ func cal(f uint8) func(a, b int) int {
 }
 
 func calculate(s string) int {
-	s = string(append([]byte(s), '+'))
+	s = s + "+"
 	res, n, fun := 0, 0, cal('+')
 	for i := 0; i < len(s); i++ {
 		if s[i] >= '0' && s[i] <= '9' {
