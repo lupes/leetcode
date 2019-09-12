@@ -7,7 +7,7 @@ var flags = []string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b",
 
 func toHex(num int) string {
 	if num < 0 {
-		num = 0xffffffff + num + 1
+		num = 0x100000000 + num
 	} else if num == 0 {
 		return "0"
 	}
