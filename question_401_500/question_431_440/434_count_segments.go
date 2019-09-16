@@ -4,8 +4,7 @@ package question_431_440
 // https://leetcode-cn.com/problems/number-of-segments-in-a-string/
 
 func countSegments(s string) int {
-	var res int
-	var flag bool
+	var res, flag = 0, false
 	for _, n := range s {
 		if n == ' ' && flag {
 			res++
