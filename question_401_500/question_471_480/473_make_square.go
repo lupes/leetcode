@@ -4,32 +4,28 @@ package question_471_480
 // https://leetcode-cn.com/problems/matchsticks-to-square/
 
 func makesquare(nums []int) bool {
-	r := int(0)
+	if len(nums) < 4 {
+		return false
+	}
+	r := 0
 	for _, n := range nums {
 		r += n
 	}
 	if r%4 != 0 {
 		return false
 	}
-	a := r / 4
-	return makeSquareHelp(nums, a, 0, 4)
+	return makeSquareHelp(nums, r/4, 0, 0, 0, 0, 0)
 }
 
-func makeSquareHelp(nums []int, a, t, j int) bool {
-	if t == 0 && j == 0 {
+func makeSquareHelp(nums []int, a, a1, a2, a3, a4, i int) bool {
+	if len(nums) == i && a1 == a && a2 == a && a3 == a && a4 == a {
 		return true
 	}
-	flag := false
-	for i, n := range nums {
-		if n != 0 {
-			nums[i] = 0
-			if t+n == a {
-				flag = flag || makeSquareHelp(nums, a, 0, j-1)
-			} else if t+n < a {
-				flag = flag || makeSquareHelp(nums, a, t+n, j)
-			}
-			nums[i] = n
-		}
+	if a1 > a || a2 > a || a3 > a || a4 > a {
+		return false
 	}
-	return flag
+	return makeSquareHelp(nums, a, a1+nums[i], a2, a3, a4, i+1) ||
+		makeSquareHelp(nums, a, a1, a2+nums[i], a3, a4, i+1) ||
+		makeSquareHelp(nums, a, a1, a2, a3+nums[i], a4, i+1) ||
+		makeSquareHelp(nums, a, a1, a2, a3, a4+nums[i], i+1)
 }
