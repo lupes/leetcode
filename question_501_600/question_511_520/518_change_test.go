@@ -13,7 +13,7 @@ func Test_change(t *testing.T) {
 		{"test", 3, []int{2}, 0},
 		{"test", 10, []int{10}, 1},
 		{"test", 10, []int{1, 2, 5}, 10},
-		{"test", 500, []int{3, 5, 7, 8, 9, 10, 11}, 10},
+		{"test", 500, []int{3, 5, 7, 8, 9, 10, 11}, 35502874},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

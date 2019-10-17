@@ -4,15 +4,14 @@ package qustion_511_520
 // https://leetcode-cn.com/problems/coin-change-2/
 
 func change(amount int, coins []int) int {
-	if len(coins) == 0 && amount != 0 {
-		return 0
-	} else if amount == 0 {
-		return 1
+	var res = make([]int, amount+1)
+	res[0] = 1
+	for _, coin := range coins {
+		for i := 1; i <= amount; i++ {
+			if i-coin >= 0 {
+				res[i] += res[i-coin]
+			}
+		}
 	}
-	coin := coins[0]
-	res := 0
-	for i := 0; i <= amount/coin; i++ {
-		res += change(amount-i*coin, coins[1:])
-	}
-	return res
+	return res[amount]
 }
