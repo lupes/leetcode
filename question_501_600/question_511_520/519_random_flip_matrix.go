@@ -25,19 +25,16 @@ func (this *Solution) Flip() []int {
 	if this.Now == this.Nums {
 		this.Reset()
 	}
-	n := rand.Intn(this.Nums)
-	for {
+	for n := rand.Intn(this.Nums); ; {
 		if _, ok := this.Map[n]; !ok {
-			break
+			this.Now++
+			this.Map[n] = struct{}{}
+			return []int{n / this.Cols, n % this.Cols}
 		}
-		n++
-		if n == this.Nums {
+		if n++; n == this.Nums {
 			n = 0
 		}
 	}
-	this.Now++
-	this.Map[n] = struct{}{}
-	return []int{n / this.Cols, n % this.Cols}
 }
 
 func (this *Solution) Reset() {

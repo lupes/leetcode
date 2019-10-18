@@ -7,7 +7,8 @@ import (
 
 func TestConstructor(t *testing.T) {
 	solution := Constructor(2, 3)
-	for i := 0; i < 12; i++ {
+	for i := 0; i < 6; i++ {
 		fmt.Printf("%+v\n", solution.Flip())
+		solution.Reset()
 	}
 }
