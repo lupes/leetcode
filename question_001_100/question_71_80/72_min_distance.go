@@ -5,43 +5,44 @@ import "fmt"
 // 72. 编辑距离
 // https://leetcode-cn.com/problems/edit-distance/
 
-func Print(word1, word2 string, args [][]int) {
+func Print(word1, word2 string, flag [][]int) {
 	word1, word2 = " -"+word1, "-"+word2
 	for _, c := range word1 {
 		fmt.Printf(" %c", c)
 	}
 	fmt.Println()
-	for i, arg := range args {
-		fmt.Printf("%c %+v\n", word2[i], arg)
+	for i, v := range flag {
+		fmt.Printf("%c %+v\n", word2[i], v)
 	}
 	fmt.Println()
 }
 
 func minDistance(word1 string, word2 string) int {
 	l1, l2 := len(word1), len(word2)
-	flags := make([][]int, l2+1)
-	for i := range flags {
-		flags[i] = make([]int, l1+1)
-		flags[i][0] = i
+	flag := make([][]int, l2+1)
+	for i := range flag {
+		flag[i] = make([]int, l1+1)
+		flag[i][0] = i
 	}
-	for i := range flags[0] {
-		flags[0][i] = i
+	for i := range flag[0] {
+		flag[0][i] = i
 	}
 	for i, w2 := range word2 {
 		for j, w1 := range word1 {
 			if w2 == w1 {
-				flags[i+1][j+1] = flags[i][j]
+				flag[i+1][j+1] = flag[i][j]
 			} else {
-				t := flags[i][j]
-				if flags[i+1][j] < t {
-					t = flags[i+1][j]
+				t := flag[i][j]
+				if flag[i+1][j] < t {
+					t = flag[i+1][j]
 				}
-				if flags[i][j+1] < t {
-					t = flags[i][j+1]
+				if flag[i][j+1] < t {
+					t = flag[i][j+1]
 				}
-				flags[i+1][j+1] = t + 1
+				flag[i+1][j+1] = t + 1
 			}
 		}
 	}
-	return flags[l2][l1]
+	Print(word1, word2, flag)
+	return flag[l2][l1]
 }

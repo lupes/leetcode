@@ -8,6 +8,7 @@ func Test_minDistance(t *testing.T) {
 		word2 string
 		want  int
 	}{
+		{"a", "ab", 1},
 		{"horse", "ros", 3},
 		{"intention", "execution", 5},
 		{"intentione", "execution", 6},
