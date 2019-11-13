@@ -16,10 +16,8 @@ func generateTreesHelper(start, end int) []*TreeNode {
 		return append(res, nil)
 	}
 	for i := start; i <= end; i++ {
-		leftTrees := generateTreesHelper(start, i-1)
-		rightTrees := generateTreesHelper(i+1, end)
-		for _, leftTree := range leftTrees {
-			for _, rightTree := range rightTrees {
+		for _, leftTree := range generateTreesHelper(start, i-1) {
+			for _, rightTree := range generateTreesHelper(i+1, end) {
 				res = append(res, &TreeNode{
 					Val:   i,
 					Left:  leftTree,
