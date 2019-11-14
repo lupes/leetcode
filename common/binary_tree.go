@@ -1,4 +1,4 @@
-package question_91_100
+package common
 
 import "fmt"
 

@@ -1,9 +1,6 @@
 package question_91_100
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import . "github.com/lupes/leetcode/common"
 
 func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	if head == nil {

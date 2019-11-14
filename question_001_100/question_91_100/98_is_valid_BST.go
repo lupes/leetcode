@@ -1,5 +1,7 @@
 package question_91_100
 
+import . "github.com/lupes/leetcode/common"
+
 // 98. 验证二叉搜索树
 // https://leetcode-cn.com/problems/validate-binary-search-tree/
 

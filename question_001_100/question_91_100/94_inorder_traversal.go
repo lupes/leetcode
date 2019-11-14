@@ -1,5 +1,7 @@
 package question_91_100
 
+import . "github.com/lupes/leetcode/common"
+
 func inorderTraversal(root *TreeNode) []int {
 	var res []int
 	if root == nil {
