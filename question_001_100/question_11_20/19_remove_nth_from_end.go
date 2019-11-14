@@ -11,7 +11,7 @@ type ListNode struct {
 }
 
 func (self ListNode) String() string {
-	return fmt.Sprintf("{Val:%d Next:%s}", self.Val, self.Next)
+	return fmt.Sprintf("{Val:%d, Next:%s}", self.Val, self.Next)
 }
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
@@ -19,16 +19,14 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 		return nil
 	}
 	head = &ListNode{Next: head}
-	num := 0
-	var next = head
-	for next.Next != nil {
-		num++
-		next = next.Next
+	fast, slow := head, head
+	for i := 0; i <= n; i++ {
+		fast = fast.Next
 	}
-	next = head
-	for i := num - n; i > 0; i-- {
-		next = next.Next
+	for fast != nil {
+		fast = fast.Next
+		slow = slow.Next
 	}
-	next.Next = next.Next.Next
+	slow.Next = slow.Next.Next
 	return head.Next
 }

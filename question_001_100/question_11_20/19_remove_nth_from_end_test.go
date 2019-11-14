@@ -20,7 +20,7 @@ func Test_removeNthFromEnd(t *testing.T) {
 		want *ListNode
 	}{
 		{head1, 1, nil},
-		{head2, 2, nil},
+		{head2, 1, nil},
 		{head3, 2, res3},
 		{head4, 5, res4},
 	}
