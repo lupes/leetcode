@@ -12,6 +12,7 @@ func Test_minWindow(t *testing.T) {
 	}{
 		{"ADOBECODEBANC", "ABC", "BANC"},
 		{"a", "aa", ""},
+		{"a", "a", "a"},
 		{"ADOBECODEBANCA", "AABC", "BANCA"},
 		{"abcabdebac", "cda", "cabd"},
 	}
