@@ -6,6 +6,9 @@ type MinStack struct {
 	size   int
 }
 
+// 155. 最小栈
+// https://leetcode-cn.com/problems/min-stack
+
 func Constructor() MinStack {
 	return MinStack{
 		stacks: make([]int, 0),

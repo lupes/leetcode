@@ -1,5 +1,8 @@
 package question_171_180
 
+// 172. 阶乘后的零
+// https://leetcode-cn.com/problems/factorial-trailing-zeroes
+
 func trailingZeroes(n int) int {
 	res := 0
 	for n >= 5 {

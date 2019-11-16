@@ -4,6 +4,9 @@ import (
 	"sort"
 )
 
+// 136. 只出现一次的数字
+// https://leetcode-cn.com/problems/single-number
+
 func singleNumber(nums []int) int {
 	sort.Ints(nums)
 	for i := 0; i < len(nums); {

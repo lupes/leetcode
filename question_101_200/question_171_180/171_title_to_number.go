@@ -2,6 +2,9 @@ package question_171_180
 
 import "math"
 
+// 171. Excel表列序号
+// https://leetcode-cn.com/problems/excel-sheet-column-number
+
 func titleToNumber(s string) int {
 	var res int
 	size := len(s)
