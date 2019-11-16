@@ -1,8 +1,7 @@
 package question_211_220
 
-func init() {
-
-}
+// 218. 天际线问题
+// https://leetcode-cn.com/problems/the-skyline-problem
 
 func getSkyline(buildings [][]int) [][]int {
 	if len(buildings) == 0 {

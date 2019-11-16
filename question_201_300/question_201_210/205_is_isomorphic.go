@@ -4,6 +4,9 @@ import (
 	"reflect"
 )
 
+// 205. 同构字符串
+// https://leetcode-cn.com/problems/isomorphic-strings
+
 func isIsomorphic(s string, t string) bool {
 	var flags1 = make(map[int32][]int)
 	var flags2 = make(map[int32][]int)

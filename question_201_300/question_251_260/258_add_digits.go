@@ -1,5 +1,8 @@
 package question_251_260
 
+// 258. 各位相加
+// https://leetcode-cn.com/problems/add-digits
+
 func addDigits(num int) int {
 	t := num
 	res := num
