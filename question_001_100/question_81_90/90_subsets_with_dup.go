@@ -2,6 +2,9 @@ package question_81_90
 
 import "sort"
 
+// 90. 子集 II
+// https://leetcode-cn.com/problems/subsets-ii
+
 func subsetsWithDup(nums []int) [][]int {
 	sort.Ints(nums)
 	n := len(nums)

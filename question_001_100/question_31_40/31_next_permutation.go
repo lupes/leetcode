@@ -4,6 +4,9 @@ import (
 	"sort"
 )
 
+// 31. 下一个排列
+// https://leetcode-cn.com/problems/next-permutation
+
 func nextPermutation(nums []int) {
 	size := len(nums)
 	if size < 2 {

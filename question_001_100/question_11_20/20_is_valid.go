@@ -1,5 +1,8 @@
 package question_11_20
 
+// 20. 有效的括号
+// https://leetcode-cn.com/problems/valid-parentheses
+
 func isValid(s string) bool {
 	var stack []uint8
 	var size int

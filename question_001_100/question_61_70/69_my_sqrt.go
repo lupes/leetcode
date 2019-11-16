@@ -1,5 +1,8 @@
 package question_61_70
 
+// 69. x 的平方根
+// https://leetcode-cn.com/problems/sqrtx
+
 func mySqrt(x int) int {
 	l, r := 1, x
 	for i := (l + r) / 2; i >= 0; i = (l + r) / 2 {

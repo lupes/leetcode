@@ -4,6 +4,9 @@ import (
 	"sort"
 )
 
+// 4. 寻找两个有序数组的中位数
+// https://leetcode-cn.com/problems/median-of-two-sorted-arrays
+
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	nums3 := append(nums1, nums2...)
 	sort.Ints(nums3)

@@ -4,6 +4,9 @@ import (
 	"strings"
 )
 
+// 6. Z 字形变换
+// https://leetcode-cn.com/problems/zigzag-conversion
+
 func convert(s string, numRows int) string {
 	if s == "" {
 		return ""

@@ -2,6 +2,9 @@ package question_51_60
 
 import "strings"
 
+// 58. 最后一个单词的长度
+// https://leetcode-cn.com/problems/length-of-last-word
+
 func lengthOfLastWord(s string) int {
 	if s == "" {
 		return 0

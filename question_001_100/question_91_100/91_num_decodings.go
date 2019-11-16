@@ -1,5 +1,8 @@
 package question_91_100
 
+// 91. 解码方法
+// https://leetcode-cn.com/problems/decode-ways
+
 func numDecodings(s string) int {
 	if (len(s) == 1 && s[0] == '0') || (len(s) == 2 && s[0] > '2' && s[1] == '0') {
 		return 0

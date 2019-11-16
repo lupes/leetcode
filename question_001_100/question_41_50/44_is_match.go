@@ -1,5 +1,8 @@
 package question_41_50
 
+// 44. 通配符匹配
+// https://leetcode-cn.com/problems/wildcard-matching
+
 func isMatch(s string, p string) bool {
 	sLen := len(s)
 	pLen := len(p)

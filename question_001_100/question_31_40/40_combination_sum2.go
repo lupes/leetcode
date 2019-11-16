@@ -4,6 +4,9 @@ import (
 	"sort"
 )
 
+// 40. 组合总和 II
+// https://leetcode-cn.com/problems/combination-sum-ii
+
 func combinationSum2(candidates []int, target int) [][]int {
 	sort.Ints(candidates)
 	return dfs2(candidates, target)

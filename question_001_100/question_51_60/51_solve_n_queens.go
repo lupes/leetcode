@@ -1,5 +1,8 @@
 package question_51_60
 
+// 51. N皇后
+// https://leetcode-cn.com/problems/n-queens
+
 func solveNQueens(n int) [][]string {
 	flag := make([][]bool, n)
 	for i := range flag {

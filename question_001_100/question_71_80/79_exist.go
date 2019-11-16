@@ -1,5 +1,8 @@
 package question_71_80
 
+// 79. 单词搜索
+// https://leetcode-cn.com/problems/word-search
+
 func exist(board [][]byte, word string) bool {
 	for r, row := range board {
 		for c, b := range row {

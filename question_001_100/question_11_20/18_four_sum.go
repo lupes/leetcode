@@ -2,6 +2,9 @@ package question_11_20
 
 import "sort"
 
+// 18. 四数之和
+// https://leetcode-cn.com/problems/4sum
+
 func fourSum(nums []int, target int) [][]int {
 	size := len(nums)
 	if size < 4 {

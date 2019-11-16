@@ -2,6 +2,9 @@ package question_71_80
 
 import "strings"
 
+// 71. 简化路径
+// https://leetcode-cn.com/problems/simplify-path
+
 func simplifyPath(path string) string {
 	var arr []string
 	var t string

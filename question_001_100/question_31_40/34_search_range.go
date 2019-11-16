@@ -1,5 +1,8 @@
 package question_31_40
 
+// 34. 在排序数组中查找元素的第一个和最后一个位置
+// https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array
+
 func searchRange(nums []int, target int) []int {
 	count := len(nums)
 	res := []int{-1, -1}

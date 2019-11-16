@@ -2,6 +2,9 @@ package question_11_20
 
 var base = []string{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"}
 
+// 17. 电话号码的字母组合
+// https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number
+
 func letterCombinations(digits string) []string {
 	if digits == "" {
 		return []string{}

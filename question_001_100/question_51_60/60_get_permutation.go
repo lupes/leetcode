@@ -1,5 +1,8 @@
 package question_51_60
 
+// 60. 第k个排列
+// https://leetcode-cn.com/problems/permutation-sequence
+
 func getPermutation(n int, k int) string {
 	if n == 0 || k == 0 {
 		return ""

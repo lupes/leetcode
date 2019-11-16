@@ -1,5 +1,8 @@
 package question_31_40
 
+// 32. 最长有效括号
+// https://leetcode-cn.com/problems/longest-valid-parentheses
+
 func longestValidParentheses(s string) int {
 	size := len(s)
 	if size < 2 {

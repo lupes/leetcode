@@ -1,5 +1,8 @@
 package question_11_20
 
+// 14. 最长公共前缀
+// https://leetcode-cn.com/problems/longest-common-prefix
+
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""

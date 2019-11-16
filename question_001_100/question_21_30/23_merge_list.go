@@ -5,6 +5,9 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// 23. 合并K个排序链表
+// https://leetcode-cn.com/problems/merge-k-sorted-lists
+
 func mergeKLists(lists []*ListNode) *ListNode {
 	var head *ListNode
 	for _, node := range lists {

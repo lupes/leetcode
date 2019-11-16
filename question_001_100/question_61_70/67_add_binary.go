@@ -4,6 +4,9 @@ import (
 	"strconv"
 )
 
+// 67. 二进制求和
+// https://leetcode-cn.com/problems/add-binary
+
 func addBinary(a string, b string) string {
 	ia := len(a) - 1
 	ib := len(b) - 1

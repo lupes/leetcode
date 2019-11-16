@@ -1,5 +1,8 @@
 package question_01_10
 
+// 7. 整数反转
+// https://leetcode-cn.com/problems/reverse-integer
+
 func reverse(x int) int {
 	res := 0
 	if x == 0 {

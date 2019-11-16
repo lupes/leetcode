@@ -2,6 +2,9 @@ package question_11_20
 
 import "sort"
 
+// 15. 三数之和
+// https://leetcode-cn.com/problems/3sum
+
 func threeSum(nums []int) [][]int {
 	sort.Ints(nums)
 	size := len(nums)

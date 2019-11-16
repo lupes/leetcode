@@ -5,6 +5,9 @@ import (
 	"strings"
 )
 
+// 49. 字母异位词分组
+// https://leetcode-cn.com/problems/group-anagrams
+
 func groupAnagrams(strs []string) [][]string {
 	var tmp = make(map[string]int)
 	var res [][]string

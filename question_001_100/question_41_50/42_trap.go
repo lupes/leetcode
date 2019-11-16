@@ -2,6 +2,9 @@ package question_41_50
 
 import "fmt"
 
+// 42. 接雨水
+// https://leetcode-cn.com/problems/trapping-rain-water
+
 func max(a, b int) int {
 	if a > b {
 		return a

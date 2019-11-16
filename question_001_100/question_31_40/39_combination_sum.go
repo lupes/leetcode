@@ -4,6 +4,9 @@ import (
 	"sort"
 )
 
+// 39. 组合总和
+// https://leetcode-cn.com/problems/combination-sum
+
 func combinationSum(candidates []int, target int) [][]int {
 	count := len(candidates)
 	if count == 0 {

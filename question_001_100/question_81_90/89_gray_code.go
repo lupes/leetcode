@@ -2,6 +2,9 @@ package question_81_90
 
 import "fmt"
 
+// 89. 格雷编码
+// https://leetcode-cn.com/problems/gray-code
+
 func grayCode(n int) []int {
 	var res []int
 	for i := 0; i < 1<<uint(n); i++ {

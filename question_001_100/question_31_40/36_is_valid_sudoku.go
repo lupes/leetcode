@@ -1,5 +1,8 @@
 package question_31_40
 
+// 36. 有效的数独
+// https://leetcode-cn.com/problems/valid-sudoku
+
 func isValidSudoku(board [][]byte) bool {
 	var flagsRow [9][9]bool
 	var flagsCol [9][9]bool

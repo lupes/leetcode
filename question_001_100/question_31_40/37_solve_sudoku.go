@@ -2,6 +2,9 @@ package question_31_40
 
 import "fmt"
 
+// 37. 解数独
+// https://leetcode-cn.com/problems/sudoku-solver
+
 func (b Board) String() string {
 	res := ""
 	for _, row := range b {

@@ -7,6 +7,9 @@ type Interval struct {
 	End   int
 }
 
+// 56. 合并区间
+// https://leetcode-cn.com/problems/merge-intervals
+
 func merge(intervals []Interval) []Interval {
 	size := len(intervals)
 	if size < 2 {

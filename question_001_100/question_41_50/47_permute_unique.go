@@ -1,5 +1,8 @@
 package question_41_50
 
+// 47. 全排列 II
+// https://leetcode-cn.com/problems/permutations-ii
+
 func permuteUnique(nums []int) [][]int {
 	var res [][]int
 	if len(nums) == 1 {

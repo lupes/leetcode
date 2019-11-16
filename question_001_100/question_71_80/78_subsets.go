@@ -1,5 +1,8 @@
 package question_71_80
 
+// 78. 子集
+// https://leetcode-cn.com/problems/subsets
+
 func subsets(nums []int) [][]int {
 	var l = len(nums)
 	var flag = make([]bool, l)

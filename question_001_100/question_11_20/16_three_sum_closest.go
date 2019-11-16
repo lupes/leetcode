@@ -5,6 +5,9 @@ import (
 	"sort"
 )
 
+// 16. 最接近的三数之和
+// https://leetcode-cn.com/problems/3sum-closest
+
 func threeSumClosest(nums []int, target int) int {
 	size := len(nums)
 	if size < 3 {

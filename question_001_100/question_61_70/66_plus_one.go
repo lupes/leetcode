@@ -1,5 +1,8 @@
 package question_61_70
 
+// 66. 加一
+// https://leetcode-cn.com/problems/plus-one
+
 func plusOne(digits []int) []int {
 	size, height, tmp := len(digits), 1, 0
 	for i := size - 1; i >= 0; i-- {

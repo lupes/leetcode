@@ -1,5 +1,8 @@
 package question_01_10
 
+// 10. 正则表达式匹配
+// https://leetcode-cn.com/problems/regular-expression-matching
+
 func isMatch(s string, p string) bool {
 	if (s == "" && p == "") || p == ".*" {
 		return true

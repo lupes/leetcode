@@ -1,5 +1,8 @@
 package question_61_70
 
+// 62. 不同路径
+// https://leetcode-cn.com/problems/unique-paths/
+
 func uniquePaths(m int, n int) int {
 	if n > m {
 		n, m = m, n

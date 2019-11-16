@@ -1,5 +1,8 @@
 package question_41_50
 
+// 45. 跳跃游戏 II
+// https://leetcode-cn.com/problems/jump-game-ii
+
 func jump(nums []int) int {
 	size := len(nums)
 	if size == 1 {

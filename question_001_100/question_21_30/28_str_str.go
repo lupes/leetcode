@@ -1,5 +1,8 @@
 package question_0011_0020
 
+// 28. 实现 strStr()
+// https://leetcode-cn.com/problems/implement-strstr
+
 func strStr(haystack string, needle string) int {
 	if needle == "" {
 		return 0

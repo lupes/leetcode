@@ -4,6 +4,9 @@ import (
 	"strings"
 )
 
+// 68. 文本左右对齐
+// https://leetcode-cn.com/problems/text-justification
+
 func fullJustify(words []string, maxWidth int) []string {
 	var line []string
 	size := len(words)

@@ -4,6 +4,9 @@ import (
 	"strconv"
 )
 
+// 38. 报数
+// https://leetcode-cn.com/problems/count-and-say
+
 func countAndSay(n int) string {
 	tmp := ""
 	result := "1"

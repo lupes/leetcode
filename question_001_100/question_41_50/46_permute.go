@@ -1,5 +1,8 @@
 package question_41_50
 
+// 46. 全排列
+// https://leetcode-cn.com/problems/permutations
+
 func permute(nums []int) [][]int {
 	var res [][]int
 	if len(nums) == 1 {

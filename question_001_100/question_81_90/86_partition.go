@@ -1,5 +1,8 @@
 package question_81_90
 
+// 86. 分隔链表
+// https://leetcode-cn.com/problems/partition-list
+
 func partition(head *ListNode, x int) *ListNode {
 	var next, head1, tail1, head2, tail2 *ListNode
 	next = head
