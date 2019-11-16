@@ -1,13 +1,9 @@
 package question_01_10
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import . "github.com/lupes/leetcode/common"
 
-func (l ListNode) Test() {
-
-}
+// 2. 两数相加
+// https://leetcode-cn.com/problems/add-two-numbers/
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	res := &ListNode{}
