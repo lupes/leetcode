@@ -5,27 +5,32 @@ package question_01_10
 // Topics: 哈希表 双指针 字符串
 
 func lengthOfLongestSubstring(s string) int {
-	if s == "" {
-		return 0
-	}
-	length1, length2 := 0, 0
-	for i := 0; i < len(s); i++ {
-		var old string
-	Break:
-		for j := i; j < len(s); j++ {
-			old = s[i : j+1]
-			for k := 0; k < len(old)-1; k++ {
-				if s[j] == old[k] {
-					length2 = len(old) - 1
-					break Break
+	var flag = make(map[byte]int)
+	var left, right, max, t = 0, 0, 0, true
+	for right < len(s) {
+		if t {
+			c := s[right]
+			if n, ok := flag[c]; ok && n == 1 {
+				flag[c]++
+				t = false
+			} else {
+				flag[c]++
+				if right-left+1 > max {
+					max = right - left + 1
 				}
 			}
-			length2 = len(old)
-		}
-		if length2 > length1 {
-			length1 = length2
-			length2 = 0
+			right++
+		} else {
+			c := s[left]
+			if n, ok := flag[c]; ok && n == 2 {
+				flag[c]--
+				t = true
+			} else {
+				flag[c]--
+			}
+			left++
 		}
 	}
-	return length1
+
+	return max
 }
