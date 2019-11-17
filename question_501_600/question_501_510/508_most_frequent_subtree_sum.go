@@ -1,14 +1,12 @@
-package question_491_500
+package question_501_510
+
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
 // 508. 出现次数最多的子树元素和
 // https://leetcode-cn.com/problems/most-frequent-subtree-sum/
 // Topics: 树 哈希表
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
 
 func findFrequentTreeSum(root *TreeNode) []int {
 	if root == nil {

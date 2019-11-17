@@ -1,9 +1,11 @@
-package question_491_500
+package question_501_510
 
 import (
 	"reflect"
 	"sort"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_findFrequentTreeSum(t *testing.T) {

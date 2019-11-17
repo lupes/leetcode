@@ -1,4 +1,4 @@
-package question_491_500
+package question_501_510
 
 // 504. 七进制数
 // https://leetcode-cn.com/problems/base-7/

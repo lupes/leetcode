@@ -1,4 +1,4 @@
-package question_491_500
+package question_501_510
 
 // 503. 下一个更大元素 II
 // https://leetcode-cn.com/problems/next-greater-element-ii/

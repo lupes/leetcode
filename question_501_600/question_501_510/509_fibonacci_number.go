@@ -5,5 +5,5 @@ package question_501_510
 // Topics: 数组
 
 func fib(N int) int {
-    
+	return 0
 }
