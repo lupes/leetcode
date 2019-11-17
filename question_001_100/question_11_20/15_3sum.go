@@ -4,6 +4,7 @@ import "sort"
 
 // 15. 三数之和
 // https://leetcode-cn.com/problems/3sum
+// Topics: 数组 双指针
 
 func threeSum(nums []int) [][]int {
 	sort.Ints(nums)

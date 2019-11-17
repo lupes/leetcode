@@ -2,6 +2,7 @@ package question_111_120
 
 // 120. 三角形最小路径和
 // https://leetcode-cn.com/problems/triangle
+// Topics: 数组 动态规划
 
 func minimumTotal(triangle [][]int) int {
 	size := len(triangle)

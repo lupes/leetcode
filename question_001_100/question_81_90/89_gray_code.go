@@ -4,6 +4,7 @@ import "fmt"
 
 // 89. 格雷编码
 // https://leetcode-cn.com/problems/gray-code
+// Topics: 回溯算法
 
 func grayCode(n int) []int {
 	var res []int

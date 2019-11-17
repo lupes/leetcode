@@ -2,6 +2,7 @@ package question_211_220
 
 // 216. 组合总和 III
 // https://leetcode-cn.com/problems/combination-sum-iii/
+// Topics: 数组 回溯算法
 
 func combinationSum3(k int, n int) [][]int {
 	if n > 45 || n < 1 || k > 9 || k < 1 {

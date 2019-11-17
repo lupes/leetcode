@@ -6,6 +6,7 @@ import (
 
 // 228. 汇总区间
 // https://leetcode-cn.com/problems/summary-ranges/
+// Topics: 数组
 
 func summaryRanges(nums []int) []string {
 	var res []string

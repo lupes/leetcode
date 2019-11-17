@@ -2,6 +2,7 @@ package question_591_600
 
 // 599. 两个列表的最小索引总和
 // https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/
+// Topics: 哈希表
 
 func findRestaurant(list1 []string, list2 []string) []string {
 	l1, l2 := len(list1), len(list2)

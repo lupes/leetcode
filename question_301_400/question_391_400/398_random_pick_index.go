@@ -6,6 +6,7 @@ import (
 
 // 398. 随机数索引
 // https://leetcode-cn.com/problems/random-pick-index/
+// Topics: 蓄水池抽样
 
 type Solution struct {
 	indexs map[int][]int

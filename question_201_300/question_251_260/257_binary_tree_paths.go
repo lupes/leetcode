@@ -4,6 +4,7 @@ import "strconv"
 
 // 257. 二叉树的所有路径
 // https://leetcode-cn.com/problems/binary-tree-paths/
+// Topics: 树 深度优先搜索
 
 type TreeNode struct {
 	Val   int

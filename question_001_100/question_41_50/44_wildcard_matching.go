@@ -2,6 +2,7 @@ package question_41_50
 
 // 44. 通配符匹配
 // https://leetcode-cn.com/problems/wildcard-matching
+// Topics: 贪心算法 字符串 动态规划 回溯算法
 
 func isMatch(s string, p string) bool {
 	sLen := len(s)

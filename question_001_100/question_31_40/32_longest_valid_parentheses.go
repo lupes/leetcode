@@ -2,6 +2,7 @@ package question_31_40
 
 // 32. 最长有效括号
 // https://leetcode-cn.com/problems/longest-valid-parentheses
+// Topics: 字符串 动态规划
 
 func longestValidParentheses(s string) int {
 	size := len(s)

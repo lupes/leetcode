@@ -4,6 +4,7 @@ import "sort"
 
 // 18. 四数之和
 // https://leetcode-cn.com/problems/4sum
+// Topics: 数组 哈希表 双指针
 
 func fourSum(nums []int, target int) [][]int {
 	size := len(nums)

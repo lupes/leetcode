@@ -2,6 +2,7 @@ package question_61_70
 
 // 64. 最小路径和
 // https://leetcode-cn.com/problems/minimum-path-sum
+// Topics: 数组 动态规划
 
 func minPathSum(grid [][]int) int {
 	r, rl, c, cl, min := 1, len(grid), 1, len(grid[0]), 0

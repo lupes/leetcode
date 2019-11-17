@@ -2,6 +2,7 @@ package question_51_60
 
 // 55. 跳跃游戏
 // https://leetcode-cn.com/problems/jump-game
+// Topics: 贪心算法 数组
 
 func canJump(nums []int) bool {
 	max := 0

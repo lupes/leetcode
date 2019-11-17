@@ -2,6 +2,7 @@ package question_401_410
 
 // 404. 左叶子之和
 // https://leetcode-cn.com/problems/sum-of-left-leaves/
+// Topics: 树
 
 type TreeNode struct {
 	Val   int

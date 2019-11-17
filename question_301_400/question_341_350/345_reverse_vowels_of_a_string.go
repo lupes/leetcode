@@ -2,6 +2,7 @@ package question_341_350
 
 // 345. 反转字符串中的元音字母
 // https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+// Topics: 双指针 字符串
 
 func reverseVowels(s string) string {
 	var flag = map[byte]struct{}{

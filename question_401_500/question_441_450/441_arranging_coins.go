@@ -2,6 +2,7 @@ package question_441_450
 
 // 441. 排列硬币
 // https://leetcode-cn.com/problems/arranging-coins/
+// Topics: 数学 二分查找
 
 func arrangeCoins(n int) int {
 	l, r, c := 0, n, 0

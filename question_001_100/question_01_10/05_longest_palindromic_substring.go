@@ -2,6 +2,7 @@ package question_01_10
 
 // 5. 最长回文子串
 // https://leetcode-cn.com/problems/longest-palindromic-substring
+// Topics: 字符串 动态规划
 
 func longestPalindrome(s string) string {
 	if s == "" {

@@ -2,6 +2,7 @@ package question_391_400
 
 // 397. 整数替换
 // https://leetcode-cn.com/problems/integer-replacement/
+// Topics: 位运算 数学
 
 func integerReplacement(n int) int {
 	res := 0

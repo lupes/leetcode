@@ -2,6 +2,7 @@ package question_221_230
 
 // 225. 用队列实现栈
 // https://leetcode-cn.com/problems/implement-stack-using-queues/
+// Topics: 栈 设计
 
 type MyStack struct {
 	value int

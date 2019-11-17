@@ -2,6 +2,7 @@ package question_201_210
 
 // 209. 长度最小的子数组
 // https://leetcode-cn.com/problems/minimum-size-subarray-sum/
+// Topics: 数组 双指针 二分查找
 
 func minSubArrayLen(s int, nums []int) int {
 	min := len(nums) + 1

@@ -6,6 +6,7 @@ import (
 
 // 136. 只出现一次的数字
 // https://leetcode-cn.com/problems/single-number
+// Topics: 位运算 哈希表
 
 func singleNumber(nums []int) int {
 	sort.Ints(nums)

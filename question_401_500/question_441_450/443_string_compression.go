@@ -2,6 +2,7 @@ package question_441_450
 
 // 443. 压缩字符串
 // https://leetcode-cn.com/problems/string-compression/
+// Topics: 字符串
 
 func compress(chars []byte) int {
 	n, j := 0, 0

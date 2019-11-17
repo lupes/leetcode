@@ -2,6 +2,7 @@ package question_41_50
 
 // 50. Pow(x, n)
 // https://leetcode-cn.com/problems/powx-n
+// Topics: 数学 二分查找
 
 func myPow(x float64, n int) float64 {
 	res := 1.0

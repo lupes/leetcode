@@ -2,6 +2,7 @@ package question_141_150
 
 // 144. 二叉树的前序遍历
 // https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
+// Topics: 栈 树
 
 func preorderTraversal(root *TreeNode) []int {
 	if root == nil {

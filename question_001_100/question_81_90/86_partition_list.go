@@ -2,6 +2,7 @@ package question_81_90
 
 // 86. 分隔链表
 // https://leetcode-cn.com/problems/partition-list
+// Topics: 链表 双指针
 
 func partition(head *ListNode, x int) *ListNode {
 	var next, head1, tail1, head2, tail2 *ListNode

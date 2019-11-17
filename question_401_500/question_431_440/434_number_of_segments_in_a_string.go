@@ -2,6 +2,7 @@ package question_431_440
 
 // 434. 字符串中的单词数
 // https://leetcode-cn.com/problems/number-of-segments-in-a-string/
+// Topics: 字符串
 
 func countSegments(s string) int {
 	var res, flag = 0, false

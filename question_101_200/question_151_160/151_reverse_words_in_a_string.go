@@ -4,6 +4,7 @@ import "strings"
 
 // 151. 翻转字符串里的单词
 // https://leetcode-cn.com/problems/reverse-words-in-a-string/
+// Topics: 字符串
 
 func reverseWords(s string) string {
 	tmp := strings.Split(s, " ")

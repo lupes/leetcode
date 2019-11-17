@@ -4,6 +4,7 @@ import "fmt"
 
 // 299. 猜数字游戏
 // https://leetcode-cn.com/problems/bulls-and-cows/
+// Topics: 哈希表
 
 func getHint(secret string, guess string) string {
 	a, b := 0, 0

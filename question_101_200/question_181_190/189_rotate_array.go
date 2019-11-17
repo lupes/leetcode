@@ -2,6 +2,7 @@ package question_181_190
 
 // 189. 旋转数组
 // https://leetcode-cn.com/problems/rotate-array/
+// Topics: 数组
 
 func rotate(nums []int, k int) {
 	l := len(nums)

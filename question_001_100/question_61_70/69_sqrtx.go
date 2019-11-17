@@ -2,6 +2,7 @@ package question_61_70
 
 // 69. x 的平方根
 // https://leetcode-cn.com/problems/sqrtx
+// Topics: 数学 二分查找
 
 func mySqrt(x int) int {
 	l, r := 1, x

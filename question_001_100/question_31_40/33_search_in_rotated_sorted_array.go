@@ -2,6 +2,7 @@ package question_31_40
 
 // 33. 搜索旋转排序数组
 // https://leetcode-cn.com/problems/search-in-rotated-sorted-array
+// Topics: 数组 二分查找
 
 func search(nums []int, target int) int {
 	size := len(nums)

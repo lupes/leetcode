@@ -6,6 +6,7 @@ import (
 
 // 68. 文本左右对齐
 // https://leetcode-cn.com/problems/text-justification
+// Topics: 字符串
 
 func fullJustify(words []string, maxWidth int) []string {
 	var line []string

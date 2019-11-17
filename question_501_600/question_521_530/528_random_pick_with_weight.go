@@ -6,6 +6,7 @@ import (
 
 // 528. 按权重随机选择
 // https://leetcode-cn.com/problems/random-pick-with-weight/
+// Topics: 二分查找 None
 
 type Solution struct {
 	Sums []int

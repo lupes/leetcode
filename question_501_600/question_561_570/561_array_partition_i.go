@@ -4,6 +4,7 @@ import "sort"
 
 // 561. 数组拆分 I
 // https://leetcode-cn.com/problems/array-partition-i/
+// Topics: 数组
 
 func arrayPairSum(nums []int) int {
 	sort.Ints(nums)

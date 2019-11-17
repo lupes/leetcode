@@ -2,6 +2,7 @@ package question_381_390
 
 // 390. 消除游戏
 // https://leetcode-cn.com/problems/elimination-game/
+// Topics:
 
 func lastRemaining(n int) int {
 	switch n {

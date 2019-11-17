@@ -7,6 +7,7 @@ type ListNode struct {
 
 // 61. 旋转链表
 // https://leetcode-cn.com/problems/rotate-list
+// Topics: 链表 双指针
 
 func rotateRight(head *ListNode, k int) *ListNode {
 	if head == nil || k == 0 {

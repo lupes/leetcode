@@ -2,6 +2,7 @@ package question_151_160
 
 // 160. 相交链表
 // https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
+// Topics: 链表
 
 type ListNode struct {
 	Val  int

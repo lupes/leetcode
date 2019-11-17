@@ -2,6 +2,7 @@ package question_231_240
 
 // 234. 回文链表
 // https://leetcode-cn.com/problems/palindrome-linked-list/
+// Topics: 链表 双指针
 
 func isPalindrome(head *ListNode) bool {
 	var arr []*ListNode

@@ -2,6 +2,7 @@ package question_181_190
 
 // 187. 重复的DNA序列
 // https://leetcode-cn.com/problems/repeated-dna-sequences/
+// Topics: 位运算 哈希表
 
 func findRepeatedDnaSequences(s string) []string {
 	var res []string

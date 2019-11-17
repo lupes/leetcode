@@ -2,6 +2,7 @@ package question_0011_0020
 
 // 25. K 个一组翻转链表
 // https://leetcode-cn.com/problems/reverse-nodes-in-k-group
+// Topics: 链表
 
 func reverseKGroup(head *ListNode, k int) *ListNode {
 	if head == nil || k == 1 {

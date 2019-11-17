@@ -2,6 +2,7 @@ package question_411_420
 
 // 415. 字符串相加
 // https://leetcode-cn.com/problems/add-strings/
+// Topics: 字符串
 
 func addStrings(num1 string, num2 string) string {
 	l1, l2, n, c, res := len(num1), len(num2), uint8(0), uint8(0), ""

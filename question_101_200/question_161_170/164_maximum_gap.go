@@ -3,7 +3,8 @@ package question_161_170
 import "sort"
 
 // 164. 最大间距
-//  https://leetcode-cn.com/problems/maximum-gap/
+// https://leetcode-cn.com/problems/maximum-gap/
+// Topics: 排序
 
 func maximumGap(nums []int) int {
 	sort.Ints(nums)

@@ -2,6 +2,7 @@ package question_591_600
 
 // 594. 最长和谐子序列
 // https://leetcode-cn.com/problems/longest-harmonious-subsequence/
+// Topics: 哈希表
 
 func findLHS(nums []int) int {
 	var tmp = make(map[int]int)

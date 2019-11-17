@@ -2,6 +2,7 @@ package question_261_270
 
 // 263. 丑数
 // https://leetcode-cn.com/problems/ugly-number/
+// Topics: 数学
 
 func isUgly(num int) bool {
 	if num < 1 {

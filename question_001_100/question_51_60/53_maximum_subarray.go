@@ -2,6 +2,7 @@ package question_51_60
 
 // 53. 最大子序和
 // https://leetcode-cn.com/problems/maximum-subarray/
+// Topics: 数组 分治算法 动态规划
 
 func maxSubArray(nums []int) int {
 	var dp = make([]int, len(nums))

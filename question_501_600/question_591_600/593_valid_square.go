@@ -6,6 +6,7 @@ import (
 
 // 593. 有效的正方形
 // https://leetcode-cn.com/problems/valid-square/
+// Topics: 数学
 
 func validSquare(p1 []int, p2 []int, p3 []int, p4 []int) bool {
 	var a []int

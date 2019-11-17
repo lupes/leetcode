@@ -2,6 +2,7 @@ package question_521_530
 
 // 530. 二叉搜索树的最小绝对差
 // https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/
+// Topics: 树
 
 type TreeNode struct {
 	Val   int

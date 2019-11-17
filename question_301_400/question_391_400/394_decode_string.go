@@ -7,6 +7,7 @@ import (
 
 // 394. 字符串解码
 // https://leetcode-cn.com/problems/decode-string/
+// Topics: 栈 深度优先搜索
 
 func decodeString(s string) string {
 	var res, n, j, k, l = "", 0, 0, 0, len(s)

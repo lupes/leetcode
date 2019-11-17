@@ -2,6 +2,7 @@ package question_111_120
 
 // 119. 杨辉三角 II
 // https://leetcode-cn.com/problems/pascals-triangle-ii/
+// Topics: 数组
 
 func getRow(rowIndex int) []int {
 	var res []int

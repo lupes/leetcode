@@ -4,6 +4,7 @@ import . "github.com/lupes/leetcode/common"
 
 // 95. 不同的二叉搜索树 II
 // https://leetcode-cn.com/problems/unique-binary-search-trees-ii/
+// Topics: 树 动态规划
 
 func generateTrees(n int) []*TreeNode {
 	if n == 0 {

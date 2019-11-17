@@ -2,6 +2,7 @@ package question_491_500
 
 // 495. 提莫攻击
 // https://leetcode-cn.com/problems/teemo-attacking/
+// Topics: 数组
 
 func findPoisonedDuration(timeSeries []int, duration int) int {
 	res, last := 0, -duration

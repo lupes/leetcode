@@ -9,6 +9,8 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// Topics: 树 深度优先搜索 广度优先搜索
+
 func minDepth(root *TreeNode) int {
 	if root == nil {
 		return 0

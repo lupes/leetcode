@@ -2,6 +2,7 @@ package qustion_511_520
 
 // 520. 检测大写字母
 // https://leetcode-cn.com/problems/detect-capital/
+// Topics: 字符串
 
 func detectCapitalUse(word string) bool {
 	num, flag, l := 0, false, len(word)

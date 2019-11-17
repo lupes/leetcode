@@ -2,6 +2,7 @@ package question_111_120
 
 // 112. 路径总和
 // https://leetcode-cn.com/problems/path-sum/
+// Topics: 树 深度优先搜索
 
 func hasPathSum(root *TreeNode, sum int) bool {
 	if root == nil {

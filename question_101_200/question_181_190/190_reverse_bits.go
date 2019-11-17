@@ -2,6 +2,7 @@ package question_181_190
 
 // 190. 颠倒二进制位
 // https://leetcode-cn.com/problems/reverse-bits/
+// Topics: 位运算
 
 func reverseBits(num uint32) uint32 {
 	var res, l uint32

@@ -4,6 +4,7 @@ import "fmt"
 
 // 42. 接雨水
 // https://leetcode-cn.com/problems/trapping-rain-water
+// Topics: 栈 数组 双指针
 
 func max(a, b int) int {
 	if a > b {

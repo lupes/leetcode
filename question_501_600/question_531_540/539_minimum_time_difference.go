@@ -4,6 +4,7 @@ import "sort"
 
 // 539. 最小时间差
 // https://leetcode-cn.com/problems/mnimum-time-difference/
+// Topics: 字符串
 
 func findMinDifference(timePoints []string) int {
 	sort.Strings(timePoints)

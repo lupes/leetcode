@@ -2,6 +2,7 @@ package question_01_10
 
 // 1. 两数之和
 // https://leetcode-cn.com/problems/two-sum/
+// Topics: 数组 哈希表
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)

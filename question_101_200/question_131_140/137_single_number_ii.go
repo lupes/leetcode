@@ -6,6 +6,7 @@ import (
 
 // 137. 只出现一次的数字 II
 // https://leetcode-cn.com/problems/single-number-ii/
+// Topics: 位运算
 
 func singleNumber2(nums []int) int {
 	sort.Ints(nums)

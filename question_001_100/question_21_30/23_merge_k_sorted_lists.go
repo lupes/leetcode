@@ -7,6 +7,7 @@ type ListNode struct {
 
 // 23. 合并K个排序链表
 // https://leetcode-cn.com/problems/merge-k-sorted-lists
+// Topics: 堆 链表 分治算法
 
 func mergeKLists(lists []*ListNode) *ListNode {
 	var head *ListNode

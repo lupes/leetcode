@@ -2,6 +2,7 @@ package question_171_180
 
 // 172. 阶乘后的零
 // https://leetcode-cn.com/problems/factorial-trailing-zeroes
+// Topics: 数学
 
 func trailingZeroes(n int) int {
 	res := 0

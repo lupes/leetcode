@@ -2,6 +2,7 @@ package question_71_80
 
 // 78. 子集
 // https://leetcode-cn.com/problems/subsets
+// Topics: 位运算 数组 回溯算法
 
 func subsets(nums []int) [][]int {
 	var l = len(nums)

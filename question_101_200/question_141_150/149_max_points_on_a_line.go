@@ -7,6 +7,7 @@ import (
 
 // 149. 直线上最多的点数
 // https://leetcode-cn.com/problems/max-points-on-a-line/
+// Topics: 哈希表 数学
 
 func maxPoints(points [][]int) int {
 	if len(points) < 3 {

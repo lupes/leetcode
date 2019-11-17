@@ -7,6 +7,7 @@ import (
 
 // 16. 最接近的三数之和
 // https://leetcode-cn.com/problems/3sum-closest
+// Topics: 数组 双指针
 
 func threeSumClosest(nums []int, target int) int {
 	size := len(nums)

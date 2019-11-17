@@ -7,6 +7,7 @@ import (
 
 // 65. 有效数字
 // https://leetcode-cn.com/problems/valid-number/
+// Topics: 数学 字符串
 
 func isNumber(s string) bool {
 	s = strings.Trim(s, " ")

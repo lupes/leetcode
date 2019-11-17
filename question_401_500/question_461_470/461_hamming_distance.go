@@ -2,6 +2,7 @@ package question_461_470
 
 // 461. 汉明距离
 // https://leetcode-cn.com/problems/hamming-distance/
+// Topics: 位运算
 
 func hammingDistance(x int, y int) int {
 	t, r := x^y, 0

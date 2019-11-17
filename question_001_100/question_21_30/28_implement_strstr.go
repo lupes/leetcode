@@ -2,6 +2,7 @@ package question_0011_0020
 
 // 28. 实现 strStr()
 // https://leetcode-cn.com/problems/implement-strstr
+// Topics: 双指针 字符串
 
 func strStr(haystack string, needle string) int {
 	if needle == "" {

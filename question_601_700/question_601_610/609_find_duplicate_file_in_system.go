@@ -6,6 +6,7 @@ import (
 
 // 609. 在系统中查找重复文件
 // https://leetcode-cn.com/problems/find-duplicate-file-in-system/
+// Topics: 哈希表 字符串
 
 func findDuplicate(paths []string) [][]string {
 	var files = make(map[string][]string)

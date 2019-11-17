@@ -6,6 +6,7 @@ import (
 
 // 150. 逆波兰表达式求值
 // https://leetcode-cn.com/problems/evaluate-reverse-polish-notation
+// Topics: 栈
 
 func evalRPN(tokens []string) int {
 	var arr []int

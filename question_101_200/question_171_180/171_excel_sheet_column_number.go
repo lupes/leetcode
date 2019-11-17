@@ -4,6 +4,7 @@ import "math"
 
 // 171. Excel表列序号
 // https://leetcode-cn.com/problems/excel-sheet-column-number
+// Topics: 数学
 
 func titleToNumber(s string) int {
 	var res int

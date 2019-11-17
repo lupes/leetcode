@@ -4,6 +4,7 @@ import "sort"
 
 // 148. 排序链表
 // https://leetcode-cn.com/problems/sort-list/
+// Topics: 排序 链表
 
 func sortList(head *ListNode) *ListNode {
 	var arr []*ListNode

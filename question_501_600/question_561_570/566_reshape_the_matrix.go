@@ -2,6 +2,7 @@ package question_561_570
 
 // 566. 重塑矩阵
 // https://leetcode-cn.com/problems/reshape-the-matrix/
+// Topics: 数组
 
 func matrixReshape(nums [][]int, r int, c int) [][]int {
 	nr, nc := len(nums), len(nums[0])

@@ -2,6 +2,7 @@ package question_491_500
 
 // 503. 下一个更大元素 II
 // https://leetcode-cn.com/problems/next-greater-element-ii/
+// Topics: 栈
 
 func nextGreaterElements(nums []int) []int {
 	var res, l, flag = make([]int, len(nums)), len(nums), false

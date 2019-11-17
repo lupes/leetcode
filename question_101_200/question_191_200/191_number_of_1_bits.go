@@ -2,6 +2,7 @@ package question_191_200
 
 // 191. 位1的个数
 // https://leetcode-cn.com/problems/number-of-1-bits/
+// Topics: 位运算
 
 func hammingWeight(num uint32) int {
 	var res int

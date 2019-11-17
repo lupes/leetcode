@@ -2,6 +2,7 @@ package question_241_250
 
 // 242. 有效的字母异位词
 // https://leetcode-cn.com/problems/valid-anagram/
+// Topics: 排序 哈希表
 
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {

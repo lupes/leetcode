@@ -2,6 +2,7 @@ package question_201_210
 
 // 206. 反转链表
 // https://leetcode-cn.com/problems/reverse-linked-list/
+// Topics: 链表
 
 func reverseList(head *ListNode) *ListNode {
 	next := head

@@ -2,6 +2,7 @@ package question_31_40
 
 // 35. 搜索插入位置
 // https://leetcode-cn.com/problems/search-insert-position
+// Topics: 数组 二分查找
 
 func searchInsert(nums []int, target int) int {
 	i := -1

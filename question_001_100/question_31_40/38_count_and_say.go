@@ -6,6 +6,7 @@ import (
 
 // 38. 报数
 // https://leetcode-cn.com/problems/count-and-say
+// Topics: 字符串
 
 func countAndSay(n int) string {
 	tmp := ""

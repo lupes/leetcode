@@ -2,6 +2,7 @@ package question_381_390
 
 // 387. 字符串中的第一个唯一字符
 // https://leetcode-cn.com/problems/first-unique-character-in-a-string/
+// Topics: 哈希表 字符串
 
 func firstUniqChar(s string) int {
 	var m = make([]int32, 26)

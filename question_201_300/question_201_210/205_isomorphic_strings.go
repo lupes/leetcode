@@ -6,6 +6,7 @@ import (
 
 // 205. 同构字符串
 // https://leetcode-cn.com/problems/isomorphic-strings
+// Topics: 哈希表
 
 func isIsomorphic(s string, t string) bool {
 	var flags1 = make(map[int32][]int)

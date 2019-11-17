@@ -7,6 +7,7 @@ import (
 
 // 506. 相对名次
 // https://leetcode-cn.com/problems/relative-ranks/
+// Topics:
 
 func findRelativeRanks(nums []int) []string {
 	var tmp = make([]int, len(nums))

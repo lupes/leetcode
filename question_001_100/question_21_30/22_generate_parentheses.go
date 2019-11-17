@@ -6,6 +6,7 @@ import (
 
 // 22. 括号生成
 // https://leetcode-cn.com/problems/generate-parentheses
+// Topics: 字符串 回溯算法
 
 func generateParenthesis(n int) []string {
 	res := &[]string{}

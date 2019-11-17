@@ -2,6 +2,7 @@ package question_101_110
 
 // 110. 平衡二叉树
 // https://leetcode-cn.com/problems/balanced-binary-tree/submissions/
+// Topics: 树 深度优先搜索
 
 func isBalanced(root *TreeNode) bool {
 	_, flag := maxDepth2(root)

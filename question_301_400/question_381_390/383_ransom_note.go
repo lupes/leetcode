@@ -2,6 +2,7 @@ package question_381_390
 
 // 383. 赎金信
 // https://leetcode-cn.com/problems/ransom-note/
+// Topics: 字符串
 
 func canConstruct(ransomNote string, magazine string) bool {
 	var m = make(map[int32]int)

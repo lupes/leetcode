@@ -2,6 +2,7 @@ package question_391_400
 
 // 396. 旋转函数
 // https://leetcode-cn.com/problems/rotate-function/
+// Topics: 数学
 
 func maxRotateFunction(A []int) int {
 	max, tmp, sum, l := 0, 0, 0, len(A)

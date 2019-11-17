@@ -6,6 +6,7 @@ import (
 
 // 39. 组合总和
 // https://leetcode-cn.com/problems/combination-sum
+// Topics: 数组 回溯算法
 
 func combinationSum(candidates []int, target int) [][]int {
 	count := len(candidates)

@@ -4,6 +4,7 @@ import "fmt"
 
 // 72. 编辑距离
 // https://leetcode-cn.com/problems/edit-distance/
+// Topics: 字符串 动态规划
 
 func Print(word1, word2 string, flag [][]int) {
 	word1, word2 = " -"+word1, "-"+word2

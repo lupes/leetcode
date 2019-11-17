@@ -2,6 +2,7 @@ package question_301_310
 
 // 303. 区域和检索 - 数组不可变
 // https://leetcode-cn.com/problems/range-sum-query-immutable/
+// Topics: 动态规划
 
 type NumArray struct {
 	Sums []int

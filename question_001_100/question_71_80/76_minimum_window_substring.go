@@ -2,6 +2,7 @@ package question_71_80
 
 // 76. 最小覆盖子串
 // https://leetcode-cn.com/problems/minimum-window-substring/
+// Topics: 哈希表 双指针 字符串
 
 func minWindow(s string, t string) string {
 	// step1 将t转换为map结构 切片长度为2，第一个存储在t的出现次数，第二个存储在当前窗口出现的次数

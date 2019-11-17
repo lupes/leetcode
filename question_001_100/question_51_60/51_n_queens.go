@@ -2,6 +2,7 @@ package question_51_60
 
 // 51. N皇后
 // https://leetcode-cn.com/problems/n-queens
+// Topics: 回溯算法
 
 func solveNQueens(n int) [][]string {
 	flag := make([][]bool, n)

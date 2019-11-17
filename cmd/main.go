@@ -6,6 +6,7 @@ import (
 )
 
 func Print(w http.ResponseWriter, req *http.Request) {
+
 	query := req.URL.Query()
 	for key, value := range query {
 		fmt.Printf("%s=%+v\n", key, value)
@@ -13,9 +14,5 @@ func Print(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/test", Print)
-	err := http.ListenAndServe(":8080", nil)
-	if err != nil {
-		fmt.Printf("%s\n", err)
-	}
+	fmt.Printf("%v", string([]byte{0x49, 0x20, 0x4c, 0x6f, 0x76, 0x65, 0x20, 0x59, 0x6f, 0x75}))
 }

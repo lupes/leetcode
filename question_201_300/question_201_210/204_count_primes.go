@@ -2,6 +2,7 @@ package question_201_210
 
 // 204. 计数质数
 // https://leetcode-cn.com/problems/count-primes
+// Topics: 哈希表 数学
 
 func countPrimes(n int) int {
 	if n < 3 {

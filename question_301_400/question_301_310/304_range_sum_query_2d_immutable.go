@@ -7,6 +7,8 @@ type NumMatrix struct {
 	Matrix [][]int
 }
 
+// Topics: 动态规划
+
 func ConstructorMatrix(matrix [][]int) NumMatrix {
 	if len(matrix) == 0 {
 		return NumMatrix{

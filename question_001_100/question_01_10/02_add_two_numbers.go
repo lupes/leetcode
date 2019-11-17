@@ -4,6 +4,7 @@ import . "github.com/lupes/leetcode/common"
 
 // 2. 两数相加
 // https://leetcode-cn.com/problems/add-two-numbers/
+// Topics: 链表 数学
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	res := &ListNode{}

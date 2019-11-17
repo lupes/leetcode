@@ -6,6 +6,7 @@ import (
 
 // 581. 最短无序连续子数组
 // https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/
+// Topics: 数组
 
 func findUnsortedSubarray(nums []int) int {
 	l, fl, r, fr := 0, false, len(nums)-1, false

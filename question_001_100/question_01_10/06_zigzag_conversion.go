@@ -6,6 +6,7 @@ import (
 
 // 6. Z 字形变换
 // https://leetcode-cn.com/problems/zigzag-conversion
+// Topics: 字符串
 
 func convert(s string, numRows int) string {
 	if s == "" {

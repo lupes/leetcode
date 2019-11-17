@@ -4,6 +4,7 @@ import "strings"
 
 // 208. 实现 Trie (前缀树)
 // https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+// Topics: 设计 字典树
 
 type Trie struct {
 	DataMap map[string]struct{}

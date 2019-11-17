@@ -2,6 +2,7 @@ package question_211_220
 
 // 218. 天际线问题
 // https://leetcode-cn.com/problems/the-skyline-problem
+// Topics: 堆 树状数组 线段树 分治算法 None
 
 func getSkyline(buildings [][]int) [][]int {
 	if len(buildings) == 0 {

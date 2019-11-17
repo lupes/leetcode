@@ -1,9 +1,10 @@
 package question_411_420
 
+import "strconv"
+
 // 412. Fizz Buzz
 // https://leetcode-cn.com/problems/fizz-buzz/
-
-import "strconv"
+// Topics:
 
 func fizzBuzz(n int) []string {
 	var res, s = make([]string, n), ""

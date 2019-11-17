@@ -7,6 +7,7 @@ import (
 
 // 179. 最大数
 // https://leetcode-cn.com/problems/largest-number/
+// Topics: 排序
 
 func largestNumber(nums []int) string {
 	sort.Slice(nums, func(i, j int) bool {

@@ -2,6 +2,7 @@ package question_01_10
 
 // 9. 回文数
 // https://leetcode-cn.com/problems/palindrome-number
+// Topics: 数学
 
 func isPalindrome(x int) bool {
 	if x < 0 {

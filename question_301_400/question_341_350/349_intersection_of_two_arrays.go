@@ -2,6 +2,7 @@ package question_341_350
 
 // 349. 两个数组的交集
 // https://leetcode-cn.com/problems/intersection-of-two-arrays/
+// Topics: 排序 哈希表 双指针 二分查找
 
 func intersection(nums1 []int, nums2 []int) []int {
 	var m = make(map[int]struct{}, 0)

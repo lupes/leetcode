@@ -2,6 +2,7 @@ package question_01_10
 
 // 10. 正则表达式匹配
 // https://leetcode-cn.com/problems/regular-expression-matching
+// Topics: 字符串 动态规划 回溯算法
 
 func isMatch(s string, p string) bool {
 	if (s == "" && p == "") || p == ".*" {

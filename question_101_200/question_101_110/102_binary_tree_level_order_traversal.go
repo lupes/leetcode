@@ -2,6 +2,7 @@ package question_101_110
 
 // 102. 二叉树的层次遍历
 // https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/
+// Topics: 树 广度优先搜索
 
 func levelOrder(root *TreeNode) [][]int {
 	if root == nil {

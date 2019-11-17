@@ -2,6 +2,7 @@ package question_101_110
 
 // 101. 对称二叉树
 // https://leetcode-cn.com/problems/symmetric-tree/
+// Topics: 树 深度优先搜索 广度优先搜索
 
 func isSymmetric(root *TreeNode) bool {
 	var next = []*TreeNode{root}

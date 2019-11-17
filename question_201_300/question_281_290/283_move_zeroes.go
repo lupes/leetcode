@@ -2,6 +2,7 @@ package question_281_290
 
 // 283. 移动零
 // https://leetcode-cn.com/problems/move-zeroes/
+// Topics: 数组 双指针
 
 func moveZeroes(nums []int) {
 	zeroIndex := 0

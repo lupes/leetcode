@@ -2,6 +2,7 @@ package question_591_600
 
 // 598. 范围求和 II
 // https://leetcode-cn.com/problems/range-addition-ii/
+// Topics: 数学
 
 func maxCount(m int, n int, ops [][]int) int {
 	for _, op := range ops {

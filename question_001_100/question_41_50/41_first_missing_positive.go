@@ -6,6 +6,7 @@ import (
 
 // 41. 缺失的第一个正数
 // https://leetcode-cn.com/problems/first-missing-positive
+// Topics: 数组
 
 func firstMissingPositive(nums []int) int {
 	sort.Ints(nums)

@@ -4,6 +4,7 @@ var base = []string{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"}
 
 // 17. 电话号码的字母组合
 // https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number
+// Topics: 字符串 回溯算法
 
 func letterCombinations(digits string) []string {
 	if digits == "" {

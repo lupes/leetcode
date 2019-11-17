@@ -2,6 +2,7 @@ package question_41_50
 
 // 43. 字符串相乘
 // https://leetcode-cn.com/problems/multiply-strings
+// Topics: 数学 字符串
 
 func multiply(num1 string, num2 string) string {
 	if num1 == "" || num2 == "" {

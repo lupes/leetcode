@@ -6,6 +6,7 @@ import (
 
 // 324. 摆动排序 II
 // https://leetcode-cn.com/problems/wiggle-sort-ii/
+// Topics: 排序
 
 func wiggleSort(nums []int) {
 	sort.Ints(nums)

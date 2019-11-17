@@ -2,6 +2,7 @@ package question_551_560
 
 // 551. 学生出勤记录 I
 // https://leetcode-cn.com/problems/student-attendance-record-i/
+// Topics: 字符串
 
 func checkRecord(s string) bool {
 	preL, hasA := 0, false

@@ -2,6 +2,7 @@ package question_471_480
 
 // 473. 火柴拼正方形
 // https://leetcode-cn.com/problems/matchsticks-to-square/
+// Topics: 深度优先搜索
 
 func makesquare(nums []int) bool {
 	if len(nums) < 4 {

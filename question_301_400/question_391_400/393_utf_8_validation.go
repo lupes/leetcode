@@ -2,6 +2,7 @@ package question_391_400
 
 // 393. UTF-8 编码验证
 // https://leetcode-cn.com/problems/utf-8-validation/
+// Topics: 位运算
 
 func validUtf8(data []int) bool {
 	l, n := len(data), 0

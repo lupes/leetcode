@@ -2,6 +2,7 @@ package question_41_50
 
 // 47. 全排列 II
 // https://leetcode-cn.com/problems/permutations-ii
+// Topics: 回溯算法
 
 func permuteUnique(nums []int) [][]int {
 	var res [][]int

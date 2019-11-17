@@ -2,6 +2,7 @@ package question_251_260
 
 // 258. 各位相加
 // https://leetcode-cn.com/problems/add-digits
+// Topics: 数学
 
 func addDigits(num int) int {
 	t := num

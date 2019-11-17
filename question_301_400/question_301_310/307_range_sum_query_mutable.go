@@ -2,6 +2,7 @@ package question_301_310
 
 // 307. 区域和检索 - 数组可修改
 // https://leetcode-cn.com/problems/range-sum-query-mutable/
+// Topics: 树状数组 线段树
 
 type NumArray2 struct {
 	Nums []int

@@ -6,6 +6,7 @@ import (
 
 // 31. 下一个排列
 // https://leetcode-cn.com/problems/next-permutation
+// Topics: 数组
 
 func nextPermutation(nums []int) {
 	size := len(nums)

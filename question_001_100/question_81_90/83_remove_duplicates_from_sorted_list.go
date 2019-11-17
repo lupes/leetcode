@@ -7,6 +7,7 @@ type ListNode struct {
 
 // 83. 删除排序链表中的重复元素
 // https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list
+// Topics: 链表
 
 func deleteDuplicates(head *ListNode) *ListNode {
 	next := head

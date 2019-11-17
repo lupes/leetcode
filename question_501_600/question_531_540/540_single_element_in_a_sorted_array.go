@@ -2,6 +2,7 @@ package question_531_540
 
 // 540. 有序数组中的单一元素
 // https://leetcode-cn.com/problems/single-element-in-a-sorted-array/
+// Topics:
 
 func singleNonDuplicate(nums []int) int {
 	l, r, h, c, n := 0, len(nums), len(nums)-1, 0, 0

@@ -8,6 +8,7 @@ type MinStack struct {
 
 // 155. 最小栈
 // https://leetcode-cn.com/problems/min-stack
+// Topics: 栈 设计
 
 func Constructor() MinStack {
 	return MinStack{

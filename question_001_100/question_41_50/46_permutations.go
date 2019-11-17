@@ -2,6 +2,7 @@ package question_41_50
 
 // 46. 全排列
 // https://leetcode-cn.com/problems/permutations
+// Topics: 回溯算法
 
 func permute(nums []int) [][]int {
 	var res [][]int

@@ -2,6 +2,7 @@ package question_81_90
 
 // 84. 柱状图中最大的矩形
 // https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
+// Topics: 栈 数组
 
 func largestRectangleArea(heights []int) int {
 	//return largestRectangleAreaViolent(heights)

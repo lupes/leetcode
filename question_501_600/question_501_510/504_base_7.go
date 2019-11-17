@@ -2,6 +2,7 @@ package question_491_500
 
 // 504. 七进制数
 // https://leetcode-cn.com/problems/base-7/
+// Topics:
 
 func convertToBase7(num int) string {
 	res, flag := "", true

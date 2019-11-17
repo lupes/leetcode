@@ -2,6 +2,7 @@ package question_551_560
 
 // 554. 砖墙
 // https://leetcode-cn.com/problems/brick-wall/
+// Topics: 哈希表
 
 func leastBricks(wall [][]int) int {
 	var tmp, width, max, height = make(map[int]int), 0, 0, len(wall)

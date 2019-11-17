@@ -4,6 +4,7 @@ import "fmt"
 
 // 37. 解数独
 // https://leetcode-cn.com/problems/sudoku-solver
+// Topics: 哈希表 回溯算法
 
 func (b Board) String() string {
 	res := ""

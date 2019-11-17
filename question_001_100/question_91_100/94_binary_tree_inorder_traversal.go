@@ -4,6 +4,7 @@ import . "github.com/lupes/leetcode/common"
 
 // 94. 二叉树的中序遍历
 // https://leetcode-cn.com/problems/binary-tree-inorder-traversal
+// Topics: 栈 树 哈希表
 
 func inorderTraversal(root *TreeNode) []int {
 	var res []int

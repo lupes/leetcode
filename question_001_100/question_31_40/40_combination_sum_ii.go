@@ -6,6 +6,7 @@ import (
 
 // 40. 组合总和 II
 // https://leetcode-cn.com/problems/combination-sum-ii
+// Topics: 数组 回溯算法
 
 func combinationSum2(candidates []int, target int) [][]int {
 	sort.Ints(candidates)

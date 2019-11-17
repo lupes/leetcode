@@ -2,6 +2,7 @@ package question_11_20
 
 // 11. 盛最多水的容器
 // https://leetcode-cn.com/problems/container-with-most-water
+// Topics: 数组 双指针
 
 func maxArea(height []int) int {
 	size := len(height)

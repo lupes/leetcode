@@ -2,6 +2,7 @@ package question_281_290
 
 // 289. 生命游戏
 // https://leetcode-cn.com/problems/game-of-life/
+// Topics: 数组
 
 func gameOfLife(board [][]int) {
 

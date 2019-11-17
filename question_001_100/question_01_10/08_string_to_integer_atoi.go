@@ -6,6 +6,7 @@ import (
 
 // 8. 字符串转换整数 (atoi)
 // https://leetcode-cn.com/problems/string-to-integer-atoi
+// Topics: 数学 字符串
 
 func myAtoi(str string) int {
 	if str == "" {

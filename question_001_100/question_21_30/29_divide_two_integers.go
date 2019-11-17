@@ -6,6 +6,7 @@ import (
 
 // 29. 两数相除
 // https://leetcode-cn.com/problems/divide-two-integers
+// Topics: 数学 二分查找
 
 func divide(dividend int, divisor int) int {
 	if dividend == 0 {

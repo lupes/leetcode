@@ -2,6 +2,7 @@ package question_481_490
 
 // 482. 密钥格式化
 // https://leetcode-cn.com/problems/license-key-formatting/
+// Topics:
 
 func licenseKeyFormatting(S string, K int) string {
 	var t, r string

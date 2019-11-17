@@ -2,6 +2,7 @@ package question_0011_0020
 
 // 21. 合并两个有序链表
 // https://leetcode-cn.com/problems/merge-two-sorted-lists
+// Topics: 链表
 
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {

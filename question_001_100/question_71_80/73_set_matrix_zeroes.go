@@ -2,6 +2,7 @@ package question_71_80
 
 // 73. 矩阵置零
 // https://leetcode-cn.com/problems/set-matrix-zeroes
+// Topics: 数组
 
 func setZeroes(matrix [][]int) {
 	ll := len(matrix)

@@ -6,6 +6,7 @@ import (
 
 // 347. 前 K 个高频元素
 // https://leetcode-cn.com/problems/top-k-frequent-elements/
+// Topics: 堆 哈希表
 
 func topKFrequent(nums []int, k int) []int {
 	var m = make(map[int]int)

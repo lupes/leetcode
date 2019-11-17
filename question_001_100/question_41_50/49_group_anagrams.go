@@ -7,6 +7,7 @@ import (
 
 // 49. 字母异位词分组
 // https://leetcode-cn.com/problems/group-anagrams
+// Topics: 哈希表 字符串
 
 func groupAnagrams(strs []string) [][]string {
 	var tmp = make(map[string]int)

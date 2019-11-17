@@ -2,6 +2,7 @@ package question_111_120
 
 // 118. 杨辉三角
 // https://leetcode-cn.com/problems/pascals-triangle/
+// Topics: 数组
 
 func generate(numRows int) [][]int {
 	if numRows < 1 {

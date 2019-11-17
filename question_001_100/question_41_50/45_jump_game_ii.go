@@ -2,6 +2,7 @@ package question_41_50
 
 // 45. 跳跃游戏 II
 // https://leetcode-cn.com/problems/jump-game-ii
+// Topics: 贪心算法 数组
 
 func jump(nums []int) int {
 	size := len(nums)

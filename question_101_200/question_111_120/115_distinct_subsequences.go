@@ -2,6 +2,7 @@ package question_111_120
 
 // 115. 不同的子序列
 // https://leetcode-cn.com/problems/distinct-subsequences/
+// Topics: 字符串 动态规划
 
 func numDistinct(s string, t string) int {
 	sl, tl := len(s), len(t)

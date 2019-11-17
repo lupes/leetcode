@@ -2,6 +2,7 @@ package question_481_490
 
 // 485. 最大连续1的个数
 // https://leetcode-cn.com/problems/max-consecutive-ones/
+// Topics: 数组
 
 func findMaxConsecutiveOnes(nums []int) int {
 	var max, t = 0, 0

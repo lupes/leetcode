@@ -2,6 +2,7 @@ package question_491_500
 
 // 500. 键盘行
 // https://leetcode-cn.com/problems/keyboard-row/
+// Topics: 哈希表
 
 func findWords(words []string) []string {
 	var res []string

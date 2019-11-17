@@ -4,6 +4,7 @@ import "math"
 
 // 507. 完美数
 // https://leetcode-cn.com/problems/perfect-number/
+// Topics: 数学
 
 func checkPerfectNumber(num int) bool {
 	var sum, t = 1, int(math.Sqrt(float64(num)))

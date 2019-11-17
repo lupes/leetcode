@@ -4,6 +4,7 @@ import "strings"
 
 // 71. 简化路径
 // https://leetcode-cn.com/problems/simplify-path
+// Topics: 栈 字符串
 
 func simplifyPath(path string) string {
 	var arr []string

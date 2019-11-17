@@ -2,6 +2,7 @@ package question_91_100
 
 // 96. 不同的二叉搜索树
 // https://leetcode-cn.com/problems/unique-binary-search-trees/
+// Topics: 树 动态规划
 
 func numTrees(n int) int {
 	if n == 0 {
