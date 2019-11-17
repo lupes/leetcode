@@ -5,32 +5,18 @@ package question_01_10
 // Topics: 哈希表 双指针 字符串
 
 func lengthOfLongestSubstring(s string) int {
-	var flag = make(map[byte]int)
-	var left, right, max, t = 0, 0, 0, true
-	for right < len(s) {
-		if t {
-			c := s[right]
-			if n, ok := flag[c]; ok && n == 1 {
-				flag[c]++
-				t = false
-			} else {
-				flag[c]++
-				if right-left+1 > max {
-					max = right - left + 1
-				}
-			}
-			right++
+	var flag, max, t = make(map[byte]int), 0, 0
+	for left, right := 0, 0; right < len(s); right++ {
+		if n, ok := flag[s[right]]; ok && n+1 > left {
+			t = right - left
+			left = n + 1
 		} else {
-			c := s[left]
-			if n, ok := flag[c]; ok && n == 2 {
-				flag[c]--
-				t = true
-			} else {
-				flag[c]--
-			}
-			left++
+			t = right - left + 1
 		}
+		if t > max {
+			max = t
+		}
+		flag[s[right]] = right
 	}
-
 	return max
 }
