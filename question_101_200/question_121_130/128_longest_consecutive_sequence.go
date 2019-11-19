@@ -5,5 +5,5 @@ package question_121_130
 // Topics: 并查集 数组
 
 func longestConsecutive(nums []int) int {
-
+	return 0
 }

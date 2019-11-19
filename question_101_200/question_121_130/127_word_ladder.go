@@ -5,5 +5,5 @@ package question_121_130
 // Topics: 广度优先搜索
 
 func ladderLength(beginWord string, endWord string, wordList []string) int {
-
+	return 0
 }
