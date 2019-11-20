@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 贪心算法
 
 func findMinArrowShots(points [][]int) int {
-
+	return 0
 }

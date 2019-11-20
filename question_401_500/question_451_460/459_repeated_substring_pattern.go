@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 字符串
 
 func repeatedSubstringPattern(s string) bool {
-
+	return false
 }

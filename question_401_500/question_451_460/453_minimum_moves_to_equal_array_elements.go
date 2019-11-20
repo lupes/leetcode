@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 数学
 
 func minMoves(nums []int) int {
-
+	return 0
 }

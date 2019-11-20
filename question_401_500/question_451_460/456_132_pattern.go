@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 栈
 
 func find132pattern(nums []int) bool {
-
+	return false
 }

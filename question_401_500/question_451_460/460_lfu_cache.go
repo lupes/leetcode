@@ -8,11 +8,11 @@ type LFUCache struct {
 }
 
 func Constructor(capacity int) LFUCache {
-
+	return LFUCache{}
 }
 
 func (this *LFUCache) Get(key int) int {
-
+	return 0
 }
 
 func (this *LFUCache) Put(key int, value int) {

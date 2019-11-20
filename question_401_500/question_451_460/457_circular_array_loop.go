@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 数组 双指针
 
 func circularArrayLoop(nums []int) bool {
-
+	return false
 }

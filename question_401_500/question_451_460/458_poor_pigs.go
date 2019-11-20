@@ -5,5 +5,5 @@ package question_451_460
 // Topics: 数学
 
 func poorPigs(buckets int, minutesToDie int, minutesToTest int) int {
-
+	return 0
 }
