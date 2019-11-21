@@ -5,5 +5,5 @@ package question_461_470
 // Topics: 动态规划
 
 func findSubstringInWraproundString(p string) int {
-
+	return 0
 }

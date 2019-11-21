@@ -5,5 +5,5 @@ package question_461_470
 // Topics: 极小化极大 动态规划
 
 func canIWin(maxChoosableInteger int, desiredTotal int) bool {
-
+	return false
 }

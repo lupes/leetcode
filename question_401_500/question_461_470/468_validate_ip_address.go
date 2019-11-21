@@ -5,5 +5,5 @@ package question_461_470
 // Topics: 字符串
 
 func validIPAddress(IP string) string {
-
+	return ""
 }

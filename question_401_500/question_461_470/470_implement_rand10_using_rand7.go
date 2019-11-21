@@ -5,5 +5,5 @@ package question_461_470
 // Topics: None None
 
 func rand10() int {
-
+	return 0
 }

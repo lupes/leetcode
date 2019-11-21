@@ -5,5 +5,5 @@ package question_461_470
 // Topics: 动态规划
 
 func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
-
+	return 0
 }
