@@ -5,5 +5,5 @@ package question_571_580
 // Topics: 深度优先搜索 动态规划
 
 func findPaths(m int, n int, N int, i int, j int) int {
-
+	return 0
 }

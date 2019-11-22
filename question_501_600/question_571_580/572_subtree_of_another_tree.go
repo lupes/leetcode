@@ -1,5 +1,9 @@
 package question_571_580
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 // 572. 另一个树的子树
 // https://leetcode-cn.com/problems/subtree-of-another-tree
 // Topics: 树
@@ -13,5 +17,5 @@ package question_571_580
  * }
  */
 func isSubtree(s *TreeNode, t *TreeNode) bool {
-
+	return false
 }
