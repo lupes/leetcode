@@ -5,5 +5,5 @@ package question_621_630
 // Topics: 数组 数学
 
 func maximumProduct(nums []int) int {
-
+	return 0
 }

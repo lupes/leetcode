@@ -5,5 +5,5 @@ package question_621_630
 // Topics: 动态规划
 
 func kInversePairs(n int, k int) int {
-
+	return 0
 }

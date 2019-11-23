@@ -5,5 +5,5 @@ package question_621_630
 // Topics: 贪心算法
 
 func scheduleCourse(courses [][]int) int {
-
+	return 0
 }

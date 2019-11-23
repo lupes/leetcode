@@ -5,5 +5,5 @@ package question_621_630
 // Topics: 贪心算法 队列 数组
 
 func leastInterval(tasks []byte, n int) int {
-
+	return 0
 }
