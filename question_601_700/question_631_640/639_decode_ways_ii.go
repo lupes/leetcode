@@ -5,5 +5,5 @@ package question_631_640
 // Topics: 动态规划
 
 func numDecodings(s string) int {
-
+	return 0
 }

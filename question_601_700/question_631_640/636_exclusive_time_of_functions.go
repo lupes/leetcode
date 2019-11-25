@@ -5,5 +5,5 @@ package question_631_640
 // Topics: 栈
 
 func exclusiveTime(n int, logs []string) []int {
-
+	return nil
 }

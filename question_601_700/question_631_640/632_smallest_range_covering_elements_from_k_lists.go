@@ -5,5 +5,5 @@ package question_631_640
 // Topics: 哈希表 双指针 字符串
 
 func smallestRange(nums [][]int) []int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_631_640
 // Topics: 数学
 
 func solveEquation(equation string) string {
-
+	return ""
 }
