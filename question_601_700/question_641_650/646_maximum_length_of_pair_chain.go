@@ -5,5 +5,5 @@ package question_641_650
 // Topics: 动态规划
 
 func findLongestChain(pairs [][]int) int {
-
+	return 0
 }

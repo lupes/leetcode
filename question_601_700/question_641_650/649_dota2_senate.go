@@ -5,5 +5,5 @@ package question_641_650
 // Topics: 贪心算法
 
 func predictPartyVictory(senate string) string {
-
+	return ""
 }

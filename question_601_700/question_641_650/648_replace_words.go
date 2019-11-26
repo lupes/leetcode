@@ -5,5 +5,5 @@ package question_641_650
 // Topics: 字典树 哈希表
 
 func replaceWords(dict []string, sentence string) string {
-
+	return ""
 }

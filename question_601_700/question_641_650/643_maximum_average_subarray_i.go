@@ -5,5 +5,5 @@ package question_641_650
 // Topics: 数组
 
 func findMaxAverage(nums []int, k int) float64 {
-
+	return 0
 }
