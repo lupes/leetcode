@@ -5,5 +5,5 @@ package question_651_660
 // Topics: 堆 贪心算法
 
 func isPossible(nums []int) bool {
-
+	return false
 }
