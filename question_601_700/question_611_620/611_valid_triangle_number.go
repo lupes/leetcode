@@ -5,5 +5,5 @@ package question_611_620
 // Topics: 数组
 
 func triangleNumber(nums []int) int {
-
+	return 0
 }
