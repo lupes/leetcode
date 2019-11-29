@@ -5,5 +5,5 @@ package question_131_140
 // Topics: 动态规划
 
 func minCut(s string) int {
-    
+	return 0
 }

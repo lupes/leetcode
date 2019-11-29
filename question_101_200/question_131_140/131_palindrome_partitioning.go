@@ -5,5 +5,5 @@ package question_131_140
 // Topics: 回溯算法
 
 func partition(s string) [][]string {
-    
+	return nil
 }

@@ -5,5 +5,5 @@ package question_131_140
 // Topics: 贪心算法
 
 func candy(ratings []int) int {
-    
+	return 0
 }

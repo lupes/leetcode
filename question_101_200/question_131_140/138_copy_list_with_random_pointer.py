@@ -1,6 +1,6 @@
 # 138. 复制带随机指针的链表
-// https://leetcode-cn.com/problems/copy-list-with-random-pointer
-// Topics: 哈希表 链表
+# https://leetcode-cn.com/problems/copy-list-with-random-pointer
+# Topics: 哈希表 链表
 
 """
 # Definition for a Node.
@@ -10,6 +10,8 @@ class Node:
         self.next = next
         self.random = random
 """
+
+
 class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
-        
+        pass
