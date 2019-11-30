@@ -5,5 +5,5 @@ package question_321_330
 // Topics: 排序 树状数组 线段树 二分查找 分治算法
 
 func countRangeSum(nums []int, lower int, upper int) int {
-
+	return 0
 }

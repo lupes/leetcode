@@ -5,5 +5,5 @@ package question_321_330
 // Topics: 贪心算法 动态规划
 
 func maxNumber(nums1 []int, nums2 []int, k int) []int {
-
+	return nil
 }

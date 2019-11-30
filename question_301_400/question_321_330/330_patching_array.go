@@ -5,5 +5,5 @@ package question_321_330
 // Topics: 贪心算法
 
 func minPatches(nums []int, n int) int {
-
+	return 0
 }

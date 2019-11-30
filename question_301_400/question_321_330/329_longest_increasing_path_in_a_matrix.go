@@ -5,5 +5,5 @@ package question_321_330
 // Topics: 深度优先搜索 拓扑排序 记忆化
 
 func longestIncreasingPath(matrix [][]int) int {
-
+	return 0
 }
