@@ -5,14 +5,17 @@ package question_121_130
 // Topics: 数组 动态规划
 
 func maxProfit(prices []int) int {
-	max := 0
-	for i, p := range prices {
-		for _, t := range prices[i+1:] {
-			s := t - p
-			if s > max {
-				max = s
-			}
+	if len(prices) == 0 {
+		return 0
+	}
+	buy, sell := prices[0], 0
+	for _, price := range prices[1:] {
+		if price-buy > sell {
+			sell = price - buy
+		}
+		if price < buy {
+			buy = price
 		}
 	}
-	return max
+	return sell
 }
