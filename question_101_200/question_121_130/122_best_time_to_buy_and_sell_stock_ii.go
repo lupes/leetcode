@@ -5,17 +5,17 @@ package question_121_130
 // Topics: 贪心算法 数组
 
 func maxProfit2(prices []int) int {
-	max, tmp, now, last := 0, 0, -1, -1
-	for _, p := range prices {
-		if p > last && last != -1 {
-			tmp = p - now
-			last = p
-		} else {
-			max += tmp
-			tmp = 0
-			now = p
-			last = p
+	if len(prices) == 0 {
+		return 0
+	}
+	buy, sell := prices[0], 0
+	for _, price := range prices[1:] {
+		if price-sell < buy {
+			buy = price - sell
+		}
+		if price-buy > sell {
+			sell = price - buy
 		}
 	}
-	return max + tmp
+	return sell
 }
