@@ -4,6 +4,8 @@ package question_221_230
 // https://leetcode-cn.com/problems/invert-binary-tree/
 // Topics: 树
 
+import . "github.com/lupes/leetcode/common"
+
 func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil

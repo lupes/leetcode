@@ -4,6 +4,6 @@ package question_221_230
 // https://leetcode-cn.com/problems/basic-calculator-ii
 // Topics: 字符串
 
-func calculate(s string) int {
-
+func calculate2(s string) int {
+	return 0
 }

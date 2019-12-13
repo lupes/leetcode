@@ -2,17 +2,13 @@ package question_221_230
 
 import (
 	"math"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 // 222. 完全二叉树的节点个数
 // https://leetcode-cn.com/problems/count-complete-tree-nodes/
 // Topics: 树 二分查找
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
 
 func countNodes(root *TreeNode) int {
 	level, res := 0, 0

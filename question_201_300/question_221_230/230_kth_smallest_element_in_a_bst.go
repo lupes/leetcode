@@ -4,14 +4,8 @@ package question_221_230
 // https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst
 // Topics: 树 二分查找
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func kthSmallest(root *TreeNode, k int) int {
+import . "github.com/lupes/leetcode/common"
 
+func kthSmallest(root *TreeNode, k int) int {
+	return 0
 }
