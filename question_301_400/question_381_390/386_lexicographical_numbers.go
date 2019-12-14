@@ -5,5 +5,5 @@ package question_381_390
 // Topics:
 
 func lexicalOrder(n int) []int {
-
+	return nil
 }

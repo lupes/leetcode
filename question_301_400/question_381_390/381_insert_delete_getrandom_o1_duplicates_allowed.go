@@ -9,22 +9,22 @@ type RandomizedCollection struct {
 
 /** Initialize your data structure here. */
 func Constructor() RandomizedCollection {
-
+	return RandomizedCollection{}
 }
 
 /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
 func (this *RandomizedCollection) Insert(val int) bool {
-
+	return false
 }
 
 /** Removes a value from the collection. Returns true if the collection contained the specified element. */
 func (this *RandomizedCollection) Remove(val int) bool {
-
+	return false
 }
 
 /** Get a random element from the collection. */
 func (this *RandomizedCollection) GetRandom() int {
-
+	return 0
 }
 
 /**

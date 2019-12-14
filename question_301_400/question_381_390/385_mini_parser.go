@@ -29,6 +29,6 @@ package question_381_390
  * // You can access NestedInteger's List element directly if you want to modify it
  * func (n NestedInteger) GetList() []*NestedInteger {}
  */
-func deserialize(s string) *NestedInteger {
-
-}
+//func deserialize(s string) *NestedInteger {
+//	r
+//}

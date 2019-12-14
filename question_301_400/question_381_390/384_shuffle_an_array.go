@@ -4,21 +4,21 @@ package question_381_390
 // https://leetcode-cn.com/problems/shuffle-an-array
 // Topics:
 
-type Solution struct {
+type Solution2 struct {
 }
 
-func Constructor(nums []int) Solution {
-
+func Constructor2(nums []int) Solution {
+	return Solution{}
 }
 
 /** Resets the array to its original configuration and return it. */
 func (this *Solution) Reset() []int {
-
+	return nil
 }
 
 /** Returns a random shuffling of the array. */
 func (this *Solution) Shuffle() []int {
-
+	return nil
 }
 
 /**

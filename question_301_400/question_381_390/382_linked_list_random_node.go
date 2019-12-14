@@ -4,25 +4,22 @@ package question_381_390
 // https://leetcode-cn.com/problems/linked-list-random-node
 // Topics: 蓄水池抽样
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 type Solution struct {
 }
 
 /** @param head The linked list's head.
   Note that the head is guaranteed to be not null, so it contains at least one node. */
-func Constructor(head *ListNode) Solution {
-
+func Constructor3(head *ListNode) Solution {
+	return Solution{}
 }
 
 /** Returns a random node's value. */
 func (this *Solution) GetRandom() int {
-
+	return 0
 }
 
 /**

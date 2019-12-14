@@ -5,5 +5,5 @@ package question_381_390
 // Topics:
 
 func lengthLongestPath(input string) int {
-
+	return 0
 }
