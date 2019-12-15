@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 动态规划
 
 func combinationSum4(nums []int, target int) int {
-    
+	return 0
 }

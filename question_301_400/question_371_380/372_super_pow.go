@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 数学
 
 func superPow(a int, b []int) int {
-    
+	return 0
 }

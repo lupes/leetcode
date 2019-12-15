@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 堆
 
 func kSmallestPairs(nums1 []int, nums2 []int, k int) [][]int {
-    
+	return nil
 }

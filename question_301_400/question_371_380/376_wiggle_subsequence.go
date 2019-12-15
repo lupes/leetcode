@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 贪心算法 动态规划
 
 func wiggleMaxLength(nums []int) int {
-    
+	return 0
 }

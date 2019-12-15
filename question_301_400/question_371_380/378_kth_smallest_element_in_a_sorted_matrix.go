@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 堆 二分查找
 
 func kthSmallest(matrix [][]int, k int) int {
-    
+	return 0
 }

@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 极小化极大 动态规划
 
 func getMoneyAmount(n int) int {
-    
+	return 0
 }

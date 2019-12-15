@@ -5,5 +5,5 @@ package question_371_380
 // Topics: 位运算
 
 func getSum(a int, b int) int {
-    
+	return 0
 }
