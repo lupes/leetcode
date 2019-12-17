@@ -5,5 +5,5 @@ package question_271_280
 // Topics: 数学 字符串
 
 func numberToWords(num int) string {
-    
+	return ""
 }
