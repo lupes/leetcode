@@ -13,6 +13,7 @@ func Test_isMatch(t *testing.T) {
 		{"", "c*", true},
 		{"", "c*b*", true},
 		{"b", "c*b*", true},
+		{"ac", "ab*c", true},
 		{"", "a", false},
 		{"a", "", false},
 		{"aa", "a", false},

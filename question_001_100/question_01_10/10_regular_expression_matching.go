@@ -23,9 +23,6 @@ func isMatch(s string, p string) bool {
 			dp[i+1][0] = true
 		}
 		for j := range s {
-			if len(t) == 2 && dp[i][j] {
-				dp[i+1][j] = true
-			}
 			if (len(t) == 2 && dp[i+1][j] && (t[0] == s[j] || t[0] == '.')) ||
 				(len(t) == 2 && dp[i][j+1]) ||
 				(t[0] == '.' && dp[i][j]) ||
