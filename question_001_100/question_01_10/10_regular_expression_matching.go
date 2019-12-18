@@ -5,54 +5,34 @@ package question_01_10
 // Topics: 字符串 动态规划 回溯算法
 
 func isMatch(s string, p string) bool {
-	if (s == "" && p == "") || p == ".*" {
-		return true
-	}
-	if s != "" && p == "" {
-		return false
-	}
-	sLen, pLen := len(s), len(p)
-	var t []string
-	for i := 0; i < pLen; {
-		if i < pLen-1 && p[i+1] == '*' {
-			t = append(t, p[i:i+2])
-			i += 2
+	var m []string
+	for _, c := range p {
+		if c == '*' {
+			m[len(m)-1] += "*"
 		} else {
-			t = append(t, p[i:i+1])
-			i += 1
+			m = append(m, string(c))
 		}
 	}
-	tLen := len(t)
-	flags := make([][]bool, tLen+1)
-	for i := range flags {
-		flags[i] = make([]bool, sLen+1)
+	var dp = make([][]bool, len(m)+1)
+	for i := range dp {
+		dp[i] = make([]bool, len(s)+1)
 	}
-	flags[0][0] = true
-	// 初始化零匹配
-	for i, v := range t {
-		if flags[i][0] && len(v) > 1 {
-			flags[i+1][0] = true
+	dp[0][0] = true
+	for i, t := range m {
+		if len(t) == 2 && dp[i][0] {
+			dp[i+1][0] = true
 		}
-	}
-	for i, v := range t {
-		r := false
-		for j, c := range s {
-			// 零匹配
-			if len(v) > 1 && flags[i][j+1] {
-				r, flags[i+1][j+1] = true, true
+		for j := range s {
+			if len(t) == 2 && dp[i][j] {
+				dp[i+1][j] = true
 			}
-			// 多匹配
-			if len(v) > 1 && (int32(v[0]) == c || v[0] == '.') && (flags[i][j] || flags[i+1][j]) {
-				r, flags[i+1][j+1] = true, true
-			}
-			// 单匹配
-			if (int32(v[0]) == c || v[0] == '.') && flags[i][j] {
-				r, flags[i+1][j+1] = true, true
+			if (len(t) == 2 && dp[i+1][j] && (t[0] == s[j] || t[0] == '.')) ||
+				(len(t) == 2 && dp[i][j+1]) ||
+				(t[0] == '.' && dp[i][j]) ||
+				(t[0] == s[j] && dp[i][j]) {
+				dp[i+1][j+1] = true
 			}
 		}
-		if !r && !flags[i][0] {
-			return false
-		}
 	}
-	return flags[tLen][sLen]
+	return dp[len(m)][len(s)]
 }

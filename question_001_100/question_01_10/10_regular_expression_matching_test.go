@@ -3,26 +3,30 @@ package question_01_10
 import "testing"
 
 func Test_isMatch(t *testing.T) {
-	type args struct {
-		s string
-		p string
-	}
 	tests := []struct {
-		name string
-		args args
+		s    string
+		p    string
 		want bool
 	}{
-		{"test#1", args{"aa", "a"}, false},
-		{"test#2", args{"aa", "a*"}, true},
-		{"test#3", args{"ab", ".*"}, true},
-		{"test#4", args{"aab", "c*a*b"}, true},
-		{"test#5", args{"mississippi", "mis*is*ip*."}, true},
-		{"test#6", args{"aaca", "ab*a*c*a"}, true},
-		{"test#7", args{"a", "ab*"}, true},
+		{"", "", true},
+		{"", ".*", true},
+		{"", "c*", true},
+		{"", "c*b*", true},
+		{"b", "c*b*", true},
+		{"", "a", false},
+		{"a", "", false},
+		{"aa", "a", false},
+		{"aa", "a*", true},
+		{"ab", ".*", true},
+		{"aab", "c*a*b", true},
+		{"mississippi", "mis*is*ip*.", true},
+		{"aaca", "ab*a*c*a", true},
+		{"a", "ab*", true},
+		{"a", "ab*c*", true},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := isMatch(tt.args.s, tt.args.p); got != tt.want {
+		t.Run("test", func(t *testing.T) {
+			if got := isMatch(tt.s, tt.p); got != tt.want {
 				t.Errorf("isMatch() = %v, want %v", got, tt.want)
 			}
 		})
