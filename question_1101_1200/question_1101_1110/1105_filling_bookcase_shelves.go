@@ -5,5 +5,5 @@ package question_1101_1110
 // Topics: 动态规划
 
 func minHeightShelves(books [][]int, shelf_width int) int {
-
+	return 0
 }

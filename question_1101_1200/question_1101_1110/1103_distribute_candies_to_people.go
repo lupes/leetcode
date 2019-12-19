@@ -5,5 +5,5 @@ package question_1101_1110
 // Topics: 数学
 
 func distributeCandies(candies int, num_people int) []int {
-
+	return nil
 }

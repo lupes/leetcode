@@ -5,5 +5,5 @@ package question_1101_1110
 // Topics: 字符串
 
 func defangIPaddr(address string) string {
-
+	return ""
 }

@@ -5,5 +5,5 @@ package question_1101_1110
 // Topics: 树 数学
 
 func pathInZigZagTree(label int) []int {
-
+	return nil
 }

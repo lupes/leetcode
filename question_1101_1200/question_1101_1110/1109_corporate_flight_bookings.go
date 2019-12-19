@@ -5,5 +5,5 @@ package question_1101_1110
 // Topics: 数组 数学
 
 func corpFlightBookings(bookings [][]int, n int) []int {
-
+	return nil
 }
