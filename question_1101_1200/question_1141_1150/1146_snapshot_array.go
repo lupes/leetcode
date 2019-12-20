@@ -8,7 +8,7 @@ type SnapshotArray struct {
 }
 
 func Constructor(length int) SnapshotArray {
-
+	return SnapshotArray{}
 }
 
 func (this *SnapshotArray) Set(index int, val int) {
@@ -16,11 +16,11 @@ func (this *SnapshotArray) Set(index int, val int) {
 }
 
 func (this *SnapshotArray) Snap() int {
-
+	return 0
 }
 
 func (this *SnapshotArray) Get(index int, snap_id int) int {
-
+	return 0
 }
 
 /**

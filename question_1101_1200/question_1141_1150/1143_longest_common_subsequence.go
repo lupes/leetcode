@@ -5,5 +5,5 @@ package question_1141_1150
 // Topics: 动态规划
 
 func longestCommonSubsequence(text1 string, text2 string) int {
-
+	return 0
 }
