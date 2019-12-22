@@ -1,6 +1,10 @@
 package question_141_150
 
-import "sort"
+import (
+	"sort"
+
+	. "github.com/lupes/leetcode/common"
+)
 
 // 148. 排序链表
 // https://leetcode-cn.com/problems/sort-list/

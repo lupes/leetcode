@@ -3,6 +3,8 @@ package question_141_150
 import (
 	"reflect"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_detectCycle(t *testing.T) {

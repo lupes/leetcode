@@ -4,6 +4,10 @@ package question_141_150
 // https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
 // Topics: 栈 树
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func preorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return nil

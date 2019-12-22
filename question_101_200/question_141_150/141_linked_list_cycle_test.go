@@ -2,6 +2,8 @@ package question_141_150
 
 import (
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_hasCycle(t *testing.T) {

@@ -4,35 +4,25 @@ import (
 	"fmt"
 	"reflect"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_insertionSortList(t *testing.T) {
-	head1 := &ListNode{Val: 2, Next: &ListNode{Val: 1}}
-	want1 := &ListNode{Val: 1, Next: &ListNode{Val: 2}}
-
-	head2 := &ListNode{Val: 4, Next: &ListNode{Val: 2, Next: &ListNode{Val: 1, Next: &ListNode{Val: 3}}}}
-	want2 := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}}
-
-	head3 := &ListNode{Val: -1, Next: &ListNode{Val: 5, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 0}}}}}
-	want3 := &ListNode{Val: -1, Next: &ListNode{Val: 0, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5}}}}}
 	tests := []struct {
-		name string
 		head *ListNode
 		want *ListNode
 	}{
 		//{"test", nil, nil},
 		//{"test", &ListNode{Val: 1}, &ListNode{Val: 1}},
-		{"test", head1, want1},
-		{"test", head2, want2},
-		{"test", head3, want3},
+		{NewList(2, 1), NewList(1, 2)},
+		{NewList(4, 2, 1, 3), NewList(1, 2, 3, 4)},
+		{NewList(-1, 5, 3, 4, 0), NewList(-1, 0, 3, 4, 5)},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
+		t.Run("test", func(t *testing.T) {
 			got := insertionSortList(tt.head)
-			for n := got; n != nil; n = n.Next {
-				fmt.Printf("%d ", n.Val)
-			}
-			fmt.Println()
+			fmt.Printf("%+v\n", got)
 			if !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("insertionSortList() = %v, want %v", got, tt.want)
 			}

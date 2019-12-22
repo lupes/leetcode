@@ -4,10 +4,9 @@ package question_141_150
 // https://leetcode-cn.com/problems/linked-list-cycle/
 // Topics: 链表 双指针
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
 func hasCycle(head *ListNode) bool {
 	m := make(map[*ListNode]struct{})

@@ -1,20 +1,14 @@
 package question_141_150
 
-import "fmt"
+import (
+	"fmt"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+	. "github.com/lupes/leetcode/common"
+)
 
 // 145. 二叉树的后序遍历
 // https://leetcode-cn.com/problems/binary-tree-postorder-traversal
 // Topics: 栈 树
-
-func (tn *TreeNode) String() string {
-	return fmt.Sprintf("V: %d, L: %p, R: %p", tn.Val, tn.Left, tn.Right)
-}
 
 func postorderTraversal(root *TreeNode) []int {
 	var res []int
@@ -35,8 +29,8 @@ func postorderTraversal(root *TreeNode) []int {
 			stacks = append(stacks, node.Left)
 		}
 
-		res = append(res, node.Val)
-		//res = append([]int{node.Val}, res...)
+		//res = append(res, node.Val)
+		res = append([]int{node.Val}, res...)
 	}
 	fmt.Printf("%v\n", res)
 	return res

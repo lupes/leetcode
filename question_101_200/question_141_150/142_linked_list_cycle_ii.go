@@ -4,6 +4,10 @@ package question_141_150
 // https://leetcode-cn.com/problems/linked-list-cycle-ii/
 // Topics: 链表 双指针
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func detectCycle(head *ListNode) *ListNode {
 	m := make(map[*ListNode]struct{})
 	for next := head; next != nil; next = next.Next {

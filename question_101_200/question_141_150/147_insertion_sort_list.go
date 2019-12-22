@@ -4,6 +4,10 @@ package question_141_150
 // https://leetcode-cn.com/problems/insertion-sort-list/
 // Topics: 排序 链表
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func insertionSortList(head *ListNode) *ListNode {
 	if head == nil {
 		return nil
