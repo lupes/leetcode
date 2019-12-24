@@ -5,5 +5,5 @@ package question_1121_1130
 // Topics: 栈
 
 func longestWPI(hours []int) int {
-
+	return 0
 }

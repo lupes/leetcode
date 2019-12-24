@@ -5,5 +5,5 @@ package question_1121_1130
 // Topics: 位运算 动态规划
 
 func smallestSufficientTeam(req_skills []string, people [][]string) []int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_1121_1130
 // Topics: 栈 树 动态规划
 
 func mctFromLeafValues(arr []int) int {
-
+	return 0
 }

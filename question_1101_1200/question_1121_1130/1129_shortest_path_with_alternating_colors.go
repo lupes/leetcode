@@ -5,5 +5,5 @@ package question_1121_1130
 // Topics: 广度优先搜索 图
 
 func shortestAlternatingPaths(n int, red_edges [][]int, blue_edges [][]int) []int {
-
+	return nil
 }

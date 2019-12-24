@@ -5,5 +5,5 @@ package question_1121_1130
 // Topics: 数组
 
 func numEquivDominoPairs(dominoes [][]int) int {
-
+	return 0
 }
