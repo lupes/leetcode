@@ -5,5 +5,5 @@ package question_1051_1060
 // Topics: 堆 排序
 
 func rearrangeBarcodes(barcodes []int) []int {
-
+	return nil
 }

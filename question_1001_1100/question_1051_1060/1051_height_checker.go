@@ -5,5 +5,5 @@ package question_1051_1060
 // Topics: 数组
 
 func heightChecker(heights []int) int {
-
+	return 0
 }

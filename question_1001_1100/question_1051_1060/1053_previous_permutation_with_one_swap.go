@@ -5,5 +5,5 @@ package question_1051_1060
 // Topics: 贪心算法 数组
 
 func prevPermOpt1(A []int) []int {
-
+	return nil
 }
