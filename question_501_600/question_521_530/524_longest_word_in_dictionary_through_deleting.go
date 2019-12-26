@@ -5,5 +5,5 @@ package question_521_530
 // Topics: 排序 双指针
 
 func findLongestWord(s string, d []string) string {
-
+	return ""
 }

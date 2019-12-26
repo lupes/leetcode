@@ -5,5 +5,5 @@ package question_521_530
 // Topics: 回溯算法
 
 func countArrangement(N int) int {
-
+	return 0
 }

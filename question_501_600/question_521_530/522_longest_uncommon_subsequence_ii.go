@@ -4,6 +4,6 @@ package question_521_530
 // https://leetcode-cn.com/problems/longest-uncommon-subsequence-ii
 // Topics: 字符串
 
-func findLUSlength(strs []string) int {
-
+func findLUSlength2(strs []string) int {
+	return 0
 }

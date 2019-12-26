@@ -5,5 +5,5 @@ package question_521_530
 // Topics: 深度优先搜索 广度优先搜索
 
 func updateBoard(board [][]byte, click []int) [][]byte {
-
+	return nil
 }

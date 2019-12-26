@@ -5,5 +5,5 @@ package question_521_530
 // Topics: 哈希表
 
 func findMaxLength(nums []int) int {
-
+	return 0
 }
