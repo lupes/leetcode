@@ -5,5 +5,5 @@ package question_661_670
 // Topics: 二分查找
 
 func findKthNumber(m int, n int, k int) int {
-
+	return 0
 }

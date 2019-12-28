@@ -5,5 +5,5 @@ package question_661_670
 // Topics: 数组 数学
 
 func maximumSwap(num int) int {
-
+	return 0
 }

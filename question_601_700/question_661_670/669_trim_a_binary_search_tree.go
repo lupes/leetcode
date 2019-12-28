@@ -4,14 +4,10 @@ package question_661_670
 // https://leetcode-cn.com/problems/trim-a-binary-search-tree
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func trimBST(root *TreeNode, L int, R int) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func trimBST(root *TreeNode, L int, R int) *TreeNode {
+	return nil
 }

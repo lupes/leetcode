@@ -5,5 +5,5 @@ package question_661_670
 // Topics: 数组
 
 func constructArray(n int, k int) []int {
-
+	return nil
 }
