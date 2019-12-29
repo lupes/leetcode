@@ -22,7 +22,7 @@ func findClosestElements(arr []int, k int, x int) []int {
 		left = 0
 	}
 	right = right + k + 1
-	if right >= l {
+	if right > l {
 		right = l
 	}
 	for right > left+k {
