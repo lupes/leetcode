@@ -9,5 +9,17 @@ import (
 // Topics: 树
 
 func findTarget(root *TreeNode, k int) bool {
-	return false
+	var flags = make(map[int]struct{})
+	return findTargetHelper(root, flags, k)
+}
+
+func findTargetHelper(root *TreeNode, flags map[int]struct{}, k int) bool {
+	if root == nil {
+		return false
+	}
+	if _, ok := flags[k-root.Val]; ok {
+		return true
+	}
+	flags[root.Val] = struct{}{}
+	return findTargetHelper(root.Left, flags, k) || findTargetHelper(root.Right, flags, k)
 }
