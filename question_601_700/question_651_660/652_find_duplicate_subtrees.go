@@ -1,7 +1,7 @@
 package question_651_660
 
 import (
-	"encoding/json"
+	"fmt"
 
 	. "github.com/lupes/leetcode/common"
 )
@@ -11,27 +11,28 @@ import (
 // Topics: 树
 
 func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
-	var flag = make(map[string]*TreeNode)
-	var resFlag = make(map[*TreeNode]struct{})
+	var flag = make(map[string]struct{})
+	var resFlag = make(map[string]struct{})
 	var res = make([]*TreeNode, 0)
 	findDuplicateSubtreesHelper(root, flag, resFlag, &res)
 	return res
 }
 
-func findDuplicateSubtreesHelper(root *TreeNode, flag map[string]*TreeNode, resFlag map[*TreeNode]struct{}, res *[]*TreeNode) {
+func findDuplicateSubtreesHelper(root *TreeNode, flag map[string]struct{}, resFlag map[string]struct{}, res *[]*TreeNode) string {
 	if root == nil {
-		return
+		return "#"
 	}
-	buffer, _ := json.Marshal(root)
-	node, ok := flag[string(buffer)]
+	left := findDuplicateSubtreesHelper(root.Left, flag, resFlag, res)
+	right := findDuplicateSubtreesHelper(root.Right, flag, resFlag, res)
+	str := fmt.Sprintf("%d,%s,%s", root.Val, left, right)
+	_, ok := flag[str]
 	if ok {
-		if _, ok := resFlag[node]; !ok {
-			resFlag[node] = struct{}{}
-			*res = append(*res, node)
+		if _, ok := resFlag[str]; !ok {
+			resFlag[str] = struct{}{}
+			*res = append(*res, root)
 		}
 	} else {
-		flag[string(buffer)] = root
+		flag[str] = struct{}{}
 	}
-	findDuplicateSubtreesHelper(root.Left, flag, resFlag, res)
-	findDuplicateSubtreesHelper(root.Right, flag, resFlag, res)
+	return str
 }

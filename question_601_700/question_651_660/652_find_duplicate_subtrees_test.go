@@ -23,7 +23,7 @@ func Test_findDuplicateSubtrees(t *testing.T) {
 		},
 		{
 			NewNode(2, NewNode(2, NewNode(3)), NewNode(2, NewNode(3))),
-			[]*TreeNode{NewNode(2, NewNode(3)), NewNode(3)},
+			[]*TreeNode{NewNode(3), NewNode(2, NewNode(3))},
 		},
 		{
 			NewNode(0, NewNode(0, NewNode(0)), NewNode(0, nil, NewNode(0, NewNode(0), NewNode(0)))),
@@ -39,7 +39,7 @@ func Test_findDuplicateSubtrees(t *testing.T) {
 		},
 		{
 			NewNode(0, NewNode(0, NewNode(0)), NewNode(0, nil, NewNode(0, NewNode(0)))),
-			[]*TreeNode{NewNode(0, NewNode(0)), NewNode(0)},
+			[]*TreeNode{NewNode(0), NewNode(0, NewNode(0))},
 		},
 	}
 	for _, tt := range tests {
