@@ -11,28 +11,27 @@ import (
 // Topics: 树
 
 func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
-	var flag = make(map[string]struct{})
-	var resFlag = make(map[string]struct{})
+	var flags = make(map[string]bool)
 	var res = make([]*TreeNode, 0)
-	findDuplicateSubtreesHelper(root, flag, resFlag, &res)
+	findDuplicateSubtreesHelper(root, flags, &res)
 	return res
 }
 
-func findDuplicateSubtreesHelper(root *TreeNode, flag map[string]struct{}, resFlag map[string]struct{}, res *[]*TreeNode) string {
+func findDuplicateSubtreesHelper(root *TreeNode, flags map[string]bool, res *[]*TreeNode) string {
 	if root == nil {
 		return "#"
 	}
-	left := findDuplicateSubtreesHelper(root.Left, flag, resFlag, res)
-	right := findDuplicateSubtreesHelper(root.Right, flag, resFlag, res)
+	left := findDuplicateSubtreesHelper(root.Left, flags, res)
+	right := findDuplicateSubtreesHelper(root.Right, flags, res)
 	str := fmt.Sprintf("%d,%s,%s", root.Val, left, right)
-	_, ok := flag[str]
+	flag, ok := flags[str]
 	if ok {
-		if _, ok := resFlag[str]; !ok {
-			resFlag[str] = struct{}{}
+		if !flag {
+			flags[str] = true
 			*res = append(*res, root)
 		}
 	} else {
-		flag[str] = struct{}{}
+		flags[str] = false
 	}
 	return str
 }
