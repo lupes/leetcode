@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 广度优先搜索
 
 func cutOffTree(forest [][]int) int {
-
+	return 0
 }

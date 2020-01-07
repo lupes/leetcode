@@ -8,8 +8,8 @@ type MagicDictionary struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MagicDictionary {
-
+func Constructor2() MagicDictionary {
+	return MagicDictionary{}
 }
 
 /** Build a dictionary through a list of words */
@@ -19,7 +19,7 @@ func (this *MagicDictionary) BuildDict(dict []string) {
 
 /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
 func (this *MagicDictionary) Search(word string) bool {
-
+	return false
 }
 
 /**

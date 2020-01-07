@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 深度优先搜索
 
 func judgePoint24(nums []int) bool {
-
+	return false
 }

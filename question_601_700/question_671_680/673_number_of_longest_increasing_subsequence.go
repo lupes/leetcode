@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 动态规划
 
 func findNumberOfLIS(nums []int) int {
-
+	return 0
 }

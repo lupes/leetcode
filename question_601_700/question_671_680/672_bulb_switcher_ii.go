@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 数学
 
 func flipLights(n int, m int) int {
-
+	return 0
 }

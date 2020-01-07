@@ -9,15 +9,15 @@ type MapSum struct {
 
 /** Initialize your data structure here. */
 func Constructor() MapSum {
-
+	return MapSum{}
 }
 
 func (this *MapSum) Insert(key string, val int) {
-
+	return
 }
 
 func (this *MapSum) Sum(prefix string) int {
-
+	return 0
 }
 
 /**

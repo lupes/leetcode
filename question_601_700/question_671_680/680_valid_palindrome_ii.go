@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 字符串
 
 func validPalindrome(s string) bool {
-
+	return false
 }

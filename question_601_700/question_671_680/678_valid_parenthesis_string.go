@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 字符串
 
 func checkValidString(s string) bool {
-
+	return false
 }

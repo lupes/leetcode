@@ -5,5 +5,5 @@ package question_671_680
 // Topics: 数组
 
 func findLengthOfLCIS(nums []int) int {
-
+	return 0
 }
