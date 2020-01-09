@@ -5,5 +5,5 @@ package question_691_700
 // Topics: 数组
 
 func findShortestSubArray(nums []int) int {
-
+	return 0
 }

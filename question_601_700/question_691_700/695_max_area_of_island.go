@@ -5,5 +5,5 @@ package question_691_700
 // Topics: 深度优先搜索 数组
 
 func maxAreaOfIsland(grid [][]int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_691_700
 // Topics: 字符串
 
 func countBinarySubstrings(s string) int {
-
+	return 0
 }

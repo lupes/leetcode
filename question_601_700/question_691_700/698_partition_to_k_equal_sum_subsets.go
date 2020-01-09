@@ -5,5 +5,5 @@ package question_691_700
 // Topics: 递归 动态规划
 
 func canPartitionKSubsets(nums []int, k int) bool {
-
+	return false
 }

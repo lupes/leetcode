@@ -5,5 +5,5 @@ package question_691_700
 // Topics: 线段树 None
 
 func fallingSquares(positions [][]int) []int {
-
+	return nil
 }
