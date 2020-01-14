@@ -8,13 +8,13 @@ type MyLinkedList struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyLinkedList {
-
+func Constructor5() MyLinkedList {
+	return MyLinkedList{}
 }
 
 /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
 func (this *MyLinkedList) Get(index int) int {
-
+	return 0
 }
 
 /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */

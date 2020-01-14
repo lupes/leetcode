@@ -8,11 +8,11 @@ type Solution struct {
 }
 
 func Constructor(N int, blacklist []int) Solution {
-
+	return Solution{}
 }
 
 func (this *Solution) Pick() int {
-
+	return 0
 }
 
 /**

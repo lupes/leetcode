@@ -5,5 +5,5 @@ package question_701_710
 // Topics: 字符串
 
 func toLowerCase(str string) string {
-
+	return ""
 }

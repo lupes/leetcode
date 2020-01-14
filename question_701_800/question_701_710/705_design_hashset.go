@@ -8,8 +8,8 @@ type MyHashSet struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyHashSet {
-
+func Constructor3() MyHashSet {
+	return MyHashSet{}
 }
 
 func (this *MyHashSet) Add(key int) {
@@ -22,7 +22,7 @@ func (this *MyHashSet) Remove(key int) {
 
 /** Returns true if this set contains the specified element */
 func (this *MyHashSet) Contains(key int) bool {
-
+	return false
 }
 
 /**
