@@ -5,5 +5,12 @@ package question_701_710
 // Topics: 字符串
 
 func toLowerCase(str string) string {
-	return ""
+	var res = ""
+	for _, n := range str {
+		if n >= 'A' && n <= 'Z' {
+			n += 'a' - 'A'
+		}
+		res += string(n)
+	}
+	return res
 }
