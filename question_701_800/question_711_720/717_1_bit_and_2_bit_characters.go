@@ -5,5 +5,5 @@ package question_711_720
 // Topics: 数组
 
 func isOneBitCharacter(bits []int) bool {
-
+	return false
 }

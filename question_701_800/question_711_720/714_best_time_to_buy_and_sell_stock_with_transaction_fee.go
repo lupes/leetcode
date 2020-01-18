@@ -5,5 +5,5 @@ package question_711_720
 // Topics: 贪心算法 数组 动态规划
 
 func maxProfit(prices []int, fee int) int {
-
+	return 0
 }

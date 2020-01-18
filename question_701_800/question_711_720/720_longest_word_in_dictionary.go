@@ -5,5 +5,5 @@ package question_711_720
 // Topics: 字典树 哈希表
 
 func longestWord(words []string) string {
-
+	return ""
 }

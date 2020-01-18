@@ -5,5 +5,5 @@ package question_711_720
 // Topics: 堆 数组 二分查找
 
 func smallestDistancePair(nums []int, k int) int {
-
+	return 0
 }

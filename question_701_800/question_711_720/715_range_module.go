@@ -8,7 +8,7 @@ type RangeModule struct {
 }
 
 func Constructor() RangeModule {
-
+	return RangeModule{}
 }
 
 func (this *RangeModule) AddRange(left int, right int) {
@@ -16,7 +16,7 @@ func (this *RangeModule) AddRange(left int, right int) {
 }
 
 func (this *RangeModule) QueryRange(left int, right int) bool {
-
+	return false
 }
 
 func (this *RangeModule) RemoveRange(left int, right int) {

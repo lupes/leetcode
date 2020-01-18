@@ -5,5 +5,5 @@ package question_711_720
 // Topics: 动态规划
 
 func minimumDeleteSum(s1 string, s2 string) int {
-
+	return 0
 }
