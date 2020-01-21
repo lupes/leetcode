@@ -5,5 +5,5 @@ package question_721_730
 // Topics: 字符串
 
 func removeComments(source []string) []string {
-
+	return nil
 }

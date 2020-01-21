@@ -5,5 +5,5 @@ package question_721_730
 // Topics: 深度优先搜索 并查集
 
 func accountsMerge(accounts [][]string) [][]string {
-
+	return nil
 }

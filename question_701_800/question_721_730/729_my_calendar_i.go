@@ -8,11 +8,11 @@ type MyCalendar struct {
 }
 
 func Constructor() MyCalendar {
-
+	return MyCalendar{}
 }
 
 func (this *MyCalendar) Book(start int, end int) bool {
-
+	return false
 }
 
 /**

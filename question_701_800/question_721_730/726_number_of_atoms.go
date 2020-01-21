@@ -5,5 +5,5 @@ package question_721_730
 // Topics: 栈 递归 哈希表
 
 func countOfAtoms(formula string) string {
-
+	return ""
 }

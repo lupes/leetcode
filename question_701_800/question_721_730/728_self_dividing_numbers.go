@@ -5,5 +5,5 @@ package question_721_730
 // Topics: 数学
 
 func selfDividingNumbers(left int, right int) []int {
-
+	return nil
 }

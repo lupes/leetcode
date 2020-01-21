@@ -5,5 +5,5 @@ package question_721_730
 // Topics: 字符串 动态规划
 
 func countPalindromicSubsequences(S string) int {
-
+	return 0
 }
