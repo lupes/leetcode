@@ -9,5 +9,31 @@ import (
 )
 
 func splitListToParts(root *ListNode, k int) []*ListNode {
-	return nil
+	if k == 1 {
+		return []*ListNode{root}
+	}
+	l := 0
+	for next := root; next != nil; next = next.Next {
+		l++
+	}
+	var res []*ListNode
+	a, b, next := l/k, l%k, root
+	for i := 0; i < k; i++ {
+		if next == nil {
+			res = append(res, nil)
+		} else {
+			res = append(res, next)
+			c := a
+			if i < b {
+				c++
+			}
+			for j := 1; j < c && next != nil; j++ {
+				next = next.Next
+			}
+			if next != nil {
+				next, next.Next = next.Next, nil
+			}
+		}
+	}
+	return res
 }
