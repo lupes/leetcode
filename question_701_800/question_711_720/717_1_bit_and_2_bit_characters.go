@@ -5,5 +5,11 @@ package question_711_720
 // Topics: 数组
 
 func isOneBitCharacter(bits []int) bool {
-	return false
+	i, l := 0, len(bits)
+	for i = 0; i < l-1; i++ {
+		if bits[i] == 1 {
+			i++
+		}
+	}
+	return i == l-1
 }

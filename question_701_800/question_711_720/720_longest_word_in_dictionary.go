@@ -9,6 +9,7 @@ import (
 // Topics: 字典树 哈希表
 
 type node struct {
+	l   int
 	son map[string]node
 }
 
