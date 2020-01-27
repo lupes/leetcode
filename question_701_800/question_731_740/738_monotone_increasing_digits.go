@@ -5,5 +5,5 @@ package question_731_740
 // Topics: 贪心算法
 
 func monotoneIncreasingDigits(N int) int {
-
+	return 0
 }

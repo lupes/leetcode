@@ -5,5 +5,5 @@ package question_731_740
 // Topics: 动态规划
 
 func deleteAndEarn(nums []int) int {
-
+	return 0
 }

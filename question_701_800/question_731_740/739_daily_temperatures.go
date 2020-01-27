@@ -5,5 +5,5 @@ package question_731_740
 // Topics: 栈 哈希表
 
 func dailyTemperatures(T []int) []int {
-
+	return nil
 }

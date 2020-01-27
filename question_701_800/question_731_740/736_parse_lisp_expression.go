@@ -5,5 +5,5 @@ package question_731_740
 // Topics: 字符串
 
 func evaluate(expression string) int {
-
+	return 0
 }

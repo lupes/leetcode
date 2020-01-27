@@ -7,12 +7,12 @@ package question_731_740
 type MyCalendarThree struct {
 }
 
-func Constructor() MyCalendarThree {
-
+func Constructor2() MyCalendarThree {
+	return MyCalendarThree{}
 }
 
 func (this *MyCalendarThree) Book(start int, end int) int {
-
+	return 0
 }
 
 /**
