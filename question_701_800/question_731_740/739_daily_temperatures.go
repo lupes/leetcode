@@ -5,5 +5,14 @@ package question_731_740
 // Topics: 栈 哈希表
 
 func dailyTemperatures(T []int) []int {
-	return nil
+	var res = make([]int, len(T))
+	for i, t := range T {
+		for j := i + 1; j < len(T); j++ {
+			if T[j] > t {
+				res[i] = j - i
+				break
+			}
+		}
+	}
+	return res
 }
