@@ -5,5 +5,5 @@ package question_741_750
 // Topics: 数组 动态规划
 
 func minCostClimbingStairs(cost []int) int {
-
+	return 0
 }

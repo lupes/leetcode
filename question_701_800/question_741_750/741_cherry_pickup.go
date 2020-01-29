@@ -5,5 +5,5 @@ package question_741_750
 // Topics: 动态规划
 
 func cherryPickup(grid [][]int) int {
-
+	return 0
 }

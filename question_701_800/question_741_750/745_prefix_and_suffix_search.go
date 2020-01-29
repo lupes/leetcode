@@ -8,11 +8,11 @@ type WordFilter struct {
 }
 
 func Constructor(words []string) WordFilter {
-
+	return WordFilter{}
 }
 
 func (this *WordFilter) F(prefix string, suffix string) int {
-
+	return 0
 }
 
 /**

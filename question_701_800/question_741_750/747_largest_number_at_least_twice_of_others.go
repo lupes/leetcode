@@ -5,5 +5,5 @@ package question_741_750
 // Topics: 数组
 
 func dominantIndex(nums []int) int {
-
+	return 0
 }

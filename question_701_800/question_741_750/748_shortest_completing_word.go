@@ -5,5 +5,5 @@ package question_741_750
 // Topics: 哈希表
 
 func shortestCompletingWord(licensePlate string, words []string) string {
-
+	return ""
 }

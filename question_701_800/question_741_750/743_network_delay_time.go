@@ -5,5 +5,5 @@ package question_741_750
 // Topics: 堆 深度优先搜索 广度优先搜索 图
 
 func networkDelayTime(times [][]int, N int, K int) int {
-
+	return 0
 }
