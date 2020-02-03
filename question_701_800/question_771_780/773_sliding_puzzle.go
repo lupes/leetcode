@@ -5,5 +5,5 @@ package question_771_780
 // Topics: 广度优先搜索
 
 func slidingPuzzle(board [][]int) int {
-
+	return 0
 }

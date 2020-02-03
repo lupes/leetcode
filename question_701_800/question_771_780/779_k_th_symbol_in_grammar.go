@@ -5,5 +5,5 @@ package question_771_780
 // Topics: 递归
 
 func kthGrammar(N int, K int) int {
-
+	return 0
 }

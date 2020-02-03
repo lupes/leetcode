@@ -5,5 +5,5 @@ package question_771_780
 // Topics: 数学
 
 func reachingPoints(sx int, sy int, tx int, ty int) bool {
-
+	return false
 }

@@ -5,5 +5,5 @@ package question_771_780
 // Topics: 脑筋急转弯
 
 func canTransform(start string, end string) bool {
-
+	return false
 }

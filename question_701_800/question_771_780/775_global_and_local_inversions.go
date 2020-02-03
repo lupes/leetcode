@@ -5,5 +5,5 @@ package question_771_780
 // Topics: 数组 数学
 
 func isIdealPermutation(A []int) bool {
-
+	return false
 }
