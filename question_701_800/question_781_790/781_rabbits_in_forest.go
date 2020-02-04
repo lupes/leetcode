@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 哈希表 数学
 
 func numRabbits(answers []int) int {
-
+	return 0
 }

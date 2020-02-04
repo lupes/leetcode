@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 动态规划
 
 func numTilings(N int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 数学
 
 func escapeGhosts(ghosts [][]int, target []int) bool {
-
+	return false
 }

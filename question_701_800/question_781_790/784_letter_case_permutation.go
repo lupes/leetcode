@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 位运算 回溯算法
 
 func letterCasePermutation(S string) []string {
-
+	return nil
 }

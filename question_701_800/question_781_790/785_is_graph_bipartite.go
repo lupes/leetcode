@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 深度优先搜索 广度优先搜索 图
 
 func isBipartite(graph [][]int) bool {
-
+	return false
 }

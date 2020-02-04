@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 数组 数学
 
 func movesToChessboard(board [][]int) int {
-
+	return 0
 }

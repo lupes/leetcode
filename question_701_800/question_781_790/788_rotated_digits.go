@@ -5,5 +5,5 @@ package question_781_790
 // Topics: 字符串
 
 func rotatedDigits(N int) int {
-
+	return 0
 }
