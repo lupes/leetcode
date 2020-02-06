@@ -5,5 +5,5 @@ package question_791_800
 // Topics: 数组
 
 func numMatchingSubseq(S string, words []string) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_791_800
 // Topics: 二分查找
 
 func preimageSizeFZF(K int) int {
-
+	return 0
 }

@@ -5,5 +5,17 @@ package question_791_800
 // Topics: 字符串
 
 func customSortString(S string, T string) string {
-
+	var tmp = make(map[int32]string)
+	for _, c := range T {
+		tmp[c] += string(c)
+	}
+	var res = ""
+	for _, c := range S {
+		res += tmp[c]
+		delete(tmp, c)
+	}
+	for _, v := range tmp {
+		res += v
+	}
+	return res
 }

@@ -5,5 +5,5 @@ package question_791_800
 // Topics:
 
 func champagneTower(poured int, query_row int, query_glass int) float64 {
-
+	return 0
 }

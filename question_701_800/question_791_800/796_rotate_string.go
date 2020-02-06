@@ -5,5 +5,5 @@ package question_791_800
 // Topics:
 
 func rotateString(A string, B string) bool {
-
+	return false
 }

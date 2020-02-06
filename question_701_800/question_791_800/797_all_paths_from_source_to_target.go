@@ -5,5 +5,5 @@ package question_791_800
 // Topics:
 
 func allPathsSourceTarget(graph [][]int) [][]int {
-
+	return nil
 }

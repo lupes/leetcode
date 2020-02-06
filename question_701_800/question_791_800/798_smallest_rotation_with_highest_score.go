@@ -5,5 +5,5 @@ package question_791_800
 // Topics:
 
 func bestRotation(A []int) int {
-
+	return 0
 }

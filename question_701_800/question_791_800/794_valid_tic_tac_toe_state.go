@@ -5,5 +5,5 @@ package question_791_800
 // Topics: 递归 数学
 
 func validTicTacToe(board []string) bool {
-
+	return false
 }

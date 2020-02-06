@@ -5,5 +5,5 @@ package question_791_800
 // Topics: 数组
 
 func numSubarrayBoundedMax(A []int, L int, R int) int {
-
+	return 0
 }
