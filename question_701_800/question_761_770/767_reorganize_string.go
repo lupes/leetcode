@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 堆 贪心算法 排序 字符串
 
 func reorganizeString(S string) string {
-
+	return ""
 }

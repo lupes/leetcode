@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 栈 哈希表 字符串
 
 func basicCalculatorIV(expression string, evalvars []string, evalints []int) []string {
-
+	return nil
 }

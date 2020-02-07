@@ -4,6 +4,6 @@ package question_761_770
 // https://leetcode-cn.com/problems/max-chunks-to-make-sorted-ii
 // Topics: 数组
 
-func maxChunksToSorted(arr []int) int {
-
+func maxChunksToSorted2(arr []int) int {
+	return 0
 }

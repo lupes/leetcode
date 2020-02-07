@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 贪心算法 并查集 图
 
 func minSwapsCouples(row []int) int {
-
+	return 0
 }

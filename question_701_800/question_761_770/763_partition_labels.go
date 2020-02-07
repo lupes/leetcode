@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 贪心算法 双指针
 
 func partitionLabels(S string) []int {
-
+	return nil
 }

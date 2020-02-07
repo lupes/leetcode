@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 数组
 
 func isToeplitzMatrix(matrix [][]int) bool {
-
+	return false
 }

@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 递归 字符串
 
 func makeLargestSpecial(S string) string {
-
+	return ""
 }

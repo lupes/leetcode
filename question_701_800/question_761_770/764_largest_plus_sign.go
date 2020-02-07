@@ -5,5 +5,5 @@ package question_761_770
 // Topics: 动态规划
 
 func orderOfLargestPlusSign(N int, mines [][]int) int {
-
+	return 0
 }
