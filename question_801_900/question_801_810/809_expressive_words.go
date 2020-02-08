@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 字符串
 
 func expressiveWords(S string, words []string) int {
-
+	return 0
 }

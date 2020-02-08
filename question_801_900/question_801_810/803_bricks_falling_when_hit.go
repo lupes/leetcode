@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 并查集
 
 func hitBricks(grid [][]int, hits [][]int) []int {
-
+	return nil
 }

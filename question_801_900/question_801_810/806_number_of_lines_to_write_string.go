@@ -5,5 +5,5 @@ package question_801_810
 // Topics:
 
 func numberOfLines(widths []int, S string) []int {
-
+	return nil
 }

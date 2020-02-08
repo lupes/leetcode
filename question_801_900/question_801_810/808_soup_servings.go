@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 动态规划
 
 func soupServings(N int) float64 {
-
+	return 0
 }

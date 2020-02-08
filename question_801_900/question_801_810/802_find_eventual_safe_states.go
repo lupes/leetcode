@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 深度优先搜索 图
 
 func eventualSafeNodes(graph [][]int) []int {
-
+	return nil
 }

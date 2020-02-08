@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 动态规划
 
 func minSwap(A []int, B []int) int {
-
+	return 0
 }

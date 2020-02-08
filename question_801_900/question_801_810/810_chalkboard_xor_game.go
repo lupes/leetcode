@@ -5,5 +5,5 @@ package question_801_810
 // Topics: 数学
 
 func xorGame(nums []int) bool {
-
+	return false
 }
