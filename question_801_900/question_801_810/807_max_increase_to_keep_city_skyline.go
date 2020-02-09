@@ -5,5 +5,27 @@ package question_801_810
 // Topics:
 
 func maxIncreaseKeepingSkyline(grid [][]int) int {
-	return 0
+	rowMax := make([]int, len(grid))
+	colMax := make([]int, len(grid[0]))
+	for i, r := range grid {
+		for j, h := range r {
+			if h > rowMax[i] {
+				rowMax[i] = h
+			}
+			if h > colMax[j] {
+				colMax[j] = h
+			}
+		}
+	}
+	var res = 0
+	for i, r := range grid {
+		for j, h := range r {
+			min := rowMax[i]
+			if min > colMax[j] {
+				min = colMax[j]
+			}
+			res += min - h
+		}
+	}
+	return res
 }
