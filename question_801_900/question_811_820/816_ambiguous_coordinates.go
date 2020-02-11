@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 字符串
 
 func ambiguousCoordinates(S string) []string {
-
+	return nil
 }

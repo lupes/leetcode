@@ -4,13 +4,10 @@ package question_811_820
 // https://leetcode-cn.com/problems/linked-list-components
 // Topics: 链表
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func numComponents(head *ListNode, G []int) int {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func numComponents(head *ListNode, G []int) int {
+	return 0
 }

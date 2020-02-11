@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 堆 动态规划
 
 func racecar(target int) int {
-
+	return 0
 }

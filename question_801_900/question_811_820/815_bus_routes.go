@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 广度优先搜索
 
 func numBusesToDestination(routes [][]int, S int, T int) int {
-
+	return 0
 }

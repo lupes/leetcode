@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 字符串
 
 func mostCommonWord(paragraph string, banned []string) string {
-
+	return ""
 }

@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 哈希表
 
 func subdomainVisits(cpdomains []string) []string {
-
+	return nil
 }

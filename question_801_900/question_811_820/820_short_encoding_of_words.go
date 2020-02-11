@@ -5,5 +5,5 @@ package question_811_820
 // Topics:
 
 func minimumLengthEncoding(words []string) int {
-
+	return 0
 }

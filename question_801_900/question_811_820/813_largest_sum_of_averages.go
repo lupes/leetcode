@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 动态规划
 
 func largestSumOfAverages(A []int, K int) float64 {
-
+	return 0
 }

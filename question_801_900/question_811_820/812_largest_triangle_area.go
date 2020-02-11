@@ -5,5 +5,5 @@ package question_811_820
 // Topics: 数学
 
 func largestTriangleArea(points [][]int) float64 {
-
+	return 0
 }
