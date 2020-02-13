@@ -5,5 +5,5 @@ package question_821_830
 // Topics:
 
 func numFactoredBinaryTrees(A []int) int {
-
+	return 0
 }

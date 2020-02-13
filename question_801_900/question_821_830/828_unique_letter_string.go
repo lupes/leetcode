@@ -5,5 +5,5 @@ package question_821_830
 // Topics: 双指针
 
 func uniqueLetterString(S string) int {
-
+	return 0
 }

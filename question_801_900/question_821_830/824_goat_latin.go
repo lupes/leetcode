@@ -5,5 +5,5 @@ package question_821_830
 // Topics: 字符串
 
 func toGoatLatin(S string) string {
-
+	return ""
 }

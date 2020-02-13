@@ -5,5 +5,5 @@ package question_821_830
 // Topics: 数组
 
 func largeGroupPositions(S string) [][]int {
-
+	return nil
 }

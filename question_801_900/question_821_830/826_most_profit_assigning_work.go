@@ -5,5 +5,5 @@ package question_821_830
 // Topics: 双指针
 
 func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {
-
+	return 0
 }

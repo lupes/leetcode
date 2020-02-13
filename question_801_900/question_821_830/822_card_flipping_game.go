@@ -5,5 +5,5 @@ package question_821_830
 // Topics:
 
 func flipgame(fronts []int, backs []int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_821_830
 // Topics:
 
 func shortestToChar(S string, C byte) []int {
-
+	return nil
 }

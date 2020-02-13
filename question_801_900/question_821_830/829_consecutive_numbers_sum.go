@@ -5,5 +5,5 @@ package question_821_830
 // Topics: 数学
 
 func consecutiveNumbersSum(N int) int {
-
+	return 0
 }
