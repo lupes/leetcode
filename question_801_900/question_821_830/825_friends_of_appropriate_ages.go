@@ -1,25 +1,27 @@
 package question_821_830
 
-import (
-	"sort"
-)
-
 // 825. 适龄的朋友
 // https://leetcode-cn.com/problems/friends-of-appropriate-ages
 // Topics: 数组
 
 func numFriendRequests(ages []int) int {
-	sort.Ints(ages)
 	var res = 0
-	for i := len(ages) - 1; i > 0; i-- {
-		for j := i - 1; j >= 0; j-- {
-			if ages[i]/2+7 >= ages[j] {
+	var flag = make([]int, 121)
+	for _, age := range ages {
+		flag[age]++
+	}
+
+	for i := 120; i > 1; i-- {
+		if flag[i] == 0 {
+			continue
+		} else if i+14 < 2*i {
+			res += flag[i] * (flag[i] - 1)
+		}
+		for j := i - 1; j > 0; j-- {
+			if i+14 >= 2*j {
 				break
 			}
-			res++
-			if ages[i] == ages[j] {
-				res++
-			}
+			res += flag[j] * flag[i]
 		}
 	}
 	return res
