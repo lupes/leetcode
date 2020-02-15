@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 数组
 
 func numMagicSquaresInside(grid [][]int) int {
-
+	return 0
 }

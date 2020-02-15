@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 双指针 动态规划
 
 func pushDominoes(dominoes string) string {
-
+	return ""
 }

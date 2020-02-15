@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 深度优先搜索 并查集 图
 
 func numSimilarGroups(A []string) int {
-
+	return 0
 }

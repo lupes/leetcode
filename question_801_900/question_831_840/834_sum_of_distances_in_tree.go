@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 树 深度优先搜索
 
 func sumOfDistancesInTree(N int, edges [][]int) []int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 动态规划
 
 func new21Game(N int, K int, W int) float64 {
-
+	return 0
 }

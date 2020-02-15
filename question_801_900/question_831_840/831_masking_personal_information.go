@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 字符串
 
 func maskPII(S string) string {
-
+	return ""
 }

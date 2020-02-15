@@ -5,5 +5,5 @@ package question_831_840
 // Topics: 数学
 
 func isRectangleOverlap(rec1 []int, rec2 []int) bool {
-
+	return false
 }
