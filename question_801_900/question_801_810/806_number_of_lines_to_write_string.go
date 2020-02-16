@@ -5,5 +5,13 @@ package question_801_810
 // Topics:
 
 func numberOfLines(widths []int, S string) []int {
-	return nil
+	var res = []int{1, 0}
+	for _, c := range S {
+		if res[1]+widths[c-'a'] > 100 {
+			res[0]++
+			res[1] = 0
+		}
+		res[1] += widths[c-'a']
+	}
+	return res
 }
