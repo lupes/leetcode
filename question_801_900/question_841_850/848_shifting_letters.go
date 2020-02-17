@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 字符串
 
 func shiftingLetters(S string, shifts []int) string {
-
+	return ""
 }

@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 栈 双指针
 
 func backspaceCompare(S string, T string) bool {
-
+	return false
 }

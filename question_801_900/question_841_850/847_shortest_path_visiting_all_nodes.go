@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 广度优先搜索 动态规划
 
 func shortestPathLength(graph [][]int) int {
-
+	return 0
 }

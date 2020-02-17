@@ -4,14 +4,13 @@ package question_841_850
 // https://leetcode-cn.com/problems/guess-the-word
 // Topics: 极小化极大
 
-/**
- * // This is the Master's API interface.
- * // You should not implement it, or speculate about its implementation
- * type Master struct {
- * }
- *
- * func (this *Master) Guess(word string) int {}
- */
+type Master struct {
+}
+
+func (this *Master) Guess(word string) int {
+	return 0
+}
+
 func findSecretWord(wordlist []string, master *Master) {
 
 }

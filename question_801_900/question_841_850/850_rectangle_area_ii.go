@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 线段树 None
 
 func rectangleArea(rectangles [][]int) int {
-
+	return 0
 }

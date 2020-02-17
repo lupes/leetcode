@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 数组
 
 func maxDistToClosest(seats []int) int {
-
+	return 0
 }

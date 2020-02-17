@@ -5,5 +5,5 @@ package question_841_850
 // Topics: 双指针
 
 func longestMountain(A []int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_841_850
 // Topics: None
 
 func isNStraightHand(hand []int, W int) bool {
-
+	return false
 }
