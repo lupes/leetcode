@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 广度优先搜索 图
 
 func kSimilarity(A string, B string) int {
-
+	return 0
 }

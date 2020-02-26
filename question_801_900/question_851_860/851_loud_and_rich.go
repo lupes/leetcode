@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 深度优先搜索
 
 func loudAndRich(richer [][]int, quiet []int) []int {
-
+	return nil
 }

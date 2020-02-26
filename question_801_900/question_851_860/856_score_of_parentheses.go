@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 栈 字符串
 
 func scoreOfParentheses(S string) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 数学
 
 func mirrorReflection(p int, q int) int {
-
+	return 0
 }

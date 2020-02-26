@@ -8,11 +8,11 @@ type ExamRoom struct {
 }
 
 func Constructor(N int) ExamRoom {
-
+	return ExamRoom{}
 }
 
 func (this *ExamRoom) Seat() int {
-
+	return 0
 }
 
 func (this *ExamRoom) Leave(p int) {

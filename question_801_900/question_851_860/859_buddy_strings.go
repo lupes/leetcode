@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 字符串
 
 func buddyStrings(A string, B string) bool {
-
+	return false
 }

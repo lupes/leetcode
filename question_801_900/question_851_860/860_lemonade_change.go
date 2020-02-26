@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 贪心算法
 
 func lemonadeChange(bills []int) bool {
-
+	return false
 }

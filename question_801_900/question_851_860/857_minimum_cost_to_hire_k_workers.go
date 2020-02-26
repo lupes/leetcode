@@ -5,5 +5,5 @@ package question_851_860
 // Topics: 堆
 
 func mincostToHireWorkers(quality []int, wage []int, K int) float64 {
-
+	return 0
 }
