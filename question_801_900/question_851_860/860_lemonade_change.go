@@ -5,5 +5,20 @@ package question_851_860
 // Topics: 贪心算法
 
 func lemonadeChange(bills []int) bool {
-	return false
+	var a, b = 0, 0
+	for _, bill := range bills {
+		switch {
+		case bill == 5:
+			a++
+		case bill == 10 && a > 0:
+			a, b = a-1, b+1
+		case bill == 20 && b > 0 && a > 0:
+			a, b = a-1, b-1
+		case bill == 20 && a > 2:
+			a -= 3
+		default:
+			return false
+		}
+	}
+	return true
 }
