@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 数学
 
 func binaryGap(N int) int {
-
+	return 0
 }

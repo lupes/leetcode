@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 堆 广度优先搜索
 
 func shortestPathAllKeys(grid []string) int {
-
+	return 0
 }

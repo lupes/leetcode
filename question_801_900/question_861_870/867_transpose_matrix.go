@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 数组
 
 func transpose(A [][]int) [][]int {
-
+	return nil
 }

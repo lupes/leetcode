@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 数学
 
 func reorderedPowerOf2(N int) bool {
-
+	return false
 }

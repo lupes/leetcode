@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 数学
 
 func primePalindrome(N int) int {
-
+	return 0
 }

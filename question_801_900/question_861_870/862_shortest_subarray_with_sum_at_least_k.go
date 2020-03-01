@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 队列 二分查找
 
 func shortestSubarray(A []int, K int) int {
-
+	return 0
 }

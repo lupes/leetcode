@@ -5,5 +5,5 @@ package question_861_870
 // Topics: 贪心算法 数组
 
 func advantageCount(A []int, B []int) []int {
-
+	return nil
 }
