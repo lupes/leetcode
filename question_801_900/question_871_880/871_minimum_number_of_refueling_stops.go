@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 堆 动态规划
 
 func minRefuelStops(target int, startFuel int, stations [][]int) int {
-
+	return 0
 }

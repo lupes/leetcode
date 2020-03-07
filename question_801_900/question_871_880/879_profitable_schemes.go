@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 动态规划
 
 func profitableSchemes(G int, P int, group []int, profit []int) int {
-
+	return 0
 }

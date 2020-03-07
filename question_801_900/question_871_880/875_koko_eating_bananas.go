@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 二分查找
 
 func minEatingSpeed(piles []int, H int) int {
-
+	return 0
 }

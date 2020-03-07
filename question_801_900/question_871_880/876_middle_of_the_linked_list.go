@@ -4,13 +4,10 @@ package question_871_880
 // https://leetcode-cn.com/problems/middle-of-the-linked-list
 // Topics: 链表
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func middleNode(head *ListNode) *ListNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func middleNode(head *ListNode) *ListNode {
+	return nil
 }

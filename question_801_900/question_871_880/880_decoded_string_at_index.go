@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 栈
 
 func decodeAtIndex(S string, K int) string {
-
+	return ""
 }

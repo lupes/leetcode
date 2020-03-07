@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 极小化极大 数学 动态规划
 
 func stoneGame(piles []int) bool {
-
+	return false
 }

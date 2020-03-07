@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 数学 二分查找
 
 func nthMagicalNumber(N int, A int, B int) int {
-
+	return 0
 }

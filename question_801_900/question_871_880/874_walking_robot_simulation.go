@@ -5,5 +5,5 @@ package question_871_880
 // Topics: 贪心算法
 
 func robotSim(commands []int, obstacles [][]int) int {
-
+	return 0
 }
