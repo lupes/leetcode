@@ -9,5 +9,13 @@ import (
 )
 
 func middleNode(head *ListNode) *ListNode {
-	return nil
+	var slow, fast = head, head
+	for fast.Next != nil && fast.Next.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+	if fast.Next != nil {
+		return slow.Next
+	}
+	return slow
 }
