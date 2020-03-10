@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 深度优先搜索
 
 func possibleBipartition(N int, dislikes [][]int) bool {
-
+	return false
 }

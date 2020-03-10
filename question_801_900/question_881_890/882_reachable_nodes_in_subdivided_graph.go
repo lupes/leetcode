@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 堆
 
 func reachableNodes(edges [][]int, M int, N int) int {
-
+	return 0
 }

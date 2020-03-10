@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 字符串
 
 func findAndReplacePattern(words []string, pattern string) []string {
-
+	return nil
 }

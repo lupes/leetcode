@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 数组
 
 func fairCandySwap(A []int, B []int) []int {
-
+	return nil
 }

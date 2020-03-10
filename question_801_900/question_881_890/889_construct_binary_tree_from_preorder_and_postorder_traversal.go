@@ -4,14 +4,10 @@ package question_881_890
 // https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func constructFromPrePost(pre []int, post []int) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func constructFromPrePost(pre []int, post []int) *TreeNode {
+	return nil
 }

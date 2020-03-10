@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 数学
 
 func projectionArea(grid [][]int) int {
-
+	return 0
 }

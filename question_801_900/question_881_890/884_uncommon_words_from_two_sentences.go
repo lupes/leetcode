@@ -5,5 +5,5 @@ package question_881_890
 // Topics: 哈希表
 
 func uncommonFromSentences(A string, B string) []string {
-
+	return nil
 }
