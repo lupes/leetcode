@@ -8,11 +8,11 @@ type StockSpanner struct {
 }
 
 func Constructor() StockSpanner {
-
+	return StockSpanner{}
 }
 
 func (this *StockSpanner) Next(price int) int {
-
+	return 0
 }
 
 /**

@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 栈 数组
 
 func sumSubarrayMins(A []int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 双指针
 
 func totalFruit(tree []int) int {
-
+	return 0
 }

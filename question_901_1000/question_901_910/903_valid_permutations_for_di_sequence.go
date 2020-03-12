@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 分治算法 动态规划
 
 func numPermsDISequence(S string) int {
-
+	return 0
 }

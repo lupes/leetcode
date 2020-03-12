@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 广度优先搜索
 
 func snakesAndLadders(board [][]int) int {
-
+	return 0
 }

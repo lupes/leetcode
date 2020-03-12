@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 数学 动态规划
 
 func atMostNGivenDigitSet(D []string, N int) int {
-
+	return 0
 }

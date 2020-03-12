@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 数学
 
 func smallestRangeI(A []int, K int) int {
-
+	return 0
 }

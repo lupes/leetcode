@@ -5,5 +5,5 @@ package question_901_910
 // Topics: 贪心算法 数学
 
 func smallestRangeII(A []int, K int) int {
-
+	return 0
 }
