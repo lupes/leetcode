@@ -5,6 +5,7 @@ package question_901_910
 // Topics: 栈
 
 type StockSpanner struct {
+	Prices []int
 }
 
 func Constructor() StockSpanner {
@@ -12,11 +13,14 @@ func Constructor() StockSpanner {
 }
 
 func (this *StockSpanner) Next(price int) int {
-	return 0
+	var res = 1
+	for i := len(this.Prices) - 1; i >= 0; i-- {
+		if this.Prices[i] <= price {
+			res++
+		} else {
+			break
+		}
+	}
+	this.Prices = append(this.Prices, price)
+	return res
 }
-
-/**
- * Your StockSpanner object will be instantiated and called as such:
- * obj := Constructor();
- * param_1 := obj.Next(price);
- */
