@@ -5,5 +5,5 @@ package question_911_920
 // Topics: 数组 数学
 
 func hasGroupsSizeX(deck []int) bool {
-
+	return false
 }

@@ -8,11 +8,11 @@ type TopVotedCandidate struct {
 }
 
 func Constructor(persons []int, times []int) TopVotedCandidate {
-
+	return TopVotedCandidate{}
 }
 
 func (this *TopVotedCandidate) Q(t int) int {
-
+	return 0
 }
 
 /**

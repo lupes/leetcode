@@ -5,5 +5,5 @@ package question_911_920
 // Topics: 广度优先搜索 极小化极大
 
 func catMouseGame(graph [][]int) int {
-
+	return 0
 }

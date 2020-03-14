@@ -5,5 +5,5 @@ package question_911_920
 // Topics: 动态规划
 
 func numMusicPlaylists(N int, L int, K int) int {
-
+	return 0
 }

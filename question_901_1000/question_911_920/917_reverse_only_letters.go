@@ -5,5 +5,5 @@ package question_911_920
 // Topics: 字符串
 
 func reverseOnlyLetters(S string) string {
-
+	return ""
 }

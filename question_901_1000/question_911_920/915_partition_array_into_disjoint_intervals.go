@@ -5,5 +5,5 @@ package question_911_920
 // Topics: 数组
 
 func partitionDisjoint(A []int) int {
-
+	return 0
 }

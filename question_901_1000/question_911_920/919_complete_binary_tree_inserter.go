@@ -4,27 +4,23 @@ package question_911_920
 // https://leetcode-cn.com/problems/complete-binary-tree-inserter
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 type CBTInserter struct {
 }
 
-func Constructor(root *TreeNode) CBTInserter {
-
+func Constructor2(root *TreeNode) CBTInserter {
+	return CBTInserter{}
 }
 
 func (this *CBTInserter) Insert(v int) int {
-
+	return 0
 }
 
 func (this *CBTInserter) Get_root() *TreeNode {
-
+	return nil
 }
 
 /**
