@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 贪心算法 数学 二分查找
 
 func threeEqualParts(A []int) []int {
-
+	return nil
 }

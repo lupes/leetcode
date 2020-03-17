@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 栈 贪心算法
 
 func minAddToMakeValid(S string) int {
-
+	return 0
 }

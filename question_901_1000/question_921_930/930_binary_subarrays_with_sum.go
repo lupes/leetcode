@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 哈希表 双指针
 
 func numSubarraysWithSum(A []int, S int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 双指针
 
 func threeSumMulti(A []int, target int) int {
-
+	return 0
 }

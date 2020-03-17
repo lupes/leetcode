@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 数组
 
 func minFlipsMonoIncr(S string) int {
-
+	return 0
 }

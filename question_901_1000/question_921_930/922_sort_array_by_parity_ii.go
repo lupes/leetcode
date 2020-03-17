@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 排序 数组
 
 func sortArrayByParityII(A []int) []int {
-
+	return nil
 }

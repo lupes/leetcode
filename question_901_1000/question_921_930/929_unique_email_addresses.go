@@ -5,5 +5,5 @@ package question_921_930
 // Topics: 字符串
 
 func numUniqueEmails(emails []string) int {
-
+	return 0
 }
