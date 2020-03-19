@@ -5,5 +5,13 @@ package question_921_930
 // Topics: 栈 贪心算法
 
 func minAddToMakeValid(S string) int {
-	return 0
+	var stack []int32
+	for _, c := range S {
+		if c == ')' && len(stack) > 0 && stack[len(stack)-1] == '(' {
+			stack = stack[:len(stack)-1]
+		} else {
+			stack = append(stack, c)
+		}
+	}
+	return len(stack)
 }
