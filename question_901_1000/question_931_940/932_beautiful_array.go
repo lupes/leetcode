@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 分治算法
 
 func beautifulArray(N int) []int {
-
+	return nil
 }

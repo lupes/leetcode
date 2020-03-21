@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 动态规划
 
 func distinctSubseqII(S string) int {
-
+	return 0
 }

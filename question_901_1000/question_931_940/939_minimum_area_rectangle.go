@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 哈希表
 
 func minAreaRect(points [][]int) int {
-
+	return 0
 }

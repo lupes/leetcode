@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 贪心算法 字符串
 
 func movesToStamp(stamp string, target string) []int {
-
+	return nil
 }

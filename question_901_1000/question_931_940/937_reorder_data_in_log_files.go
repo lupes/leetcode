@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 字符串
 
 func reorderLogFiles(logs []string) []string {
-
+	return nil
 }

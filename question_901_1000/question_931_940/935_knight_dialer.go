@@ -5,5 +5,5 @@ package question_931_940
 // Topics: 动态规划
 
 func knightDialer(N int) int {
-
+	return 0
 }
