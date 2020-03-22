@@ -5,6 +5,7 @@ package question_931_940
 // Topics: 队列
 
 type RecentCounter struct {
+	data []int
 }
 
 func Constructor() RecentCounter {
@@ -12,7 +13,17 @@ func Constructor() RecentCounter {
 }
 
 func (this *RecentCounter) Ping(t int) int {
-	return 0
+	this.data = append(this.data, t)
+	var left, right = 0, len(this.data)
+	for right > left {
+		center := (left + right) / 2
+		if t-this.data[center] > 3000 {
+			left = center + 1
+		} else {
+			right = center
+		}
+	}
+	return len(this.data[left:])
 }
 
 /**
