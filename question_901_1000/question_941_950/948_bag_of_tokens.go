@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 贪心算法
 
 func bagOfTokensScore(tokens []int, P int) int {
-
+	return 0
 }

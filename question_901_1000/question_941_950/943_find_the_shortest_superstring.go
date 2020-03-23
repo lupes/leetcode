@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 动态规划
 
 func shortestSuperstring(A []string) string {
-
+	return ""
 }

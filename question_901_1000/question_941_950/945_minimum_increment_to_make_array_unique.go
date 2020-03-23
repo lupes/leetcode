@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 数组
 
 func minIncrementForUnique(A []int) int {
-
+	return 0
 }

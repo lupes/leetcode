@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 深度优先搜索 并查集
 
 func removeStones(stones [][]int) int {
-
+	return 0
 }

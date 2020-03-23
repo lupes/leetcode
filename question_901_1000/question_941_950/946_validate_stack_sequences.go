@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 栈
 
 func validateStackSequences(pushed []int, popped []int) bool {
-
+	return false
 }

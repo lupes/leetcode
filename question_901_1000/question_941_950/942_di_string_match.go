@@ -5,5 +5,5 @@ package question_941_950
 // Topics: 数学
 
 func diStringMatch(S string) []int {
-
+	return nil
 }
