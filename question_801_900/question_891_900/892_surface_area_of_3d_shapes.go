@@ -5,5 +5,5 @@ package question_891_900
 // Topics: 几何 数学
 
 func surfaceArea(grid [][]int) int {
-
+	return 0
 }

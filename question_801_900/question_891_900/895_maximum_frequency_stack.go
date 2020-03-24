@@ -7,8 +7,8 @@ package question_891_900
 type FreqStack struct {
 }
 
-func Constructor() FreqStack {
-
+func Constructor2() FreqStack {
+	return FreqStack{}
 }
 
 func (this *FreqStack) Push(x int) {
@@ -16,7 +16,7 @@ func (this *FreqStack) Push(x int) {
 }
 
 func (this *FreqStack) Pop() int {
-
+	return 0
 }
 
 /**

@@ -4,14 +4,10 @@ package question_891_900
 // https://leetcode-cn.com/problems/increasing-order-search-tree
 // Topics: 树 深度优先搜索
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func increasingBST(root *TreeNode) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func increasingBST(root *TreeNode) *TreeNode {
+	return &TreeNode{}
 }

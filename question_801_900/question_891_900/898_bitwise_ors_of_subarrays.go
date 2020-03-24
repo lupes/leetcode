@@ -5,5 +5,5 @@ package question_891_900
 // Topics: 位运算 动态规划
 
 func subarrayBitwiseORs(A []int) int {
-
+	return 0
 }

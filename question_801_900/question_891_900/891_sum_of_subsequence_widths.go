@@ -5,5 +5,5 @@ package question_891_900
 // Topics: 数组 数学
 
 func sumSubseqWidths(A []int) int {
-
+	return 0
 }

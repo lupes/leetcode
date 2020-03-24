@@ -5,5 +5,5 @@ package question_891_900
 // Topics: 字符串
 
 func numSpecialEquivGroups(A []string) int {
-
+	return 0
 }

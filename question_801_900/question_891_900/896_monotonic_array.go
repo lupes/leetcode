@@ -5,5 +5,5 @@ package question_891_900
 // Topics: 数组
 
 func isMonotonic(A []int) bool {
-
+	return false
 }

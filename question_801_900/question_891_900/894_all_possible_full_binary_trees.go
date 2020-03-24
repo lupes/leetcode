@@ -4,14 +4,10 @@ package question_891_900
 // https://leetcode-cn.com/problems/all-possible-full-binary-trees
 // Topics: 树 递归
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func allPossibleFBT(N int) []*TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func allPossibleFBT(N int) []*TreeNode {
+	return nil
 }
