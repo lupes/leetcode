@@ -5,5 +5,14 @@ package question_921_930
 // Topics: 排序 数组
 
 func sortArrayByParityII(A []int) []int {
-	return nil
+	for i, j := 0, 1; i < len(A)-1 && j < len(A); {
+		if A[i]%2 == 1 && A[j]%2 == 0 {
+			A[i], A[j] = A[j], A[i]
+		} else if A[i]%2 == 0 {
+			i += 2
+		} else if A[j]%2 == 1 {
+			j += 2
+		}
+	}
+	return A
 }
