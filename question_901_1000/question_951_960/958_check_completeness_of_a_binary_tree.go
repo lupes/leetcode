@@ -4,14 +4,10 @@ package question_951_960
 // https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func isCompleteTree(root *TreeNode) bool {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func isCompleteTree(root *TreeNode) bool {
+	return false
 }

@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 深度优先搜索 并查集 图
 
 func regionsBySlashes(grid []string) int {
-
+	return 0
 }

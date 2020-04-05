@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 哈希表
 
 func prisonAfterNDays(cells []int, N int) []int {
-
+	return nil
 }

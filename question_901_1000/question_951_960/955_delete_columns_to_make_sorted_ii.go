@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 贪心算法
 
 func minDeletionSize(A []string) int {
-
+	return 0
 }

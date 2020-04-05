@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 哈希表
 
 func isAlienSorted(words []string, order string) bool {
-
+	return false
 }

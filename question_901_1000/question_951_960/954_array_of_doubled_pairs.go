@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 数组 哈希表
 
 func canReorderDoubled(A []int) bool {
-
+	return false
 }

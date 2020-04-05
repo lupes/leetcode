@@ -5,5 +5,5 @@ package question_951_960
 // Topics: 并查集 数学
 
 func largestComponentSize(A []int) int {
-
+	return 0
 }
