@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 哈希表 字符串
 
 func spellchecker(wordlist []string, queries []string) []string {
-
+	return nil
 }

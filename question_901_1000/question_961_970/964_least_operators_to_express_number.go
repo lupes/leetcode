@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 数学 动态规划
 
 func leastOpsExpressTarget(x int, target int) int {
-
+	return 0
 }

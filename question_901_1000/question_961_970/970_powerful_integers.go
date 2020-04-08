@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 哈希表 数学
 
 func powerfulIntegers(x int, y int, bound int) []int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 几何 数学
 
 func minAreaFreeRect(points [][]int) float64 {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 哈希表
 
 func repeatedNTimes(A []int) int {
-
+	return 0
 }

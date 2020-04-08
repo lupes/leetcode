@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 排序 数组
 
 func pancakeSort(A []int) []int {
-
+	return nil
 }

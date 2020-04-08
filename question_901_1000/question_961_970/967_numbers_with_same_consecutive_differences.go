@@ -5,5 +5,5 @@ package question_961_970
 // Topics: 动态规划
 
 func numsSameConsecDiff(N int, K int) []int {
-
+	return nil
 }

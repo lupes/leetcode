@@ -4,14 +4,10 @@ package question_961_970
 // https://leetcode-cn.com/problems/univalued-binary-tree
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func isUnivalTree(root *TreeNode) bool {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func isUnivalTree(root *TreeNode) bool {
+	return false
 }
