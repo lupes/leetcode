@@ -9,5 +9,15 @@ import (
 )
 
 func isUnivalTree(root *TreeNode) bool {
-	return false
+	return isUnivalTreeHelper(root, root.Val)
+}
+
+func isUnivalTreeHelper(root *TreeNode, num int) bool {
+	if root == nil {
+		return true
+	} else if root.Val != num {
+		return false
+	} else {
+		return isUnivalTreeHelper(root.Left, num) && isUnivalTreeHelper(root.Right, num)
+	}
 }
