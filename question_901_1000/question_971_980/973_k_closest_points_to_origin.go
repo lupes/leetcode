@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 堆 排序 分治算法
 
 func kClosest(points [][]int, K int) [][]int {
-
+	return nil
 }

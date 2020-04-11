@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 数组 哈希表
 
 func subarraysDivByK(A []int, K int) int {
-
+	return 0
 }

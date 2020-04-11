@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 栈 动态规划 None
 
 func oddEvenJumps(A []int) int {
-
+	return 0
 }

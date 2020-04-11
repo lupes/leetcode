@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 深度优先搜索 回溯算法
 
 func uniquePathsIII(grid [][]int) int {
-
+	return 0
 }

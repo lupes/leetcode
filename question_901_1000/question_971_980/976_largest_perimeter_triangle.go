@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 排序 数学
 
 func largestPerimeter(A []int) int {
-
+	return 0
 }

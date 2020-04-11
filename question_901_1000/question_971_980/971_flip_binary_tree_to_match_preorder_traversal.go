@@ -4,14 +4,10 @@ package question_971_980
 // https://leetcode-cn.com/problems/flip-binary-tree-to-match-preorder-traversal
 // Topics: 树 深度优先搜索
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func flipMatchVoyage(root *TreeNode, voyage []int) []int {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func flipMatchVoyage(root *TreeNode, voyage []int) []int {
+	return nil
 }

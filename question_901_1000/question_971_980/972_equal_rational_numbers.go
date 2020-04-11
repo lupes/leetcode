@@ -5,5 +5,5 @@ package question_971_980
 // Topics: 数学
 
 func isRationalEqual(S string, T string) bool {
-
+	return false
 }
