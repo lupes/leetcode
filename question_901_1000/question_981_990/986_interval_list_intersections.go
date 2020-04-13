@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 双指针
 
 func intervalIntersection(A [][]int, B [][]int) [][]int {
-
+	return nil
 }

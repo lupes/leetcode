@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 贪心算法
 
 func strWithout3a3b(A int, B int) string {
-
+	return ""
 }

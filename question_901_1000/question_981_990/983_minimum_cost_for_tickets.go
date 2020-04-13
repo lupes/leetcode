@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 动态规划
 
 func mincostTickets(days []int, costs []int) int {
-
+	return 0
 }

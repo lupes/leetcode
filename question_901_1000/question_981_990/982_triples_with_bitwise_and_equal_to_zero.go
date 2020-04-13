@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 动态规划
 
 func countTriplets(A []int) int {
-
+	return 0
 }

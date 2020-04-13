@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 并查集 图
 
 func equationsPossible(equations []string) bool {
-
+	return false
 }

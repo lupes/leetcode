@@ -5,5 +5,5 @@ package question_981_990
 // Topics: 数组
 
 func addToArrayForm(A []int, K int) []int {
-
+	return nil
 }
