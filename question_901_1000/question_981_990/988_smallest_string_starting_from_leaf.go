@@ -9,5 +9,21 @@ import (
 )
 
 func smallestFromLeaf(root *TreeNode) string {
-	return ""
+	return smallestFromLeafHelper(root, "", "")
+}
+
+func smallestFromLeafHelper(root *TreeNode, suffix, min string) string {
+	t := string('a'+root.Val) + suffix
+	if root.Left == nil && root.Right == nil {
+		if (min != "" && t < min) || min == "" {
+			min = t
+		}
+	}
+	if root.Left != nil {
+		min = smallestFromLeafHelper(root.Left, t, min)
+	}
+	if root.Right != nil {
+		min = smallestFromLeafHelper(root.Right, t, min)
+	}
+	return min
 }
