@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 图 数学 回溯算法
 
 func numSquarefulPerms(A []int) int {
-
+	return 0
 }

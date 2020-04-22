@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 动态规划
 
 func mergeStones(stones []int, K int) int {
-
+	return 0
 }

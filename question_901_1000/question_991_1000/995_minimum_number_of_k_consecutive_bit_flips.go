@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 贪心算法 None
 
 func minKBitFlips(A []int, K int) int {
-
+	return 0
 }

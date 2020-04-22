@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 图
 
 func findJudge(N int, trust [][]int) int {
-
+	return 0
 }

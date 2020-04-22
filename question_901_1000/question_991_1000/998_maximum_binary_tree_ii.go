@@ -4,14 +4,10 @@ package question_991_1000
 // https://leetcode-cn.com/problems/maximum-binary-tree-ii
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func insertIntoMaxTree(root *TreeNode, val int) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func insertIntoMaxTree(root *TreeNode, val int) *TreeNode {
+	return nil
 }

@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 哈希表 双指针 None
 
 func subarraysWithKDistinct(A []int, K int) int {
-
+	return 0
 }

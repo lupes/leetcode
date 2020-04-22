@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 数组
 
 func numRookCaptures(board [][]byte) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_991_1000
 // Topics: 贪心算法 数学
 
 func brokenCalc(X int, Y int) int {
-
+	return 0
 }
