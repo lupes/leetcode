@@ -5,5 +5,50 @@ package question_991_1000
 // Topics: 数组
 
 func numRookCaptures(board [][]byte) int {
-	return 0
+	i, j := findRook(board)
+	var res = 0
+	for k := i - 1; k >= 0; k-- {
+		if board[k][j] == 'p' {
+			res++
+			break
+		} else if board[k][j] == 'B' {
+			break
+		}
+	}
+	for k := i + 1; k < 8; k++ {
+		if board[k][j] == 'p' {
+			res++
+			break
+		} else if board[k][j] == 'B' {
+			break
+		}
+	}
+	for k := j - 1; k >= 0; k-- {
+		if board[i][k] == 'p' {
+			res++
+			break
+		} else if board[i][k] == 'B' {
+			break
+		}
+	}
+	for k := j + 1; k < 8; k++ {
+		if board[i][k] == 'p' {
+			res++
+			break
+		} else if board[i][k] == 'B' {
+			break
+		}
+	}
+	return res
+}
+
+func findRook(board [][]byte) (int, int) {
+	for i, line := range board {
+		for j, v := range line {
+			if v == 'R' {
+				return i, j
+			}
+		}
+	}
+	return -1, -1
 }
