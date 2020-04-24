@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 双指针 None
 
 func longestOnes(A []int, K int) int {
-
+	return 0
 }

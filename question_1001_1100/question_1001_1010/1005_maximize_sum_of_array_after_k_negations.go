@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 贪心算法
 
 func largestSumAfterKNegations(A []int, K int) int {
-
+	return 0
 }

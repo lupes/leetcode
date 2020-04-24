@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 数组
 
 func numPairsDivisibleBy60(time []int) int {
-
+	return 0
 }

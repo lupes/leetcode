@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 贪心算法 数组
 
 func minDominoRotations(A []int, B []int) int {
-
+	return 0
 }

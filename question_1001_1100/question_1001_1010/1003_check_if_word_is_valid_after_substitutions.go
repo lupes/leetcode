@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 栈 字符串
 
 func isValid(S string) bool {
-
+	return false
 }

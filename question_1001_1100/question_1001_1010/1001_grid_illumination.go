@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 哈希表
 
 func gridIllumination(N int, lamps [][]int, queries [][]int) []int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_1001_1010
 // Topics: 数学
 
 func bitwiseComplement(N int) int {
-
+	return 0
 }
