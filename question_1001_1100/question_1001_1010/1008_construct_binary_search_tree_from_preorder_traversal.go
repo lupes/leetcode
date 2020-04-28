@@ -9,5 +9,17 @@ import (
 )
 
 func bstFromPreorder(preorder []int) *TreeNode {
-	return nil
+	if len(preorder) == 0 {
+		return nil
+	}
+	node := &TreeNode{Val: preorder[0]}
+	var i = 1
+	for i = 1; i < len(preorder); i++ {
+		if preorder[i] > node.Val {
+			break
+		}
+	}
+	node.Left = bstFromPreorder(preorder[1:i])
+	node.Right = bstFromPreorder(preorder[i:])
+	return node
 }
