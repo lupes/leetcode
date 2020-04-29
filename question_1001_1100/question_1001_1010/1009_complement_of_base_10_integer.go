@@ -5,5 +5,12 @@ package question_1001_1010
 // Topics: 数学
 
 func bitwiseComplement(N int) int {
-	return 0
+	if N == 0 {
+		return 1
+	}
+	for i := 0; ; i++ {
+		if 1<<i > N {
+			return 1<<i - 1 - N
+		}
+	}
 }
