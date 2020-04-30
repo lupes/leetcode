@@ -5,9 +5,15 @@ package question_1001_1010
 // Topics: 数组
 
 func numPairsDivisibleBy60(time []int) int {
-	var flag = make([][]int, 60)
-	for i, n := range time {
-		flag[n%60] = append(flag[n%60], i)
+	var flag, res = make([]int, 60), 0
+	for _, n := range time {
+		t := n % 60
+		if t == 0 {
+			res += flag[0]
+		} else {
+			res += flag[60-t]
+		}
+		flag[t]++
 	}
-	return 0
+	return res
 }
