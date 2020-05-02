@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 数学
 
 func baseNeg2(N int) string {
-
+	return ""
 }

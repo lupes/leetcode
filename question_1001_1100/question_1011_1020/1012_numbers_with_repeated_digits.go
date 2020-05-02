@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 数学 动态规划
 
 func numDupDigitsAtMostN(N int) int {
-
+	return 0
 }

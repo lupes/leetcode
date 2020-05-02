@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 深度优先搜索
 
 func numEnclaves(A [][]int) int {
-
+	return 0
 }

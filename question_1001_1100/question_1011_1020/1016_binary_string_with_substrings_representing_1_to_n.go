@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 字符串
 
 func queryString(S string, N int) bool {
-
+	return false
 }

@@ -4,13 +4,10 @@ package question_1011_1020
 // https://leetcode-cn.com/problems/next-greater-node-in-linked-list
 // Topics: 栈 链表
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func nextLargerNodes(head *ListNode) []int {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func nextLargerNodes(head *ListNode) []int {
+	return nil
 }

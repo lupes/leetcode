@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 数组
 
 func canThreePartsEqualSum(A []int) bool {
-
+	return false
 }

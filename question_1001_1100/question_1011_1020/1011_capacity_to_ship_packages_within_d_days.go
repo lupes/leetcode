@@ -5,5 +5,5 @@ package question_1011_1020
 // Topics: 数组 二分查找
 
 func shipWithinDays(weights []int, D int) int {
-
+	return 0
 }
