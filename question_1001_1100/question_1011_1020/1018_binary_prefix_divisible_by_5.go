@@ -5,5 +5,14 @@ package question_1011_1020
 // Topics: 数组
 
 func prefixesDivBy5(A []int) []bool {
-	return nil
+	var res, t = make([]bool, len(A)), 0
+	for i, n := range A {
+		t <<= 1
+		t += n
+		t %= 10
+		if t%5 == 0 {
+			res[i] = true
+		}
+	}
+	return res
 }
