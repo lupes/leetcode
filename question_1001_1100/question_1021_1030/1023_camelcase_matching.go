@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 字典树 字符串
 
 func camelMatch(queries []string, pattern string) []bool {
-
+	return nil
 }

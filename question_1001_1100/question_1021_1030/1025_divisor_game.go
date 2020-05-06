@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 数学 动态规划
 
 func divisorGame(N int) bool {
-
+	return false
 }

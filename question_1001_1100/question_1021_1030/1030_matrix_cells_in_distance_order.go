@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 排序
 
 func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
-
+	return nil
 }

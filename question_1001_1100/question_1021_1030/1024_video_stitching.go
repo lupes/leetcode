@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 动态规划
 
 func videoStitching(clips [][]int, T int) int {
-
+	return 0
 }

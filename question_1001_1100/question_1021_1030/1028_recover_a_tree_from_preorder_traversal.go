@@ -4,14 +4,10 @@ package question_1021_1030
 // https://leetcode-cn.com/problems/recover-a-tree-from-preorder-traversal
 // Topics: 树 深度优先搜索
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func recoverFromPreorder(S string) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func recoverFromPreorder(S string) *TreeNode {
+	return nil
 }

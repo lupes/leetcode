@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 贪心算法
 
 func twoCitySchedCost(costs [][]int) int {
-
+	return 0
 }

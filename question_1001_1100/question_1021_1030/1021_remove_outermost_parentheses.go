@@ -5,5 +5,5 @@ package question_1021_1030
 // Topics: 栈
 
 func removeOuterParentheses(S string) string {
-
+	return ""
 }
