@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 数组 None
 
 func numMovesStonesII(stones []int) []int {
-
+	return nil
 }

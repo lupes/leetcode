@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 数组
 
 func maxUncrossedLines(A []int, B []int) int {
-
+	return 0
 }

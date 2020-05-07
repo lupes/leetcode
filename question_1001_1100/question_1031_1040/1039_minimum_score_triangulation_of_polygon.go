@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 动态规划
 
 func minScoreTriangulation(A []int) int {
-
+	return 0
 }

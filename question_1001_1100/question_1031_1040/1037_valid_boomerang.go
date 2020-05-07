@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 数学
 
 func isBoomerang(points [][]int) bool {
-
+	return false
 }

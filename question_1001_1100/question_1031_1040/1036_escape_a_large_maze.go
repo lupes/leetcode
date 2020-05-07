@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 广度优先搜索
 
 func isEscapePossible(blocked [][]int, source []int, target []int) bool {
-
+	return false
 }

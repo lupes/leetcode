@@ -5,5 +5,5 @@ package question_1031_1040
 // Topics: 数组
 
 func maxSumTwoNoOverlap(A []int, L int, M int) int {
-
+	return 0
 }

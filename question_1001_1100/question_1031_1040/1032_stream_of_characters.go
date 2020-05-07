@@ -8,11 +8,11 @@ type StreamChecker struct {
 }
 
 func Constructor(words []string) StreamChecker {
-
+	return StreamChecker{}
 }
 
 func (this *StreamChecker) Query(letter byte) bool {
-
+	return false
 }
 
 /**
