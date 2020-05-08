@@ -5,5 +5,17 @@ package question_1021_1030
 // Topics: 栈
 
 func removeOuterParentheses(S string) string {
-	return ""
+	var stack, res, start = make([]byte, 0), "", 0
+	for i, c := range S {
+		if c == '(' {
+			stack = append(stack, '(')
+		} else {
+			stack = stack[:len(stack)-1]
+			if len(stack) == 0 {
+				res += S[start+1 : i]
+				start = i + 1
+			}
+		}
+	}
+	return res
 }
