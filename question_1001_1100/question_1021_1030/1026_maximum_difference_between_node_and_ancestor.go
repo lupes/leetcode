@@ -9,5 +9,27 @@ import (
 )
 
 func maxAncestorDiff(root *TreeNode) int {
-	return 0
+	return maxAncestorDiffHelper(root, root.Val, root.Val)
+}
+
+func maxAncestorDiffHelper(root *TreeNode, max, min int) int {
+	if root == nil {
+		return 0
+	}
+	if root.Val > max {
+		max = root.Val
+	}
+	if root.Val < min {
+		min = root.Val
+	}
+	res := max - min
+	tmp := maxAncestorDiffHelper(root.Left, max, min)
+	if tmp > res {
+		res = tmp
+	}
+	tmp = maxAncestorDiffHelper(root.Right, max, min)
+	if tmp > res {
+		res = tmp
+	}
+	return res
 }
