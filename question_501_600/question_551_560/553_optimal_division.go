@@ -5,5 +5,5 @@ package question_551_560
 // Topics: 数学 字符串
 
 func optimalDivision(nums []int) string {
-    
+	return ""
 }

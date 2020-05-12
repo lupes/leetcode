@@ -4,6 +4,6 @@ package question_551_560
 // https://leetcode-cn.com/problems/student-attendance-record-ii
 // Topics: 动态规划
 
-func checkRecord(n int) int {
-    
+func checkRecord2(n int) int {
+	return 0
 }

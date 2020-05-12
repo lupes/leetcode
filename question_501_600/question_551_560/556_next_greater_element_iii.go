@@ -5,5 +5,5 @@ package question_551_560
 // Topics: 字符串
 
 func nextGreaterElement(n int) int {
-    
+	return 0
 }

@@ -5,5 +5,5 @@ package question_551_560
 // Topics: 数组 哈希表
 
 func subarraySum(nums []int, k int) int {
-    
+	return 0
 }
