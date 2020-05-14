@@ -9,5 +9,16 @@ import (
 )
 
 func bstToGst(root *TreeNode) *TreeNode {
-	return nil
+	bstToGstHelper(root, 0)
+	return root
+}
+
+func bstToGstHelper(root *TreeNode, n int) (t int) {
+	if root == nil {
+		return n
+	}
+	t = bstToGstHelper(root.Right, n) + root.Val
+	root.Val = t
+	t = bstToGstHelper(root.Left, t)
+	return t
 }
