@@ -5,5 +5,5 @@ package question_1041_1050
 // Topics: 动态规划
 
 func lastStoneWeightII(stones []int) int {
-
+	return 0
 }

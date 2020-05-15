@@ -5,5 +5,5 @@ package question_1041_1050
 // Topics: 数学
 
 func isRobotBounded(instructions string) bool {
-
+	return false
 }

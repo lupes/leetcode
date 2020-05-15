@@ -5,5 +5,5 @@ package question_1041_1050
 // Topics: 图
 
 func gardenNoAdj(N int, paths [][]int) []int {
-
+	return nil
 }

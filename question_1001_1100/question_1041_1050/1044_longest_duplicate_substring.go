@@ -5,5 +5,5 @@ package question_1041_1050
 // Topics: 哈希表 二分查找
 
 func longestDupSubstring(S string) string {
-
+	return ""
 }
