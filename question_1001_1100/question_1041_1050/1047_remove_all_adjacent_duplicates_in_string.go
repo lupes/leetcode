@@ -5,5 +5,14 @@ package question_1041_1050
 // Topics: 栈
 
 func removeDuplicates(S string) string {
-	return ""
+	var stack []byte
+	for _, c := range S {
+		c := byte(c)
+		if len(stack) > 0 && c == stack[len(stack)-1] {
+			stack = stack[:len(stack)-1]
+		} else {
+			stack = append(stack, c)
+		}
+	}
+	return string(stack)
 }
