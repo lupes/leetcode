@@ -5,5 +5,5 @@ package question_531_540
 // Topics: 数组 双指针
 
 func findPairs(nums []int, k int) int {
-    
+	return 0
 }

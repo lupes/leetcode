@@ -5,5 +5,5 @@ package question_531_540
 // Topics: 数学 字符串
 
 func complexNumberMultiply(a string, b string) string {
-    
+	return ""
 }
