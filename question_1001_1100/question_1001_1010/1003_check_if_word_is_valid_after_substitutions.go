@@ -5,5 +5,14 @@ package question_1001_1010
 // Topics: 栈 字符串
 
 func isValid(S string) bool {
-	return false
+	var stack []byte
+	for _, c := range S {
+		c, l := byte(c), len(stack)
+		if l > 1 && c == 'c' && stack[l-1] == 'b' && stack[l-2] == 'a' {
+			stack = stack[:l-2]
+		} else {
+			stack = append(stack, c)
+		}
+	}
+	return len(stack) == 0
 }
