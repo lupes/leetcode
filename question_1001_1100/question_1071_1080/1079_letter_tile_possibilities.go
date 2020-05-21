@@ -5,5 +5,5 @@ package question_1071_1080
 // Topics: 回溯算法
 
 func numTilePossibilities(tiles string) int {
-
+	return 0
 }

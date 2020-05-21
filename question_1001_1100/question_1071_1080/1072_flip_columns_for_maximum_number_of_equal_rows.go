@@ -5,5 +5,5 @@ package question_1071_1080
 // Topics: 哈希表
 
 func maxEqualRowsAfterFlips(matrix [][]int) int {
-
+	return 0
 }

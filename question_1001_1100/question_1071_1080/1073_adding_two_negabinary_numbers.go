@@ -5,5 +5,5 @@ package question_1071_1080
 // Topics: 数学
 
 func addNegabinary(arr1 []int, arr2 []int) []int {
-
+	return nil
 }
