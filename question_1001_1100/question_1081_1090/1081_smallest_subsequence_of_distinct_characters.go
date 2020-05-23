@@ -5,5 +5,5 @@ package question_1081_1090
 // Topics: 字符串
 
 func smallestSubsequence(text string) string {
-
+	return ""
 }

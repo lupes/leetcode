@@ -5,5 +5,5 @@ package question_1081_1090
 // Topics: 贪心算法 哈希表
 
 func largestValsFromLabels(values []int, labels []int, num_wanted int, use_limit int) int {
-
+	return 0
 }
