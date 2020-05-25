@@ -5,5 +5,5 @@ package question_1091_1100
 // Topics: 数学 双指针
 
 func sampleStats(count []int) []float64 {
-
+	return nil
 }

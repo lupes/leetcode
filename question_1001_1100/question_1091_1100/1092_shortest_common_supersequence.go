@@ -5,5 +5,5 @@ package question_1091_1100
 // Topics: 动态规划
 
 func shortestCommonSupersequence(str1 string, str2 string) string {
-
+	return ""
 }

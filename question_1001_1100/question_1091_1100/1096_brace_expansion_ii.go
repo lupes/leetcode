@@ -5,5 +5,5 @@ package question_1091_1100
 // Topics: 字符串
 
 func braceExpansionII(expression string) []string {
-
+	return nil
 }

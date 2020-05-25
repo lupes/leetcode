@@ -5,5 +5,5 @@ package question_1091_1100
 // Topics: 广度优先搜索
 
 func shortestPathBinaryMatrix(grid [][]int) int {
-
+	return 0
 }
