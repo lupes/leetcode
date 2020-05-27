@@ -5,5 +5,16 @@ package question_1101_1110
 // Topics: 数组 数学
 
 func corpFlightBookings(bookings [][]int, n int) []int {
-	return nil
+	var res = make([]int, n)
+	for _, booking := range bookings {
+		if booking[0] > n {
+			continue
+		}
+		for i := booking[0] - 1; i < booking[1]; i++ {
+			if i < n {
+				res[i] += booking[2]
+			}
+		}
+	}
+	return res
 }
