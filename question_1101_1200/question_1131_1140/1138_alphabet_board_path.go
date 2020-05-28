@@ -5,5 +5,5 @@ package question_1131_1140
 // Topics: 哈希表 字符串
 
 func alphabetBoardPath(target string) string {
-
+	return ""
 }

@@ -5,5 +5,5 @@ package question_1131_1140
 // Topics: 动态规划
 
 func largest1BorderedSquare(grid [][]int) int {
-
+	return 0
 }

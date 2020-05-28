@@ -5,5 +5,5 @@ package question_1131_1140
 // Topics: 动态规划
 
 func stoneGameII(piles []int) int {
-
+	return 0
 }
