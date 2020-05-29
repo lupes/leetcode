@@ -12,6 +12,7 @@ func Test_tribonacci(t *testing.T) {
 		{4, 4},
 		{25, 1389537},
 		{40, 12960201916},
+		{50, 5742568741225},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {
