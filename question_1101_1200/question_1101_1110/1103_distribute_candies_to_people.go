@@ -5,5 +5,12 @@ package question_1101_1110
 // Topics: 数学
 
 func distributeCandies(candies int, num_people int) []int {
-	return nil
+	var res = make([]int, num_people)
+	for i, num := 0, 1; candies > 0; i, num = i+1, num+1 {
+		if candies-num < 0 {
+			num = candies
+		}
+		res[i%num_people], candies = res[i%num_people]+num, candies-num
+	}
+	return res
 }
