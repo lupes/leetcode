@@ -8,11 +8,11 @@ type MajorityChecker struct {
 }
 
 func Constructor(arr []int) MajorityChecker {
-
+	return MajorityChecker{}
 }
 
 func (this *MajorityChecker) Query(left int, right int, threshold int) int {
-
+	return 0
 }
 
 /**

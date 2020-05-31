@@ -5,5 +5,5 @@ package question_1151_1160
 // Topics: 动态规划
 
 func numRollsToTarget(d int, f int, target int) int {
-
+	return 0
 }

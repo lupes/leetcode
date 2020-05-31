@@ -5,5 +5,5 @@ package question_1151_1160
 // Topics: 字符串
 
 func maxRepOpt1(text string) int {
-
+	return 0
 }

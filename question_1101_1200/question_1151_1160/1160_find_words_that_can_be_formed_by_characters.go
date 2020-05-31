@@ -5,5 +5,5 @@ package question_1151_1160
 // Topics: 数组 哈希表
 
 func countCharacters(words []string, chars string) int {
-
+	return 0
 }
