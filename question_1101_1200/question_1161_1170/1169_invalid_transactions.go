@@ -5,5 +5,5 @@ package question_1161_1170
 // Topics: 数组 字符串
 
 func invalidTransactions(transactions []string) []string {
-
+	return nil
 }

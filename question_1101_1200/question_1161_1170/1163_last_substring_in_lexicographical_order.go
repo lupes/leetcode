@@ -5,5 +5,5 @@ package question_1161_1170
 // Topics: 字符串
 
 func lastSubstring(s string) string {
-
+	return ""
 }

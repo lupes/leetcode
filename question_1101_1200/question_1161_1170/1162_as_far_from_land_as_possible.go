@@ -5,5 +5,5 @@ package question_1161_1170
 // Topics: 广度优先搜索 图
 
 func maxDistance(grid [][]int) int {
-
+	return 0
 }
