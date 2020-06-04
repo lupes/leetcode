@@ -5,5 +5,5 @@ package question_1181_1190
 // Topics: 动态规划
 
 func maximumSum(arr []int) int {
-
+	return 0
 }

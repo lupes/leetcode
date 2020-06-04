@@ -5,5 +5,5 @@ package question_1181_1190
 // Topics: 哈希表 字符串
 
 func maxNumberOfBalloons(text string) int {
-
+	return 0
 }

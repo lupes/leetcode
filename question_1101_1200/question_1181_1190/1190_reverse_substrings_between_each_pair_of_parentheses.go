@@ -5,5 +5,5 @@ package question_1181_1190
 // Topics: 栈
 
 func reverseParentheses(s string) string {
-
+	return ""
 }

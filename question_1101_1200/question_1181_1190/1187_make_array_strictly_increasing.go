@@ -5,5 +5,5 @@ package question_1181_1190
 // Topics: 动态规划
 
 func makeArrayIncreasing(arr1 []int, arr2 []int) int {
-
+	return 0
 }

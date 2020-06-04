@@ -5,5 +5,5 @@ package question_1181_1190
 // Topics: 数组
 
 func dayOfTheWeek(day int, month int, year int) string {
-
+	return ""
 }
