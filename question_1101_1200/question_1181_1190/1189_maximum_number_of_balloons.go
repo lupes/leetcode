@@ -5,5 +5,18 @@ package question_1181_1190
 // Topics: 哈希表 字符串
 
 func maxNumberOfBalloons(text string) int {
-	return 0
+	var flag = make(map[int32]int)
+	for _, c := range text {
+		flag[c]++
+	}
+	var min = len(text)
+	for _, c := range "balon" {
+		if c == 'l' || c == 'o' {
+			flag[c] /= 2
+		}
+		if flag[c] < min {
+			min = flag[c]
+		}
+	}
+	return min
 }
