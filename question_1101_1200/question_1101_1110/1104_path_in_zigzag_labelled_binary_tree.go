@@ -12,11 +12,8 @@ var tree = [][2]int{
 }
 
 func pathInZigZagTree(label int) []int {
-	var i, f = 0, [2]int{0, 0}
-	for i, f = range tree {
-		if f[1] >= label {
-			break
-		}
+	var i = 0
+	for i = 0; tree[i][1] < label; i++ {
 	}
 	var res = make([]int, i+1)
 	for ; i > 0; i-- {
