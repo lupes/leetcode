@@ -5,5 +5,5 @@ package question_1201_1210
 // Topics: 并查集 数组
 
 func smallestStringWithSwaps(s string, pairs [][]int) string {
-
+	return ""
 }

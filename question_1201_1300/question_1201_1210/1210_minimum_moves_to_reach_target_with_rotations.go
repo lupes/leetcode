@@ -5,5 +5,5 @@ package question_1201_1210
 // Topics: 广度优先搜索
 
 func minimumMoves(grid [][]int) int {
-
+	return 0
 }

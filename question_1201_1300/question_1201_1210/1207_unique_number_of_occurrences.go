@@ -5,5 +5,17 @@ package question_1201_1210
 // Topics: 哈希表
 
 func uniqueOccurrences(arr []int) bool {
-
+	var flag1 = make(map[int]int)
+	var flag2 = make(map[int]struct{})
+	for _, n := range arr {
+		flag1[n]++
+	}
+	for _, v := range flag1 {
+		if _, ok := flag2[v]; ok {
+			return false
+		} else {
+			flag2[v] = struct{}{}
+		}
+	}
+	return true
 }

@@ -5,5 +5,5 @@ package question_1201_1210
 // Topics: 数学 二分查找
 
 func nthUglyNumber(n int, a int, b int, c int) int {
-
+	return 0
 }

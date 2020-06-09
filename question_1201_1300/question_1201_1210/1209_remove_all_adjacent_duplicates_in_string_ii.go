@@ -5,5 +5,5 @@ package question_1201_1210
 // Topics: 栈
 
 func removeDuplicates(s string, k int) string {
-
+	return ""
 }
