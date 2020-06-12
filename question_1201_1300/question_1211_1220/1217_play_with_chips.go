@@ -5,5 +5,5 @@ package question_1211_1220
 // Topics: 贪心算法 数组 数学
 
 func minCostToMoveChips(chips []int) int {
-
+	return 0
 }

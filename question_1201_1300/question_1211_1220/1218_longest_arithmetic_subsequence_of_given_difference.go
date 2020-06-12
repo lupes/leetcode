@@ -5,5 +5,5 @@ package question_1211_1220
 // Topics: 数学 动态规划
 
 func longestSubsequence(arr []int, difference int) int {
-
+	return 0
 }

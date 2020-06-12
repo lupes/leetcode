@@ -5,5 +5,5 @@ package question_1211_1220
 // Topics: 动态规划
 
 func countVowelPermutation(n int) int {
-
+	return 0
 }
