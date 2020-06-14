@@ -5,5 +5,5 @@ package question_1221_1230
 // Topics: 贪心算法 字符串
 
 func balancedStringSplit(s string) int {
-
+	return 0
 }

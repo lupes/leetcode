@@ -5,5 +5,5 @@ package question_1221_1230
 // Topics: 动态规划
 
 func dieSimulator(n int, rollMax []int) int {
-
+	return 0
 }

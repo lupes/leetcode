@@ -5,5 +5,5 @@ package question_1221_1230
 // Topics: 脑筋急转弯 数学 动态规划
 
 func nthPersonGetsNthSeat(n int) float64 {
-
+	return 0
 }

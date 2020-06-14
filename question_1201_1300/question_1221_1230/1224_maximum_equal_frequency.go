@@ -5,5 +5,5 @@ package question_1221_1230
 // Topics: 哈希表
 
 func maxEqualFreq(nums []int) int {
-
+	return 0
 }
