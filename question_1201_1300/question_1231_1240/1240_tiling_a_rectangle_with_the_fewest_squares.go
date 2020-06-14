@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 动态规划 回溯算法
 
 func tilingRectangle(n int, m int) int {
-    
+	return 0
 }

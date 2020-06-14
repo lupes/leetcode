@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 位运算 回溯算法
 
 func maxLength(arr []string) int {
-    
+	return 0
 }

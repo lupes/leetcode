@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 数学
 
 func circularPermutation(n int, start int) []int {
-    
+	return nil
 }

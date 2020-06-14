@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 几何 数组 数学
 
 func checkStraightLine(coordinates [][]int) bool {
-    
+	return false
 }

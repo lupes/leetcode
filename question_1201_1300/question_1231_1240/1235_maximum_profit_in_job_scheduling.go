@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 排序 二分查找 动态规划
 
 func jobScheduling(startTime []int, endTime []int, profit []int) int {
-    
+	return 0
 }

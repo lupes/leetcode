@@ -5,5 +5,5 @@ package question_1231_1240
 // Topics: 双指针 字符串
 
 func balancedString(s string) int {
-    
+	return 0
 }
