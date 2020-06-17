@@ -5,5 +5,5 @@ package question_1251_1260
 // Topics: 位运算
 
 func maxScoreWords(words []string, letters []byte, score []int) int {
-
+	return 0
 }

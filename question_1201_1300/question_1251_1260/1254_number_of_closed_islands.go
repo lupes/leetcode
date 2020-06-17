@@ -5,5 +5,5 @@ package question_1251_1260
 // Topics: 深度优先搜索
 
 func closedIsland(grid [][]int) int {
-
+	return 0
 }

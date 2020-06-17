@@ -5,5 +5,5 @@ package question_1251_1260
 // Topics: 贪心算法 数学
 
 func reconstructMatrix(upper int, lower int, colsum []int) [][]int {
-
+	return nil
 }
