@@ -1,6 +1,10 @@
 package question_101_110
 
-import "testing"
+import (
+	"testing"
+
+	. "github.com/lupes/leetcode/common"
+)
 
 func Test_isBalanced(t *testing.T) {
 	tests := []struct {

@@ -4,6 +4,10 @@ package question_101_110
 // https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/
 // Topics: 树 深度优先搜索
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func sortedArrayToBST(nums []int) *TreeNode {
 	l := len(nums)
 	if l == 0 {

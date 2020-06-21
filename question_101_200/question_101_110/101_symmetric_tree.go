@@ -4,6 +4,10 @@ package question_101_110
 // https://leetcode-cn.com/problems/symmetric-tree/
 // Topics: 树 深度优先搜索 广度优先搜索
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func isSymmetric(root *TreeNode) bool {
 	var next = []*TreeNode{root}
 	for len(next) != 0 {

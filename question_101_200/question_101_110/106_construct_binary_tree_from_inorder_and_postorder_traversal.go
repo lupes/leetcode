@@ -12,6 +12,10 @@ package question_101_110
  *     Right *TreeNode
  * }
  */
-func buildTree(inorder []int, postorder []int) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func buildTree106(inorder []int, postorder []int) *TreeNode {
+	return nil
 }

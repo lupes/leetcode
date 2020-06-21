@@ -4,14 +4,26 @@ package question_101_110
 // https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
 // Topics: 树 深度优先搜索 数组
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func buildTree(preorder []int, inorder []int) *TreeNode {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func buildTree(preorder []int, inorder []int) *TreeNode {
+	if len(preorder) == 0 {
+		return nil
+	} else if len(preorder) == 1 {
+		return &TreeNode{Val: preorder[0]}
+	}
+	var node = &TreeNode{
+		Val: preorder[0],
+	}
+	i := 0
+	for ; i < len(inorder); i++ {
+		if inorder[i] == node.Val {
+			break
+		}
+	}
+	node.Left = buildTree(preorder[1:i+1], inorder[:i])
+	node.Right = buildTree(preorder[i+1:], inorder[i+1:])
+	return node
 }

@@ -4,6 +4,10 @@ package question_101_110
 // https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/
 // Topics: 树 广度优先搜索
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return nil

@@ -4,6 +4,10 @@ package question_101_110
 // https://leetcode-cn.com/problems/balanced-binary-tree/submissions/
 // Topics: 树 深度优先搜索
 
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func isBalanced(root *TreeNode) bool {
 	_, flag := maxDepth2(root)
 	return flag
