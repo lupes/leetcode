@@ -8,14 +8,18 @@ import (
 // https://leetcode-cn.com/problems/sum-root-to-leaf-numbers
 // Topics: 树 深度优先搜索
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
 func sumNumbers(root *TreeNode) int {
-	return 0
+	return sumNumbersHelper(root, 0)
+}
+
+func sumNumbersHelper(root *TreeNode, num int) int {
+	if root == nil {
+		return 0
+	}
+	num = num*10 + root.Val
+	if root.Left == nil && root.Right == nil {
+		return num
+	} else {
+		return sumNumbersHelper(root.Left, num) + sumNumbersHelper(root.Right, num)
+	}
 }
