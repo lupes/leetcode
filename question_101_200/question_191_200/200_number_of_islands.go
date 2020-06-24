@@ -5,5 +5,5 @@ package question_191_200
 // Topics: 深度优先搜索 广度优先搜索 并查集
 
 func numIslands(grid [][]byte) int {
-
+	return 0
 }
