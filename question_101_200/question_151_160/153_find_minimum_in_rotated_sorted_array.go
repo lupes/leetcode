@@ -5,20 +5,14 @@ package question_151_160
 // Topics: 数组 二分查找
 
 func findMin(nums []int) int {
-	l, r, min := 0, len(nums), 1<<63-1
+	l, r := 0, len(nums)-1
 	for r > l {
 		c := (l + r) / 2
-		if nums[c] > nums[l] {
-			if nums[l] < min {
-				min = nums[l]
-			}
+		if nums[c] > nums[r] {
 			l = c + 1
-		} else {
-			if nums[c] < min {
-				min = nums[c]
-			}
+		} else if nums[c] < nums[r] {
 			r = c
 		}
 	}
-	return min
+	return nums[l]
 }
