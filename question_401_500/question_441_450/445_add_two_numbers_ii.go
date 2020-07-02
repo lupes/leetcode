@@ -4,10 +4,9 @@ package question_441_450
 // https://leetcode-cn.com/problems/add-two-numbers-ii/comments/
 // Topics: 链表
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var r1, r2 []int

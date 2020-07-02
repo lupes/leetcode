@@ -5,5 +5,5 @@ package question_441_450
 // Topics: 哈希表
 
 func numberOfBoomerangs(points [][]int) int {
-    
+	return 0
 }

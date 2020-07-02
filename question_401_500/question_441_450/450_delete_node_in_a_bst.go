@@ -4,14 +4,10 @@ package question_441_450
 // https://leetcode-cn.com/problems/delete-node-in-a-bst
 // Topics: 树
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+import (
+	. "github.com/lupes/leetcode/common"
+)
+
 func deleteNode(root *TreeNode, key int) *TreeNode {
-    
+	return nil
 }

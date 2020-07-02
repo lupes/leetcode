@@ -5,5 +5,5 @@ package question_441_450
 // Topics: 动态规划
 
 func numberOfArithmeticSlices(A []int) int {
-    
+	return 0
 }
