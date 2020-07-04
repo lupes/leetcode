@@ -5,5 +5,5 @@ package question_411_420
 // Topics:
 
 func countBattleships(board [][]byte) int {
-
+	return 0
 }

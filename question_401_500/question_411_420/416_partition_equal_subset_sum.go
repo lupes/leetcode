@@ -5,5 +5,5 @@ package question_411_420
 // Topics: 动态规划
 
 func canPartition(nums []int) bool {
-
+	return false
 }

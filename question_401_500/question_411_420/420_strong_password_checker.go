@@ -5,5 +5,5 @@ package question_411_420
 // Topics:
 
 func strongPasswordChecker(s string) int {
-
+	return 0
 }
