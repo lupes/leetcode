@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 哈希表
 
 func longestPalindrome(s string) int {
-
+	return 0
 }

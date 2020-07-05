@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 贪心算法
 
 func reconstructQueue(people [][]int) [][]int {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 堆 广度优先搜索
 
 func trapRainWater(heightMap [][]int) int {
-
+	return 0
 }

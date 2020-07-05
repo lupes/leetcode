@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 栈 贪心算法
 
 func removeKdigits(num string, k int) string {
-
+	return ""
 }

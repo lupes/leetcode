@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 二分查找 动态规划
 
 func splitArray(nums []int, m int) int {
-
+	return 0
 }

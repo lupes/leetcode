@@ -5,5 +5,5 @@ package question_401_410
 // Topics: 动态规划
 
 func canCross(stones []int) bool {
-
+	return false
 }
