@@ -18,6 +18,7 @@ func Test_removeKdigits(t *testing.T) {
 		{"10200", 1, "200"},
 		{"10200", 2, "0"},
 		{"10", 2, "0"},
+		{"100", 1, "0"},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {

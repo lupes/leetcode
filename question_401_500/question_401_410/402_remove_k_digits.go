@@ -14,15 +14,13 @@ func removeKdigits(num string, k int) string {
 			stack = stack[:len(stack)-1]
 			k--
 		} else {
-			stack = append(stack, num[i])
+			if len(stack) != 0 || num[i] != '0' {
+				stack = append(stack, num[i])
+			}
 			i++
 		}
 	}
-	for _, n := range stack {
-		if (len(res) == 0 && n != '0') || (len(res) != 0) {
-			res += string(n)
-		}
-	}
+	res = string(stack)
 	if k > 0 && k < len(res) {
 		res = res[:len(res)-k]
 	} else if len(res) == 0 {
