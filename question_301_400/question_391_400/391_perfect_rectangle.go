@@ -5,5 +5,5 @@ package question_391_400
 // Topics: None
 
 func isRectangleCover(rectangles [][]int) bool {
-
+	return false
 }

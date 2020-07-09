@@ -5,5 +5,5 @@ package question_391_400
 // Topics: 并查集 图
 
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
-
+	return nil
 }

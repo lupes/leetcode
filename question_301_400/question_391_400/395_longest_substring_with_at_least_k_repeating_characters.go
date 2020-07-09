@@ -5,5 +5,5 @@ package question_391_400
 // Topics:
 
 func longestSubstring(s string, k int) int {
-
+	return 0
 }
