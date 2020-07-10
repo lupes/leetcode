@@ -5,5 +5,5 @@ package question_431_440
 // Topics:
 
 func findKthNumber(n int, k int) int {
-
+	return 0
 }

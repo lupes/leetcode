@@ -5,5 +5,5 @@ package question_431_440
 // Topics: 贪心算法
 
 func eraseOverlapIntervals(intervals [][]int) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_431_440
 // Topics:
 
 func minMutation(start string, end string, bank []string) int {
-
+	return 0
 }

@@ -5,5 +5,5 @@ package question_431_440
 // Topics: 哈希表
 
 func findAnagrams(s string, p string) []int {
-
+	return nil
 }

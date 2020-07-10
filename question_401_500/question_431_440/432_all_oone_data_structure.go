@@ -9,7 +9,7 @@ type AllOne struct {
 
 /** Initialize your data structure here. */
 func Constructor() AllOne {
-
+	return AllOne{}
 }
 
 /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */
@@ -24,12 +24,12 @@ func (this *AllOne) Dec(key string) {
 
 /** Returns one of the keys with maximal value. */
 func (this *AllOne) GetMaxKey() string {
-
+	return ""
 }
 
 /** Returns one of the keys with Minimal value. */
 func (this *AllOne) GetMinKey() string {
-
+	return ""
 }
 
 /**
