@@ -5,5 +5,5 @@ package question_421_430
 // Topics: 数学
 
 func originalDigits(s string) string {
-    
+	return ""
 }

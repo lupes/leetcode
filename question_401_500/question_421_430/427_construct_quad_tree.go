@@ -1,18 +1,18 @@
-# 427. 建立四叉树
-// https://leetcode-cn.com/problems/construct-quad-tree
-// Topics: 
+package question_421_430
 
-"""
-# Definition for a QuadTree node.
-class Node:
-    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
-        self.val = val
-        self.isLeaf = isLeaf
-        self.topLeft = topLeft
-        self.topRight = topRight
-        self.bottomLeft = bottomLeft
-        self.bottomRight = bottomRight
-"""
-class Solution:
-    def construct(self, grid: List[List[int]]) -> 'Node':
-        
+// 427. 建立四叉树
+// https://leetcode-cn.com/problems/construct-quad-tree
+// Topics:
+
+type Node2 struct {
+	Val         bool
+	IsLeaf      bool
+	TopLeft     *Node
+	TopRight    *Node
+	BottomLeft  *Node
+	BottomRight *Node
+}
+
+func construct(grid [][]int) *Node2 {
+	return nil
+}

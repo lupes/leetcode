@@ -5,5 +5,5 @@ package question_421_430
 // Topics: 双指针 None
 
 func characterReplacement(s string, k int) int {
-    
+	return 0
 }
