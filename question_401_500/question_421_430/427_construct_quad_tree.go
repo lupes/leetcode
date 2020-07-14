@@ -7,10 +7,10 @@ package question_421_430
 type Node2 struct {
 	Val         bool
 	IsLeaf      bool
-	TopLeft     *Node
-	TopRight    *Node
-	BottomLeft  *Node
-	BottomRight *Node
+	TopLeft     *Node2
+	TopRight    *Node2
+	BottomLeft  *Node2
+	BottomRight *Node2
 }
 
 func construct(grid [][]int) *Node2 {

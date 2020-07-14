@@ -6,9 +6,9 @@ package question_421_430
 
 type Node3 struct {
 	Val   int
-	Prev  *Node
-	Next  *Node
-	Child *Node
+	Prev  *Node3
+	Next  *Node3
+	Child *Node3
 }
 
 func flatten(root *Node3) *Node3 {
