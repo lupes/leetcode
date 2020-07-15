@@ -9,5 +9,24 @@ import (
 )
 
 func deleteNode(root *TreeNode, key int) *TreeNode {
-	return nil
+	if root == nil {
+		return nil
+	}
+	if root.Val == key {
+		if root.Left == nil {
+			return root.Right
+		} else {
+			now := root.Left
+			for now.Right != nil {
+				now = now.Right
+			}
+			now.Right = root.Right
+			return root.Left
+		}
+	} else if key < root.Val {
+		root.Left = deleteNode(root.Left, key)
+	} else if key > root.Val {
+		root.Right = deleteNode(root.Right, key)
+	}
+	return root
 }
