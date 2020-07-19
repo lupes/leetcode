@@ -5,5 +5,14 @@ package question_451_460
 // Topics: 数学
 
 func minMoves(nums []int) int {
-	return 0
+	var min, res = nums[0], 0
+	for i, n := range nums {
+		if n < min {
+			res += (min - n) * i
+			min = n
+		} else {
+			res += n - min
+		}
+	}
+	return res
 }
