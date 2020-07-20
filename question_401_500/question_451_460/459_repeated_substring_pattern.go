@@ -5,5 +5,11 @@ package question_451_460
 // Topics: 字符串
 
 func repeatedSubstringPattern(s string) bool {
+	t := s + s
+	for i := 1; i < len(s); i++ {
+		if s == t[i:len(s)+i] {
+			return true
+		}
+	}
 	return false
 }
