@@ -9,5 +9,24 @@ import (
 )
 
 func convertBST(root *TreeNode) *TreeNode {
-	return nil
+	if root == nil {
+		return nil
+	}
+	convertBSTHelper(root, 0)
+	return root
+}
+
+func convertBSTHelper(root *TreeNode, n int) int {
+	if root.Right == nil && root.Left == nil {
+		root.Val += n
+		return root.Val
+	}
+	if root.Right != nil {
+		n = convertBSTHelper(root.Right, n)
+	}
+	root.Val += n
+	if root.Left != nil {
+		return convertBSTHelper(root.Left, root.Val)
+	}
+	return root.Val
 }
