@@ -5,5 +5,5 @@ package question_751_760
 // Topics: 深度优先搜索 数学
 
 func crackSafe(n int, k int) string {
-
+	return ""
 }

@@ -5,5 +5,5 @@ package question_751_760
 // Topics: 位运算 深度优先搜索
 
 func pyramidTransition(bottom string, allowed []string) bool {
-
+	return false
 }

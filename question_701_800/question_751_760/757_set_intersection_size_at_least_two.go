@@ -5,5 +5,5 @@ package question_751_760
 // Topics: 贪心算法
 
 func intersectionSizeTwo(intervals [][]int) int {
-
+	return 0
 }
