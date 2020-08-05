@@ -8,8 +8,7 @@ func reachNumber(target int) int {
 	if target < 0 {
 		target *= -1
 	}
-	var tmp = 0
-	for i := 1; ; i++ {
+	for i, tmp := 1, 0; ; i++ {
 		tmp += i
 		if tmp == target || (tmp > target && (tmp-target)%2 == 0) {
 			return i
