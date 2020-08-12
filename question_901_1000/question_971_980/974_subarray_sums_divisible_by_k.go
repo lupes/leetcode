@@ -5,5 +5,13 @@ package question_971_980
 // Topics: 数组 哈希表
 
 func subarraysDivByK(A []int, K int) int {
-	return 0
+	var res, sum, flag = 0, 0, make(map[int]int)
+	flag[0] = 1
+	for i := 0; i < len(A); i++ {
+		sum += A[i]
+		mod := (sum%K + K) % K
+		res += flag[mod]
+		flag[mod]++
+	}
+	return res
 }
