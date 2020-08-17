@@ -5,5 +5,13 @@ package question_991_1000
 // Topics: 贪心算法 数学
 
 func brokenCalc(X int, Y int) int {
-	return 0
+	var res = 0
+	for ; Y > X; res++ {
+		if Y%2 == 0 {
+			Y /= 2
+		} else {
+			Y += 1
+		}
+	}
+	return res + X - Y
 }
