@@ -5,17 +5,14 @@ package question_991_1000
 // Topics: 图
 
 func findJudge(N int, trust [][]int) int {
-	if N == 1 {
-		return 1
-	}
-	var flagA, flagB = make(map[int][]int), make(map[int]struct{})
+	var flag = make([][2]int, N+1)
 	for _, tmp := range trust {
-		flagA[tmp[1]] = append(flagA[tmp[1]], tmp[0])
-		flagB[tmp[0]] = struct{}{}
+		flag[tmp[1]][0]++
+		flag[tmp[0]][1]++
 	}
-	for k, v := range flagA {
-		if _, ok := flagB[k]; len(v) == N-1 && !ok {
-			return k
+	for k, v := range flag[1:] {
+		if v[0] == N-1 && v[1] == 0 {
+			return k + 1
 		}
 	}
 	return -1

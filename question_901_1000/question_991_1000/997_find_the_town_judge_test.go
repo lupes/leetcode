@@ -10,6 +10,7 @@ func Test_findJudge(t *testing.T) {
 		trust [][]int
 		want  int
 	}{
+		{1, [][]int{}, 1},
 		{2, [][]int{{1, 2}}, 2},
 		{3, [][]int{{1, 3}, {2, 3}}, 3},
 		{3, [][]int{{1, 3}, {2, 3}, {3, 1}}, -1},
