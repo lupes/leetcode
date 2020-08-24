@@ -5,5 +5,39 @@ package question_1011_1020
 // Topics: 数组 二分查找
 
 func shipWithinDays(weights []int, D int) int {
-	return 0
+	min, max := 0, 0
+	for _, w := range weights {
+		if w > min {
+			min = w
+		}
+		max += w
+	}
+	for max > min {
+		weight := (max + min) / 2
+		d := shipWithinDaysHelper(weights, weight)
+
+		if d > D {
+			min = weight + 1
+		} else {
+			max = weight
+		}
+	}
+	return min
+}
+
+func shipWithinDaysHelper(weights []int, weight int) int {
+	var r, t = 0, 0
+	for i := 0; i < len(weights); {
+		if t+weights[i] <= weight {
+			t += weights[i]
+			i++
+		} else {
+			t = 0
+			r++
+		}
+	}
+	if t > 0 {
+		r++
+	}
+	return r
 }
