@@ -5,5 +5,5 @@ package question_1171_1180
 // Topics: 位运算 哈希表
 
 func findNumOfValidWords(words []string, puzzles []string) []int {
-
+	return nil
 }

@@ -8,7 +8,7 @@ type DinnerPlates struct {
 }
 
 func Constructor(capacity int) DinnerPlates {
-
+	return DinnerPlates{}
 }
 
 func (this *DinnerPlates) Push(val int) {
@@ -16,11 +16,11 @@ func (this *DinnerPlates) Push(val int) {
 }
 
 func (this *DinnerPlates) Pop() int {
-
+	return 0
 }
 
 func (this *DinnerPlates) PopAtStack(index int) int {
-
+	return 0
 }
 
 /**

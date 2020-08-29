@@ -5,5 +5,5 @@ package question_1171_1180
 // Topics: 数组 字符串
 
 func canMakePaliQueries(s string, queries [][]int) []bool {
-
+	return nil
 }

@@ -5,5 +5,5 @@ package question_1171_1180
 // Topics: 数学
 
 func numPrimeArrangements(n int) int {
-
+	return 0
 }
