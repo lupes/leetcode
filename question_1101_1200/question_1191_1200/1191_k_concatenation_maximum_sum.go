@@ -5,5 +5,5 @@ package question_1191_1200
 // Topics: 动态规划
 
 func kConcatenationMaxSum(arr []int, k int) int {
-
+	return 0
 }

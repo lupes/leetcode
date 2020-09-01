@@ -5,5 +5,5 @@ package question_1191_1200
 // Topics: 深度优先搜索
 
 func criticalConnections(n int, connections [][]int) [][]int {
-
+	return nil
 }
