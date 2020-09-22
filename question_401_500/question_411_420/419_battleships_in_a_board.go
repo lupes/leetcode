@@ -5,5 +5,16 @@ package question_411_420
 // Topics:
 
 func countBattleships(board [][]byte) int {
-	return 0
+	var res = 0
+	for i, row := range board {
+		for j, c := range row {
+			if c == 'X' {
+				if (i == 0 || (i > 0 && board[i-1][j] == '.')) && (j == 0 || (j > 0 && board[i][j-1] == '.')) {
+					res++
+				}
+				board[i][j] = '+'
+			}
+		}
+	}
+	return res
 }
