@@ -8,7 +8,7 @@ type RandomizedCollection struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() RandomizedCollection {
+func Constructor1() RandomizedCollection {
 	return RandomizedCollection{}
 }
 

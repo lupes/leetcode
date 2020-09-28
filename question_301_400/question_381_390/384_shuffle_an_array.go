@@ -8,23 +8,23 @@ import (
 // https://leetcode-cn.com/problems/shuffle-an-array
 // Topics:
 
-type Solution struct {
+type Solution4 struct {
 	src []int
 }
 
-func Constructor(nums []int) Solution {
-	return Solution{
+func Constructor4(nums []int) Solution4 {
+	return Solution4{
 		src: nums,
 	}
 }
 
 /** Resets the array to its original configuration and return it. */
-func (this *Solution) Reset() []int {
+func (this *Solution4) Reset() []int {
 	return this.src
 }
 
 /** Returns a random shuffling of the array. */
-func (this *Solution) Shuffle() []int {
+func (this *Solution4) Shuffle() []int {
 	var res = make([]int, 0, len(this.src))
 	var tmp = make([]int, len(this.src))
 	copy(tmp, this.src)
