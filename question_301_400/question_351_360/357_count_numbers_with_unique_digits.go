@@ -5,5 +5,5 @@ package question_351_360
 // Topics: 数学 动态规划 回溯算法
 
 func countNumbersWithUniqueDigits(n int) int {
-
+	return 0
 }

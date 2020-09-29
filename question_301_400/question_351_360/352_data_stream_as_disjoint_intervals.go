@@ -8,8 +8,8 @@ type SummaryRanges struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() SummaryRanges {
-
+func Constructor2() SummaryRanges {
+	return SummaryRanges{}
 }
 
 func (this *SummaryRanges) AddNum(val int) {
@@ -17,7 +17,7 @@ func (this *SummaryRanges) AddNum(val int) {
 }
 
 func (this *SummaryRanges) GetIntervals() [][]int {
-
+	return nil
 }
 
 /**

@@ -5,5 +5,5 @@ package question_351_360
 // Topics: 二分查找 动态规划
 
 func maxEnvelopes(envelopes [][]int) int {
-
+	return 0
 }
