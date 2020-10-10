@@ -1,57 +1,44 @@
-# 284. 顶端迭代器
+package question_281_290
+
+// 284. 顶端迭代器
 // https://leetcode-cn.com/problems/peeking-iterator
 // Topics: 设计
 
-# Below is the interface for Iterator, which is already defined for you.
-#
-# class Iterator:
-#     def __init__(self, nums):
-#         """
-#         Initializes an iterator object to the beginning of a list.
-#         :type nums: List[int]
-#         """
-#
-#     def hasNext(self):
-#         """
-#         Returns true if the iteration has more elements.
-#         :rtype: bool
-#         """
-#
-#     def next(self):
-#         """
-#         Returns the next element in the iteration.
-#         :rtype: int
-#         """
+type Iterator struct {
+	arr []int
+}
 
-class PeekingIterator:
-    def __init__(self, iterator):
-        """
-        Initialize your data structure here.
-        :type iterator: Iterator
-        """
-        
+func (this *Iterator) hasNext() bool {
+	return len(this.arr) != 0
+}
+func (this *Iterator) next() int {
+	tmp := this.arr[0]
+	this.arr = this.arr[1:]
+	return tmp
+}
 
-    def peek(self):
-        """
-        Returns the next element in the iteration without advancing the iterator.
-        :rtype: int
-        """
-        
+type PeekingIterator struct {
+	arr []int
+}
 
-    def next(self):
-        """
-        :rtype: int
-        """
-        
+func Constructor(iter *Iterator) *PeekingIterator {
+	this := &PeekingIterator{}
+	for iter.hasNext() {
+		this.arr = append(this.arr, iter.next())
+	}
+	return this
+}
 
-    def hasNext(self):
-        """
-        :rtype: bool
-        """
-        
+func (this *PeekingIterator) hasNext() bool {
+	return len(this.arr) != 0
+}
 
-# Your PeekingIterator object will be instantiated and called as such:
-# iter = PeekingIterator(Iterator(nums))
-# while iter.hasNext():
-#     val = iter.peek()   # Get the next element but not advance the iterator.
-#     iter.next()         # Should return the same value as [val].
+func (this *PeekingIterator) next() int {
+	tmp := this.arr[0]
+	this.arr = this.arr[1:]
+	return tmp
+}
+
+func (this *PeekingIterator) peek() int {
+	return this.arr[0]
+}

@@ -5,5 +5,5 @@ package question_281_290
 // Topics: 分治算法
 
 func addOperators(num string, target int) []string {
-    
+	return nil
 }

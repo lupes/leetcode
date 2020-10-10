@@ -5,5 +5,5 @@ package question_281_290
 // Topics: 哈希表
 
 func wordPattern(pattern string, str string) bool {
-    
+	return false
 }
