@@ -4,6 +4,8 @@ package question_231_240
 // https://leetcode-cn.com/problems/palindrome-linked-list/
 // Topics: 链表 双指针
 
+import . "github.com/lupes/leetcode/common"
+
 func isPalindrome(head *ListNode) bool {
 	var arr []*ListNode
 	for t := head; t != nil; t = t.Next {

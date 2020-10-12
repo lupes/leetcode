@@ -3,6 +3,8 @@ package question_231_240
 import (
 	"reflect"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_deleteNode(t *testing.T) {

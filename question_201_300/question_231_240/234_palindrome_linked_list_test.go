@@ -2,6 +2,8 @@ package question_231_240
 
 import (
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_isPalindrome(t *testing.T) {

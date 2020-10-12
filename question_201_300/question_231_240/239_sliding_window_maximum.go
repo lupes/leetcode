@@ -5,5 +5,5 @@ package question_231_240
 // Topics: 堆 None
 
 func maxSlidingWindow(nums []int, k int) []int {
-
+	return nil
 }
