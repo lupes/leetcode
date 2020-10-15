@@ -7,5 +7,14 @@ package question_231_240
 import . "github.com/lupes/leetcode/common"
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	return nil
+	if root == nil {
+		return nil
+	}
+	if root.Val > p.Val && root.Val > q.Val {
+		return lowestCommonAncestor(root.Left, p, q)
+	}
+	if root.Val < p.Val && root.Val < q.Val {
+		return lowestCommonAncestor(root.Right, p, q)
+	}
+	return root
 }
