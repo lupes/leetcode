@@ -5,5 +5,5 @@ package question_331_340
 // Topics: 数学
 
 func isSelfCrossing(x []int) bool {
-
+	return false
 }

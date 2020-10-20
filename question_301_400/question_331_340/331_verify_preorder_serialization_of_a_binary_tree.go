@@ -5,5 +5,5 @@ package question_331_340
 // Topics: 栈
 
 func isValidSerialization(preorder string) bool {
-
+	return false
 }

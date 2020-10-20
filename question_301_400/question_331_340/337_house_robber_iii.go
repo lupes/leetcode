@@ -4,14 +4,10 @@ package question_331_340
 // https://leetcode-cn.com/problems/house-robber-iii
 // Topics: 树 深度优先搜索
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func rob(root *TreeNode) int {
+import (
+	. "github.com/lupes/leetcode/common"
+)
 
+func rob(root *TreeNode) int {
+	return 0
 }
