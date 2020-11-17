@@ -10,10 +10,8 @@ import (
 
 func isPossible(target []int) bool {
 	l := len(target) - 1
-	if l == 0 && target[0] == 1 {
-		return true
-	} else if l == 0 {
-		return false
+	if l == 0 {
+		return target[0] == 1
 	}
 	sort.Ints(target)
 
