@@ -9,43 +9,39 @@ import (
 // Topics: 堆 贪心算法
 
 func findMaximizedCapital(k int, W int, Profits []int, Capital []int) int {
-	var res = W
-	var tmp = make(map[int][]int, 0)
+	var projects, available = make([][2]int, 0, len(Profits)/2), make([][2]int, 0, len(Profits)/2)
 	for i, c := range Capital {
-		tmp[c] = append(tmp[c], Profits[i])
-	}
-	for k, v := range tmp {
-		sort.Slice(v, func(i, j int) bool {
-			return v[i] > v[j]
-		})
-		tmp[k] = v
-	}
-	var stack = make(map[int][]int, 0)
-	for k > 0 {
-		for c, v := range tmp {
-			if c <= res {
-				stack[c] = v
-				delete(tmp, c)
-			}
-		}
-		max, index := 0, -1
-		for c, v := range stack {
-			if v[0] > max {
-				max = v[0]
-				index = c
-			}
-		}
-		if index != -1 {
-			res += max
-			if len(stack[index]) == 1 {
-				delete(stack, index)
-			} else {
-				stack[index] = stack[index][1:]
-			}
-			k--
+		if c <= W {
+			available = append(available, [2]int{Profits[i], Capital[i]})
 		} else {
-			return res
+			projects = append(projects, [2]int{Profits[i], Capital[i]})
 		}
 	}
-	return res
+	sort.Slice(available, func(i, j int) bool {
+		return available[i][0] > available[j][0]
+	})
+
+	sort.Slice(projects, func(i, j int) bool {
+		return projects[i][1] < projects[j][1]
+	})
+
+	for ; k > 0 && len(available) > 0; k-- {
+		if len(projects) == 0 {
+			for ; k > 0 && len(available) > 0; k-- {
+				W, available = W+available[0][0], available[1:]
+			}
+			return W
+		}
+
+		W, available = W+available[0][0], available[1:]
+		for len(projects) > 0 && projects[0][1] <= W {
+			available = append(available, projects[0])
+			for k := len(available) - 1; k > 0 && available[k][0] > available[k-1][0]; k-- {
+				available[k], available[k-1] = available[k-1], available[k]
+			}
+			projects = projects[1:]
+		}
+	}
+
+	return W
 }
