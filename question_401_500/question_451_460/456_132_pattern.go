@@ -9,17 +9,15 @@ import (
 // Topics: 栈
 
 func find132pattern(nums []int) bool {
-	var stack []int
-	min := -math.MaxInt64
+	var stack, min, l = make([]int, 0), -math.MaxInt64, 0
 	for i := len(nums) - 1; i >= 0; i-- {
 		if nums[i] < min {
 			return true
 		}
-		for len(stack) > 0 && nums[i] > stack[len(stack)-1] {
-			min = stack[len(stack)-1]
-			stack = stack[:len(stack)-1]
+		for l > 0 && nums[i] > stack[l-1] {
+			stack, min, l = stack[:l-1], stack[l-1], l-1
 		}
-		stack = append(stack, nums[i])
+		stack, l = append(stack, nums[i]), l+1
 	}
 	return false
 }
