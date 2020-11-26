@@ -1,9 +1,5 @@
 package question_341_350
 
-import (
-	"math"
-)
-
 // https://leetcode-cn.com/problems/integer-break/
 
 // 343. 整数拆分
@@ -11,15 +7,17 @@ import (
 // Topics: 数学 动态规划
 
 func integerBreak(n int) int {
-	m := int(math.Sqrt(float64(n)))
-	if m == 1 {
-		return m * (n - m)
+	var dp = make([]int, n+1)
+	for i := 2; i <= n; i++ {
+		for j := 1; j < i; j++ {
+			t := j * (i - j)
+			if j*dp[i-j] > t {
+				t = j * dp[i-j]
+			}
+			if t > dp[i] {
+				dp[i] = t
+			}
+		}
 	}
-	t := m
-	d := n - m*m
-	if d > m {
-		d = n - m*(m+1)
-		m = m + 1
-	}
-	return int(math.Pow(float64(m), float64(t-d)) * math.Pow(float64(m+1), float64(d)))
+	return dp[n]
 }
