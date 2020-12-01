@@ -5,18 +5,18 @@ package question_11_20
 // Topics: 数组 双指针
 
 func maxArea(height []int) int {
-	size := len(height)
-	var h, max, tmp, j int
-	for i := 0; i < size-1; i++ {
-		for j = i + 1; j < size; j++ {
-			h = height[i]
-			if height[i] > height[j] {
-				h = height[j]
-			}
-			tmp = h * (j - i)
-			if tmp > max {
-				max = tmp
-			}
+	max, h := 0, 0
+	for left, right := 0, len(height)-1; left < right; {
+		w := right - left
+		if height[left] > height[right] {
+			h = height[right]
+			right--
+		} else {
+			h = height[left]
+			left++
+		}
+		if h*w > max {
+			max = h * w
 		}
 	}
 	return max
