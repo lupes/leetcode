@@ -3,6 +3,8 @@ package question_0011_0020
 import (
 	"reflect"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 var lists1 = []*ListNode{
