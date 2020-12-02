@@ -9,24 +9,18 @@ func longestCommonPrefix(strs []string) string {
 		return ""
 	}
 	longPrefix := strs[0]
-	for i := 1; i < len(strs); i++ {
-		if strs[i] == "" {
-			return ""
-		}
-		size := len(longPrefix)
-		if len(strs[i]) < size {
-			size = len(strs[i])
-			longPrefix = longPrefix[:size]
-		}
-		for j := 0; j < size; j++ {
-			if longPrefix[j] != strs[i][j] {
-				longPrefix = longPrefix[0:j]
-				if longPrefix == "" {
-					return ""
-				}
-				break
-			}
+	for _, str := range strs {
+		if len(str) < len(longPrefix) {
+			longPrefix = str
 		}
 	}
-	return longPrefix
+	for i := len(longPrefix); i >= 0; i-- {
+		j := 0
+		for ; j < len(strs) && strs[j][:i] == longPrefix[:i]; j++ {
+		}
+		if j == len(strs) {
+			return longPrefix[:i]
+		}
+	}
+	return ""
 }
