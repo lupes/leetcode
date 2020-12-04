@@ -7,28 +7,19 @@ import (
 	. "github.com/lupes/leetcode/common"
 )
 
-var lists1 = []*ListNode{
-	{Val: 1, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5}}},
-	{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}},
-	{Val: 2, Next: &ListNode{Val: 6}},
-}
-
-var want1 = &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: nil}}}}}}}}
-
 func Test_mergeKLists(t *testing.T) {
-	type args struct {
-		lists []*ListNode
-	}
 	tests := []struct {
-		name string
-		args args
-		want *ListNode
+		lists []*ListNode
+		want  *ListNode
 	}{
-		{"test#1", args{lists1}, want1},
+		{
+			[]*ListNode{NewList(1, 4, 5), NewList(1, 3, 4), NewList(2, 6)},
+			NewList(1, 1, 2, 3, 4, 4, 5, 6),
+		},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := mergeKLists(tt.args.lists); !reflect.DeepEqual(got, tt.want) {
+		t.Run("test", func(t *testing.T) {
+			if got := mergeKLists(tt.lists); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("mergeKLists() = %v, want %v", got, tt.want)
 			}
 		})
