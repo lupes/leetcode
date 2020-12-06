@@ -1,42 +1,47 @@
 package question_0011_0020
 
-import (
-	"reflect"
-	"sort"
-)
-
 // 30. 串联所有单词的子串
 // https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words
 // Topics: 哈希表 双指针 字符串
 
-func findSubstring(s string, words []string) []int {
-	if s == "" {
-		return nil
+func findSubstringHelper(wordMap map[string]int, s string, l int) bool {
+	if len(s) == 0 && len(wordMap) == 0 {
+		return true
 	}
-	if len(words) == 0 {
-		return nil
-	}
-	if words[0] == "" {
-		return nil
-	}
-	var res []int
-	sort.Strings(words)
-	size := len(s)
-	wordCount := len(words)
-	wordLen := len(words[0])
-	tmp := make([]string, wordCount, wordCount)
-	for i := 0; i < wordLen; i++ {
-		var ss []string
-		for j := 0; i+(j+1)*wordLen <= size; j++ {
-			ss = append(ss, s[i+j*wordLen:i+(j+1)*wordLen])
+	var res bool
+	n, ok := wordMap[s[:l]]
+	if ok && n > 0 {
+		wordMap[s[:l]]--
+		if n == 1 {
+			delete(wordMap, s[:l])
 		}
-		for j := 0; j <= len(ss)-wordCount; j++ {
-			copy(tmp, ss[j:j+wordCount])
-			sort.Strings(tmp)
-			if reflect.DeepEqual(tmp, words) {
-				res = append(res, i+j*wordLen)
+		res = findSubstringHelper(wordMap, s[l:], l)
+		wordMap[s[:l]]++
+	}
+	return res
+}
+
+func findSubstring(s string, words []string) []int {
+	if s == "" || len(words) == 0 || words[0] == "" {
+		return nil
+	}
+
+	wordMap := make(map[string]int, len(words))
+	for _, word := range words {
+		wordMap[word]++
+	}
+
+	wordLen, wordsLen := len(words[0]), len(words)
+
+	var res []int
+	for i := 0; i <= len(s)-wordLen*wordsLen; i++ {
+		if _, ok := wordMap[s[i:i+wordLen]]; ok {
+			flag := findSubstringHelper(wordMap, s[i:i+wordLen*wordsLen], wordLen)
+			if flag {
+				res = append(res, i)
 			}
 		}
 	}
+
 	return res
 }
