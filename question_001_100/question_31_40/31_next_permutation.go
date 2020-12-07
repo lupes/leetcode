@@ -10,42 +10,20 @@ import (
 
 func nextPermutation(nums []int) {
 	size := len(nums)
-	if size < 2 {
-		return
-	}
 
-	var (
-		min      int
-		minIndex int
-		big      int
-		bigIndex int
-	)
-
-	for i := size - 1; i >= 0; i-- {
-		if i == 0 {
-			minIndex = -1
-			break
+	for i := size - 2; i >= 0; i-- {
+		min, index := 101, -1
+		for j := i + 1; j < size; j++ {
+			if nums[j] > nums[i] && nums[j] < min {
+				min, index = nums[j], j
+			}
 		}
-		if nums[i] > nums[i-1] {
-			min = nums[i-1]
-			minIndex = i - 1
-			big = nums[i]
-			bigIndex = i
-			break
-		}
-	}
-	if minIndex == -1 {
-		sort.Ints(nums)
-		return
-	}
-
-	for i := bigIndex + 1; i < size; i++ {
-		if big > nums[i] && nums[i] > min {
-			bigIndex = i
-			big = nums[i]
+		if index != -1 {
+			nums[i], nums[index] = nums[index], nums[i]
+			sort.Ints(nums[i+1:])
+			return
 		}
 	}
 
-	nums[minIndex], nums[bigIndex] = nums[bigIndex], nums[minIndex]
-	sort.Ints(nums[minIndex+1:])
+	sort.Ints(nums)
 }
