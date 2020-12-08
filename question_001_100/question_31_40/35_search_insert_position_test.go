@@ -3,24 +3,24 @@ package question_31_40
 import "testing"
 
 func Test_searchInsert(t *testing.T) {
-	type args struct {
+	tests := []struct {
 		nums   []int
 		target int
-	}
-	tests := []struct {
-		name string
-		args args
-		want int
+		want   int
 	}{
-		{"test#0", args{[]int{}, 5}, 0},
-		{"test#1", args{[]int{1, 3, 5, 6}, 5}, 2},
-		{"test#2", args{[]int{1, 3, 5, 6}, 2}, 1},
-		{"test#3", args{[]int{1, 3, 5, 6}, 7}, 4},
-		{"test#4", args{[]int{1, 3, 5, 6}, 0}, 0},
+		{[]int{}, 1, 0},
+		{[]int{1, 3, 5, 7}, 0, 0},
+		{[]int{1, 3, 5, 6}, 1, 0},
+		{[]int{1, 3, 5, 6}, 2, 1},
+		{[]int{1, 3, 5, 6}, 3, 1},
+		{[]int{1, 3, 5, 6}, 4, 2},
+		{[]int{1, 3, 5, 6}, 5, 2},
+		{[]int{1, 3, 5, 6}, 6, 3},
+		{[]int{1, 3, 5, 6}, 7, 4},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := searchInsert(tt.args.nums, tt.args.target); got != tt.want {
+		t.Run("test", func(t *testing.T) {
+			if got := searchInsert(tt.nums, tt.target); got != tt.want {
 				t.Errorf("searchInsert() = %v, want %v", got, tt.want)
 			}
 		})

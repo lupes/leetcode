@@ -5,12 +5,17 @@ package question_31_40
 // Topics: 数组 二分查找
 
 func searchInsert(nums []int, target int) int {
-	i := -1
-	num := 0
-	for i, num = range nums {
-		if num >= target {
-			return i
+	left, right := 0, len(nums)
+	for right > left {
+		mid := (left + right) / 2
+		if nums[mid] == target {
+			return mid
+		} else if nums[mid] > target {
+			right = mid
+		} else {
+			left = mid + 1
 		}
 	}
-	return i + 1
+
+	return right
 }
