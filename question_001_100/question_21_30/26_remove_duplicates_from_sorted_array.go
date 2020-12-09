@@ -5,19 +5,15 @@ package question_0011_0020
 // Topics: 数组 双指针
 
 func removeDuplicates(nums []int) int {
-	size := len(nums)
-	if size < 2 {
-		return size
+	if len(nums) < 2 {
+		return len(nums)
 	}
-	index := 0
-	for i, v := range nums {
-		if i == 0 || v == nums[index] {
-			continue
-		}
-		index++
-		if i != index {
-			nums[index] = v
+	slow, fast := 0, 1
+	for ; fast < len(nums); fast++ {
+		if nums[fast] != nums[slow] {
+			slow++
+			nums[slow] = nums[fast]
 		}
 	}
-	return index + 1
+	return slow + 1
 }
