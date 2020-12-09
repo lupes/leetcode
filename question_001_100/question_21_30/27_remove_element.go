@@ -5,13 +5,11 @@ package question_0011_0020
 // Topics: 数组 双指针
 
 func removeElement(nums []int, val int) int {
-	index := 0
-	for _, v := range nums {
-		if v == val {
-			continue
+	slow := 0
+	for _, n := range nums {
+		if n != val {
+			nums[slow], slow = n, slow+1
 		}
-		nums[index] = v
-		index++
 	}
-	return index
+	return slow
 }
