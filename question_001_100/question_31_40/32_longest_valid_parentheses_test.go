@@ -14,6 +14,7 @@ func Test_longestValidParentheses(t *testing.T) {
 		{"test#3", "(()", 2},
 		{"test#4", ")()())", 4},
 		{"test#5", "(()())", 6},
+		{"test#5", "())()", 2},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
