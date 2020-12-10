@@ -9,22 +9,18 @@ import (
 // Topics: 字符串
 
 func countAndSay(n int) string {
-	tmp := ""
-	result := "1"
+	result := "1 "
 	for i := 2; i <= n; i++ {
-		c := 1
-		t := result[0]
+		n, c, tmp := 1, result[0], ""
 		for j := 1; j < len(result); j++ {
-			if t == result[j] {
-				c++
-				continue
+			if c == result[j] {
+				n++
+			} else {
+				tmp += strconv.Itoa(n) + string(c)
+				n, c = 1, result[j]
 			}
-			tmp += strconv.Itoa(c) + string(t)
-			c = 1
-			t = result[j]
 		}
-		result = tmp + strconv.Itoa(c) + string(t)
-		tmp = ""
+		result = tmp + " "
 	}
-	return result
+	return result[:len(result)-1]
 }
