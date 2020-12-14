@@ -2,6 +2,8 @@ package question_91_100
 
 import (
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_isValidBST(t *testing.T) {

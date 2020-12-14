@@ -1,6 +1,10 @@
 package question_91_100
 
-import "testing"
+import (
+	"testing"
+
+	. "github.com/lupes/leetcode/common"
+)
 
 func Test_isSameTree(t *testing.T) {
 	var (

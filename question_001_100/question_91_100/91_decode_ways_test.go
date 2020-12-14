@@ -22,7 +22,6 @@ func Test_numDecodings(t *testing.T) {
 		{"test", "1010", 1},
 		{"test", "226", 3},
 		{"test", "2260", 0},
-		{"test", "2260", 0},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -5,25 +5,22 @@ package question_91_100
 // Topics: 字符串 动态规划
 
 func numDecodings(s string) int {
-	if (len(s) == 1 && s[0] == '0') || (len(s) == 2 && s[0] > '2' && s[1] == '0') {
+	if len(s) == 0 || (len(s) > 0 && s[0] == '0') {
 		return 0
 	}
-	if len(s) < 2 {
-		return 1
-	}
-
-	if (s[0] > '2' && s[1] == '0') || s[0] == '0' {
-		return 0
-	} else if s[0] > '2' || (len(s) > 2 && s[2] == '0') {
-		return numDecodings(s[1:])
-	} else if (s[0] == '2' && s[1] > '6') || s[1] == '0' {
-		return numDecodings(s[2:])
-	} else {
-		n1 := numDecodings(s[1:])
-		n2 := numDecodings(s[2:])
-		if n1 == 0 || n2 == 0 {
+	var flag = make([]int, len(s)+1)
+	flag[0], flag[1] = 1, 1
+	for i := 1; i < len(s); i++ {
+		n := (s[i-1]-'0')*10 + s[i] - '0'
+		if n == 0 || (n > 20 && n%10 == 0) {
 			return 0
+		} else if n == 10 || n == 20 {
+			flag[i+1] = flag[i-1]
+		} else if (n > 0 && n < 10) || n > 26 {
+			flag[i+1] = flag[i]
+		} else if n > 10 && n < 27 {
+			flag[i+1] = flag[i] + flag[i-1]
 		}
-		return n1 + n2
 	}
+	return flag[len(s)]
 }

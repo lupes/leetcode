@@ -3,6 +3,8 @@ package question_91_100
 import (
 	"reflect"
 	"testing"
+
+	. "github.com/lupes/leetcode/common"
 )
 
 func Test_inorderTraversal(t *testing.T) {
