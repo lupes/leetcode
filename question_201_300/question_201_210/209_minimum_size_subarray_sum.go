@@ -5,20 +5,22 @@ package question_201_210
 // Topics: 数组 双指针 二分查找
 
 func minSubArrayLen(s int, nums []int) int {
-	min := len(nums) + 1
-	for i, _ := range nums {
-		t := 0
-		for j := i; j < len(nums); j++ {
-			t += nums[j]
-			if t >= s {
-				if j-i+1 < min {
-					min = j - i + 1
-				}
-				break
-			}
+	nums = append(nums, 0)
+	min := len(nums)
+	left, right, sum := 0, 0, 0
+	for right < len(nums) {
+		if sum < s {
+			sum += nums[right]
+			right++
+		} else {
+			sum -= nums[left]
+			left++
+		}
+		if sum >= s && min > right-left {
+			min = right - left
 		}
 	}
-	if min == len(nums)+1 {
+	if min == len(nums) {
 		return 0
 	}
 	return min
