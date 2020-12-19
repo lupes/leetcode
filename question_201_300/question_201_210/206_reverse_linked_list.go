@@ -5,11 +5,9 @@ package question_201_210
 // Topics: 链表
 
 func reverseList(head *ListNode) *ListNode {
-	next := head
-	head = &ListNode{}
-	for next != nil {
-		t := next.Next
-		next.Next, next, head.Next = head.Next, t, next
+	var res = &ListNode{}
+	for next := head; next != nil; {
+		next.Next, next, res.Next = res.Next, next.Next, next
 	}
-	return head.Next
+	return res.Next
 }
