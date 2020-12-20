@@ -5,12 +5,12 @@ package question_211_220
 // Topics: 数组 哈希表
 
 func containsNearbyDuplicate(nums []int, k int) bool {
-	for i := 0; i < len(nums); i++ {
-		for j := 1; j <= k && i+j < len(nums); j++ {
-			if nums[i] == nums[i+j] {
-				return true
-			}
+	var flag = make(map[int]int)
+	for i, n := range nums {
+		if j, ok := flag[n]; ok && i-j <= k {
+			return true
 		}
+		flag[n] = i
 	}
 	return false
 }
