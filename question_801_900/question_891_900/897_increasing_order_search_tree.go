@@ -9,5 +9,23 @@ import (
 )
 
 func increasingBST(root *TreeNode) *TreeNode {
-	return &TreeNode{}
+	nums := increasingBSTDfs(root)
+	return increasingBSTCreate(nums)
+}
+
+func increasingBSTDfs(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+	nums := increasingBSTDfs(root.Left)
+	nums = append(nums, root.Val)
+	nums = append(nums, increasingBSTDfs(root.Right)...)
+	return nums
+}
+
+func increasingBSTCreate(nums []int) *TreeNode {
+	if len(nums) == 0 {
+		return nil
+	}
+	return &TreeNode{Val: nums[0], Right: increasingBSTCreate(nums[1:])}
 }
