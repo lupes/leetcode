@@ -5,5 +5,19 @@ package question_1041_1050
 // Topics: 动态规划
 
 func lastStoneWeightII(stones []int) int {
-	return 0
+	sum, tmp := 0, 0
+	for _, stone := range stones {
+		sum += stone
+	}
+	target := sum / 2
+	var dp = make([]int, sum+1)
+	for i := range stones {
+		for j := target; j >= stones[i]; j-- {
+			tmp = dp[j-stones[i]] + stones[i]
+			if dp[j] < tmp {
+				dp[j] = tmp
+			}
+		}
+	}
+	return sum - dp[target] - dp[target]
 }
