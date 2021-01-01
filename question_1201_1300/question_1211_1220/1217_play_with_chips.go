@@ -5,5 +5,17 @@ package question_1211_1220
 // Topics: 贪心算法 数组 数学
 
 func minCostToMoveChips(chips []int) int {
-	return 0
+	var odd, even, min = 0, 0, 0
+	for _, n := range chips {
+		if n%2 == 0 {
+			even++
+		} else {
+			odd++
+		}
+	}
+	min = odd
+	if even < min {
+		min = even
+	}
+	return min
 }
