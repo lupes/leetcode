@@ -5,5 +5,5 @@ package question_1241_1250
 // Topics: 贪心算法 字符串
 
 func minimumSwap(s1 string, s2 string) int {
-
+	return 0
 }

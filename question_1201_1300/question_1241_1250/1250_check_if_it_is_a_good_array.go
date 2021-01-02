@@ -5,5 +5,5 @@ package question_1241_1250
 // Topics: 数学
 
 func isGoodArray(nums []int) bool {
-
+	return false
 }

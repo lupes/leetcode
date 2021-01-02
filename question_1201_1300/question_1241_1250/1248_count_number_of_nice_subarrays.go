@@ -5,5 +5,5 @@ package question_1241_1250
 // Topics: 双指针
 
 func numberOfSubarrays(nums []int, k int) int {
-
+	return 0
 }
