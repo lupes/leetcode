@@ -11,10 +11,8 @@ func closedIsland(grid [][]int) int {
 	var res = 0
 	for r, row := range grid {
 		for c, n := range row {
-			if n == 0 {
-				if closedIslandDFS(grid, lr, lc, r, c) {
-					res++
-				}
+			if n == 0 && closedIslandDFS(grid, lr, lc, r, c) {
+				res++
 			}
 		}
 	}
