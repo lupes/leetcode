@@ -5,5 +5,5 @@ package question_311_320
 // Topics: 分治算法 动态规划
 
 func maxCoins(nums []int) int {
-
+	return 0
 }

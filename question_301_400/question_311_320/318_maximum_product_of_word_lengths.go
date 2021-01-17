@@ -5,5 +5,5 @@ package question_311_320
 // Topics: 位运算
 
 func maxProduct(words []string) int {
-
+	return 0
 }

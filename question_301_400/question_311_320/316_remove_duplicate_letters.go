@@ -5,5 +5,5 @@ package question_311_320
 // Topics: 栈 贪心算法
 
 func removeDuplicateLetters(s string) string {
-
+	return ""
 }
