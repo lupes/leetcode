@@ -9,32 +9,31 @@ func minNumberOfFrogs(croakOfFrogs string) int {
 		return -1
 	}
 
-	var flag = map[string]int{"": len(croakOfFrogs), "c": 0, "cr": 0, "cro": 0, "croa": 0, "croak": 0}
-	var m = map[int32]string{'c': "", 'r': "c", 'o': "cr", 'a': "cro", 'k': "croa"}
-
-	var res, tmp = 0, 0
-	for _, c := range croakOfFrogs {
-		if flag[m[c]] == 0 {
-			return -1
-		}
-
-		flag[m[c]]--
-		flag[m[c]+string(c)]++
-
-		if c == 'c' {
-			tmp += 1
+	var c, r, o, a, k, res, tmp int
+	for _, char := range croakOfFrogs {
+		switch char {
+		case 'c':
+			c, tmp = c+1, tmp+1
 			if tmp > res {
 				res = tmp
 			}
-		} else if c == 'k' {
-			tmp--
+		case 'r':
+			r++
+		case 'o':
+			o++
+		case 'a':
+			a++
+		case 'k':
+			k, tmp = k+1, tmp-1
+		}
+
+		if !(c >= r && r >= o && o >= a && a >= k) {
+			return -1
 		}
 	}
 
-	for k, n := range flag {
-		if k != "" && k != "croak" && n > 0 {
-			return -1
-		}
+	if c != r || r != o || o != a || a != k {
+		return -1
 	}
 
 	return res
