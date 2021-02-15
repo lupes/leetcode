@@ -5,37 +5,35 @@ package question_1471_1480
 // Topics: 设计
 
 type BrowserHistory struct {
-	now     string
-	back    []string
-	forward []string
+	now     int
+	history []string
 }
 
 func Constructor(homepage string) BrowserHistory {
 	return BrowserHistory{
-		now:     homepage,
-		back:    nil,
-		forward: nil,
+		now:     0,
+		history: []string{homepage},
 	}
 }
 
 func (this *BrowserHistory) Visit(url string) {
-	this.back = append(this.back, this.now)
-	this.now = url
-	this.forward = nil
+	this.now++
+	this.history = this.history[:this.now]
+	this.history = append(this.history, url)
 }
 
 func (this *BrowserHistory) Back(steps int) string {
-	for i := 0; i < steps && 0 < len(this.back); i++ {
-		this.forward = append(this.forward, this.now)
-		this.now, this.back = this.back[len(this.back)-1], this.back[:len(this.back)-1]
+	this.now -= steps
+	if this.now < 0 {
+		this.now = 0
 	}
-	return this.now
+	return this.history[this.now]
 }
 
 func (this *BrowserHistory) Forward(steps int) string {
-	for i := 0; i < steps && 0 < len(this.forward); i++ {
-		this.back = append(this.back, this.now)
-		this.now, this.forward = this.forward[len(this.forward)-1], this.forward[:len(this.forward)-1]
+	this.now += steps
+	if this.now >= len(this.history) {
+		this.now = len(this.history) - 1
 	}
-	return this.now
+	return this.history[this.now]
 }
