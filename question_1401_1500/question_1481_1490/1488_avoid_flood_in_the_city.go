@@ -6,17 +6,16 @@ package question_1481_1490
 
 func avoidFlood(rains []int) []int {
 	var flag = make(map[int]int)
-	var res = make([]int, len(rains))
 	for i, n := range rains {
 		if n == 0 {
-			res[i] = -2
+			rains[i] = -2
 		} else if n > 0 {
-			res[i] = -1
+			rains[i] = -1
 			if t, ok := flag[n]; ok {
 				success := false
 				for j := t + 1; j < i; j++ {
-					if res[j] == -2 {
-						res[j] = n
+					if rains[j] == -2 {
+						rains[j] = n
 						success = true
 						break
 					}
@@ -29,11 +28,11 @@ func avoidFlood(rains []int) []int {
 		}
 	}
 
-	for i, n := range res {
+	for i, n := range rains {
 		if n == -2 {
-			res[i] = 1
+			rains[i] = 1
 		}
 	}
 
-	return res
+	return rains
 }
