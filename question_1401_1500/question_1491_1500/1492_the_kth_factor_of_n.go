@@ -1,6 +1,6 @@
 package question_1491_1500
 
-// 1481. 不同整数的最少数目
+// 1492. n 的第 k 个因子
 // https://leetcode-cn.com/problems/the-kth-factor-of-n/
 // Topics: 数学
 
