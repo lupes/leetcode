@@ -1,8 +1,8 @@
 package question_1531_1540
 
-// 1524. 和为奇数的子数组数目
-// https://leetcode-cn.com/problems/number-of-sub-arrays-with-odd-sum/
-// Topics: 数学 数组
+// 1535. 找出数组游戏的赢家
+// https://leetcode-cn.com/problems/find-the-winner-of-an-array-game/
+// Topics: 数组
 
 func getWinner(arr []int, k int) int {
 	var res, num = arr[0], 0
