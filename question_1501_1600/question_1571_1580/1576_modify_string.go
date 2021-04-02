@@ -8,10 +8,7 @@ func modifyString(s string) string {
 	tmp := []byte("z" + s + "?")
 	for i := 1; i < len(tmp)-1; i++ {
 		if tmp[i] == '?' {
-			t := byte(0)
-			if t == tmp[i-1]-'a' {
-				t = (t + 1) % 26
-			}
+			t := (tmp[i-1] - 'a' + 1) % 26
 			if t == tmp[i+1]-'a' {
 				t = (t + 1) % 26
 			}

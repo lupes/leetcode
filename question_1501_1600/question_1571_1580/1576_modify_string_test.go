@@ -10,9 +10,10 @@ func Test_modifyString(t *testing.T) {
 		want string
 	}{
 		{"?zs", "azs"},
-		{"ubv?w", "ubvaw"},
-		{"j?qg??b", "jaqgacb"},
-		{"??yw?ipkj?", "abywaipkja"},
+		{"b?a", "bca"},
+		{"ubv?w", "ubvxw"},
+		{"j?qg??b", "jkqghib"},
+		{"??yw?ipkj?", "abywxipkjk"},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {
