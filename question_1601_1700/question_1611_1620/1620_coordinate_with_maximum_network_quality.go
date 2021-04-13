@@ -9,26 +9,26 @@ import (
 // Topics: 贪心算法
 
 func bestCoordinate(towers [][]int, radius int) []int {
-	maxX, minX, maxY, minY := 0, 0, 0, 0
+	maxX, minX, maxY, minY := 0, 100, 0, 100
 	for _, t := range towers {
-		if t[0]+radius > maxX {
-			maxX = t[0] + radius
+		if t[0] > maxX {
+			maxX = t[0]
 		}
-		if t[0]-radius >= 0 && t[0]-radius < minX {
-			minX = t[0] - radius
+		if t[0] < minX {
+			minX = t[0]
 		}
-		if t[1]+radius > maxY {
-			maxY = t[1] + radius
+		if t[1] > maxY {
+			maxY = t[1]
 		}
-		if t[1]-radius >= 0 && t[1]-radius < minY {
-			minY = t[1] - radius
+		if t[1] < minY {
+			minY = t[1]
 		}
 	}
 
 	var max = 0
 	var res = []int{0, 0}
-	for i := minX; i < maxX; i++ {
-		for j := minY; j < maxY; j++ {
+	for i := minX; i <= maxX; i++ {
+		for j := minY; j <= maxY; j++ {
 			var tmp = 0
 			for _, t := range towers {
 				a := (t[0]-i)*(t[0]-i) + (t[1]-j)*(t[1]-j)
