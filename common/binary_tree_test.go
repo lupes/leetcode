@@ -7,7 +7,6 @@ import (
 )
 
 func TestNewNodeV2(t *testing.T) {
-	var a int = Inf
 	tests := []struct {
 		v    []int
 		want *TreeNode
