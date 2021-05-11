@@ -5,15 +5,15 @@ package question_1671_1680
 // Topics: 哈希表
 
 func maxOperations(nums []int, k int) int {
-	var flag, res = make(map[int]int), 0
+	var flag, tmp, res = make(map[int]int), 0, 0
 	for _, num := range nums {
-		flag[num] += 1
-		if k-num > 0 {
-			t := k - num
-			if (t == num && flag[num] > 1) || (t != num && flag[t] > 0 && flag[num] > 0) {
+		tmp = k - num
+		if tmp > 0 {
+			if flag[tmp] > 0 {
 				res += 1
-				flag[num] -= 1
-				flag[t] -= 1
+				flag[tmp] -= 1
+			} else {
+				flag[num] += 1
 			}
 		}
 	}
