@@ -25,20 +25,20 @@ func construct(grid [][]int) *Node2 {
 	return quadTree(grid, 0, len(grid), 0, len(grid))
 }
 
-func quadTree(grid [][]int, h, hl, w, wl int) *Node2 {
-	if wl-w == 1 {
+func quadTree(grid [][]int, rowLow, rowHigh, colLow, colHigh int) *Node2 {
+	if colHigh-colLow == 1 {
 		return &Node2{
-			Val:    grid[h][w] == 1,
+			Val:    grid[rowLow][colLow] == 1,
 			IsLeaf: true,
 		}
 	}
 	root := &Node2{Val: true, IsLeaf: false}
 
-	diff := (wl - w) / 2
-	root.TopLeft = quadTree(grid, h, hl-diff, w, wl-diff)
-	root.TopRight = quadTree(grid, h, hl-diff, w+diff, wl)
-	root.BottomLeft = quadTree(grid, h+diff, hl, w, wl-diff)
-	root.BottomRight = quadTree(grid, h+diff, hl, w+diff, wl)
+	diff := (colHigh - colLow) / 2
+	root.TopLeft = quadTree(grid, rowLow, rowHigh-diff, colLow, colHigh-diff)
+	root.TopRight = quadTree(grid, rowLow, rowHigh-diff, colLow+diff, colHigh)
+	root.BottomLeft = quadTree(grid, rowLow+diff, rowHigh, colLow, colHigh-diff)
+	root.BottomRight = quadTree(grid, rowLow+diff, rowHigh, colLow+diff, colHigh)
 
 	if root.TopLeft.IsLeaf && root.TopRight.IsLeaf && root.BottomLeft.IsLeaf && root.BottomRight.IsLeaf &&
 		((root.TopLeft.Val && root.TopRight.Val && root.BottomLeft.Val && root.BottomRight.Val) ||
