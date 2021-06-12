@@ -13,7 +13,7 @@ func Test_findAnagrams(t *testing.T) {
 	}{
 		{"cbaebabacd", "abc", []int{0, 6}},
 		{"abab", "ab", []int{0, 1, 2}},
-		{"a", "b", []int{}},
+		{"a", "aa", nil},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {

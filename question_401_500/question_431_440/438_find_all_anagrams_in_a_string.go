@@ -5,25 +5,26 @@ package question_431_440
 // Topics: 哈希表
 
 func findAnagrams(s string, p string) []int {
-	if len(p) > len(s) {
+	var res, ls, lp = make([]int, 0), len(s), len(p)
+	if lp > ls {
 		return nil
 	}
-	var res, l, flag, tmp = make([]int, 0), len(p), make(map[byte]int, 26), make(map[byte]int, 26)
+	var sFlag, pFlag = make([]int, 'z'+1), make([]int, 'z'+1)
 	for i := range p {
-		flag[p[i]]++
-		tmp[s[i]]++
+		pFlag[p[i]]++
+		sFlag[s[i]]++
 	}
-	tmp[s[l-1]]--
-	for i := l - 1; i < len(s); i++ {
-		tmp[s[i]]++
-		for j := byte('a'); j <= 'z'; j++ {
-			if flag[j] != tmp[j] {
+	sFlag[s[lp-1]]--
+	for i := lp - 1; i < ls; i++ {
+		sFlag[s[i]]++
+		for j := 'a'; j <= 'z'; j++ {
+			if pFlag[j] != sFlag[j] {
 				goto Next
 			}
 		}
-		res = append(res, i-l+1)
+		res = append(res, i-lp+1)
 	Next:
-		tmp[s[i-l+1]]--
+		sFlag[s[i-lp+1]]--
 	}
 	return res
 }
