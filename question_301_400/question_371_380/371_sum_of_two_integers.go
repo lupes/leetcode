@@ -5,5 +5,8 @@ package question_371_380
 // Topics: 位运算
 
 func getSum(a int, b int) int {
-	return 0
+	for b != 0 {
+		a, b = a^b, a&b<<1
+	}
+	return a
 }
