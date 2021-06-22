@@ -5,5 +5,10 @@ package question_521_530
 // Topics: 字符串
 
 func findLUSlength(a string, b string) int {
-	return 0
+	if len(a) > len(b) {
+		return len(a)
+	} else if a != b {
+		return len(b)
+	}
+	return -1
 }
