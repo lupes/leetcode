@@ -7,5 +7,24 @@ package question_221_230
 import . "github.com/lupes/leetcode/common"
 
 func kthSmallest(root *TreeNode, k int) int {
-	return 0
+	_, n := kthSmallestHelper(root, k, 0)
+	return n
+}
+
+func kthSmallestHelper(root *TreeNode, k, count int) (int, int) {
+	if root == nil {
+		return count, -1
+	}
+	leftCount, n := kthSmallestHelper(root.Left, k, count)
+	if n != -1 {
+		return 0, n
+	}
+	if leftCount == k-1 {
+		return 0, root.Val
+	}
+	RightCount, n := kthSmallestHelper(root.Right, k, leftCount+1)
+	if n != -1 {
+		return 0, n
+	}
+	return RightCount, -1
 }
