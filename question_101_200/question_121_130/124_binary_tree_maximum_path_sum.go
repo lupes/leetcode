@@ -9,5 +9,28 @@ import (
 // Topics: 树 深度优先搜索
 
 func maxPathSum(root *TreeNode) int {
-	return 0
+	_, max := maxPathSumHelp(root)
+	return max
+}
+
+func maxFunc(max int, args ...int) int {
+	for _, arg := range args {
+		if arg > max {
+			max = arg
+		}
+	}
+	return max
+}
+
+func maxPathSumHelp(root *TreeNode) (int, int) {
+	if root == nil {
+		return -1001, -1001
+	}
+
+	leftMax, leftSum := maxPathSumHelp(root.Left)
+	rightMax, rightSum := maxPathSumHelp(root.Right)
+
+	var max = maxFunc(root.Val, leftMax+root.Val, rightMax+root.Val)
+	var sum = maxFunc(root.Val, leftSum, rightSum, leftMax+root.Val, rightMax+root.Val, leftMax+root.Val+rightMax)
+	return max, sum
 }
