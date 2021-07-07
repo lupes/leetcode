@@ -5,24 +5,25 @@ package question_671_680
 // Topics: 字典树
 
 type MapSum struct {
+	m map[string]int
 }
 
-/** Initialize your data structure here. */
 func Constructor() MapSum {
-	return MapSum{}
+	return MapSum{
+		m: make(map[string]int, 40),
+	}
 }
 
 func (this *MapSum) Insert(key string, val int) {
-	return
+	this.m[key] = val
 }
 
 func (this *MapSum) Sum(prefix string) int {
-	return 0
+	var sum, l = 0, len(prefix)
+	for k, v := range this.m {
+		if len(k) >= l && k[:l] == prefix {
+			sum += v
+		}
+	}
+	return sum
 }
-
-/**
- * Your MapSum object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Insert(key,val);
- * param_2 := obj.Sum(prefix);
- */
