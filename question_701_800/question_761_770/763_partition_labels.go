@@ -5,18 +5,17 @@ package question_761_770
 // Topics: 贪心算法 双指针
 
 func partitionLabels(S string) []int {
-	var sumMap = ['z' + 1]int{}
+	var flag = ['z' + 1]int{}
 	for i := range S {
-		sumMap[S[i]] = i
+		flag[S[i]] = i
 	}
 
 	var res []int
-	var start, end = 0, -1
-	for end+1 < len(S) {
-		start, end = end+1, sumMap[S[end+1]]
+	for start, end := 0, 0; start < len(S); start = end + 1 {
+		end = flag[S[start]]
 		for i := start; i < end; i++ {
-			if sumMap[S[i]] > end {
-				end = sumMap[S[i]]
+			if flag[S[i]] > end {
+				end = flag[S[i]]
 			}
 		}
 		res = append(res, end-start+1)
