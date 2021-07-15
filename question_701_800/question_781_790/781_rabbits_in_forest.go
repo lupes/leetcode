@@ -5,5 +5,14 @@ package question_781_790
 // Topics: 哈希表 数学
 
 func numRabbits(answers []int) int {
-	return 0
+	var res, flag = 0, make(map[int]int)
+	for _, n := range answers {
+		flag[n]++
+		if flag[n] == 1 {
+			res += n + 1
+		} else if flag[n] == n+1 {
+			flag[n] = 0
+		}
+	}
+	return res
 }
