@@ -9,5 +9,14 @@ import (
 )
 
 func numComponents(head *ListNode, G []int) int {
-	return 0
+	var cnt, flag = 0, make(map[int]bool, len(G))
+	for _, g := range G {
+		flag[g] = true
+	}
+	for next := head; next != nil; next = next.Next {
+		if flag[next.Val] && (next.Next == nil || !flag[next.Next.Val]) {
+			cnt++
+		}
+	}
+	return cnt
 }
