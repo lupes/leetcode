@@ -5,5 +5,21 @@ package question_881_890
 // Topics: 数学
 
 func projectionArea(grid [][]int) int {
-	return 0
+	var res, rows, cols = 0, make([]int, len(grid)), make([]int, len(grid))
+	for i, row := range grid {
+		for j, c := range row {
+			if c > rows[i] {
+				res = res - rows[i] + c
+				rows[i] = c
+			}
+			if c > cols[j] {
+				res = res - cols[j] + c
+				cols[j] = c
+			}
+			if c > 0 {
+				res += 1
+			}
+		}
+	}
+	return res
 }
