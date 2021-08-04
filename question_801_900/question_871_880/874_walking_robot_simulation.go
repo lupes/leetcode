@@ -1,17 +1,13 @@
 package question_871_880
 
-import (
-	"strconv"
-)
-
 // 874. 模拟行走机器人
 // https://leetcode-cn.com/problems/walking-robot-simulation
 // Topics: 贪心算法
 
 func robotSim(commands []int, obstacles [][]int) int {
-	var flag = make(map[string]struct{})
+	var flag = make(map[[2]int]struct{}, len(obstacles))
 	for _, obstacle := range obstacles {
-		flag[strconv.Itoa(obstacle[0])+","+strconv.Itoa(obstacle[1])] = struct{}{}
+		flag[[2]int{obstacle[0], obstacle[1]}] = struct{}{}
 	}
 	var x, y, t, max = 0, 0, 0, 0
 	xd, yd := [4]int{0, 1, 0, -1}, [4]int{1, 0, -1, 0}
@@ -22,7 +18,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 			t = (t + 3) % 4
 		} else {
 			for i := 0; i < command; i++ {
-				if _, ok := flag[strconv.Itoa(x+xd[t])+","+strconv.Itoa(y+yd[t])]; ok {
+				if _, ok := flag[[2]int{x + xd[t], y + yd[t]}]; ok {
 					break
 				} else {
 					x, y = x+xd[t], y+yd[t]
