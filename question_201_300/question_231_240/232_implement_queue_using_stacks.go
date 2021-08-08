@@ -1,42 +1,83 @@
 package question_231_240
 
+import (
+	"fmt"
+)
+
 // 232. 用栈实现队列
 // https://leetcode-cn.com/problems/implement-queue-using-stacks
 // Topics: 栈 设计
 
-type MyQueue struct {
+type stack []int
+
+func (self *stack) push(v int) {
+	*self = append(*self, v)
 }
 
-/** Initialize your data structure here. */
+func (self *stack) pop() int {
+	if !self.empty() {
+		v := (*self)[0]
+		*self = (*self)[1:]
+		return v
+	}
+	return -1
+}
+
+func (self *stack) peek() int {
+	if !self.empty() {
+		return (*self)[0]
+	}
+	return -1
+}
+
+func (self stack) size() int {
+	return len(self)
+}
+
+func (self stack) empty() bool {
+	return len(self) == 0
+}
+
+type MyQueue struct {
+	left  stack
+	right stack
+}
+
 func Constructor() MyQueue {
 	return MyQueue{}
 }
 
-/** Push element x to the back of queue. */
 func (this *MyQueue) Push(x int) {
-
+	if this.left.empty() {
+		for !this.right.empty() {
+			this.left.push(this.right.pop())
+		}
+	}
+	this.left.push(x)
 }
 
-/** Removes the element from in front of queue and returns that element. */
 func (this *MyQueue) Pop() int {
-	return 0
+	if this.right.empty() {
+		for !this.left.empty() {
+			this.right.push(this.left.pop())
+		}
+	}
+	return this.right.pop()
 }
 
-/** Get the front element. */
 func (this *MyQueue) Peek() int {
-	return 0
+	if this.right.empty() {
+		for !this.left.empty() {
+			this.right.push(this.left.pop())
+		}
+	}
+	return this.right.peek()
 }
 
-/** Returns whether the queue is empty. */
 func (this *MyQueue) Empty() bool {
-	return false
+	return this.left.empty() && this.right.empty()
 }
 
-/**
- * Your MyQueue object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Push(x);
- * param_2 := obj.Pop();
- * param_3 := obj.Peek();
- * param_4 := obj.Empty();
- */
+func (this *MyQueue) String() string {
+	return fmt.Sprintf("left:%v\nright:%v\n\n", this.left, this.right)
+}
