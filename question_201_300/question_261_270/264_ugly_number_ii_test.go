@@ -13,6 +13,9 @@ func Test_nthUglyNumber(t *testing.T) {
 		{"test", 3, 3},
 		{"test", 4, 4},
 		{"test", 5, 5},
+		{"test", 6, 6},
+		{"test", 10, 12},
+		{"test", 11, 15},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
