@@ -1,7 +1,6 @@
 package question_231_240
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -9,25 +8,23 @@ import (
 // https://leetcode-cn.com/problems/number-of-digit-one
 // Topics: 数学
 
-var m = []int{0, 1, 19, 271, 3439, 40951, 468559, 468559*9 + 100000}
+var m = []int{0, 1, 20, 300, 4000, 50000, 600000, 7000000, 80000000, 900000000}
 
 func countDigitOne(n int) int {
-	h := int(math.Log10(float64(n)))
-	t := n
-	var res = 0
-	for i := 0; t > 0; i++ {
-		w := int(math.Pow10(h - i))
-		d := t / w
-		t %= w
-		if d > 1 {
-			res += (d-1)*m[h-i] + w
-		} else if d == 1 {
-			res += t + m[h-i] + 1
-			break
+	res, t := 0, 0
+	for log := int(math.Log10(float64(n))); n > 0; log-- {
+		mod := int(math.Pow10(log))
+		t, n = n/mod, n%mod
+		for j := 0; j < t; j++ {
+			if j == 1 {
+				res += mod
+			}
+			res += m[log]
 		}
-
-		fmt.Printf("%d %d %d\n", t/w, t%w, res)
+		if t == 1 {
+			res += n + 1
+		}
 	}
-	fmt.Printf("%d\n", res)
+
 	return res
 }
