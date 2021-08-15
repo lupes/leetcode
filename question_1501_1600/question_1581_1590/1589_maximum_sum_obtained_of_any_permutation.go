@@ -9,22 +9,19 @@ import (
 // Topics: 贪心算法
 
 func maxSumRangeQuery(nums []int, requests [][]int) int {
-	sort.Slice(nums, func(i, j int) bool {
-		return nums[i] > nums[j]
-	})
-	var diff = make([]int, len(nums)+1)
+	var diff, flag = make([]int, len(nums)+1), make([]int, len(nums))
 	for _, req := range requests {
 		diff[req[0]] += 1
 		diff[req[1]+1] -= 1
 	}
-	var flag = make([]int, len(nums))
+
 	flag[0] = diff[0]
 	for i := 1; i < len(flag); i++ {
 		flag[i] = flag[i-1] + diff[i]
 	}
-	sort.Slice(flag, func(i, j int) bool {
-		return flag[i] > flag[j]
-	})
+
+	sort.Ints(nums)
+	sort.Ints(flag)
 	var res = 0
 	for i, n := range nums {
 		res = (res + n*flag[i]) % (1e9 + 7)
