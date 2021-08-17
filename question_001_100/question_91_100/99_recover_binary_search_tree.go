@@ -32,6 +32,28 @@ func recoverTree(root *TreeNode) {
 	a.Val, b.Val = b.Val, a.Val
 }
 
+// TODO: 有问题
+func recoverTree2(root *TreeNode) {
+	nodes := innerOrder(root)
+
+	var a, b *TreeNode
+	for i := range nodes {
+		if i == 0 && nodes[i].Val > nodes[i+1].Val {
+			a = nodes[i]
+		} else if i == len(nodes)-1 && nodes[i].Val < nodes[i-1].Val {
+			b = nodes[i]
+		} else if i > 0 && i < len(nodes)-1 {
+			if nodes[i].Val > nodes[i-1].Val && nodes[i].Val > nodes[i+1].Val {
+				a = nodes[i]
+			} else if nodes[i].Val < nodes[i-1].Val && nodes[i].Val < nodes[i+1].Val {
+				b = nodes[i]
+				break
+			}
+		}
+	}
+	a.Val, b.Val = b.Val, a.Val
+}
+
 func innerOrder(root *TreeNode) []*TreeNode {
 	if root == nil {
 		return nil

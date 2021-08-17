@@ -13,6 +13,7 @@ func Test_recoverTree(t *testing.T) {
 	}{
 		{NewNodeV2(1, 3, Null, Null, 2)},
 		{NewNodeV2(3, 1, 4, Null, Null, 2)},
+		{NewNodeV2(146, 71, -13, 55, Null, 231, 399, 321, Null, Null, Null, Null, Null, -33)},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {
