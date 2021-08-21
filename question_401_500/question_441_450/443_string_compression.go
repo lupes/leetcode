@@ -5,34 +5,27 @@ package question_441_450
 // Topics: 字符串
 
 func compress(chars []byte) int {
-	n, j := 0, 0
-	for i := 0; i <= len(chars); i++ {
-		if i < len(chars) && chars[i] == chars[j] {
-			n++
+	tmp := append(chars, 0)
+	low, fast, num := 0, 1, 1
+	for ; fast < len(tmp); fast++ {
+		if tmp[fast] == chars[low] {
+			num++
 		} else {
-			a, b, c, d := n%10000/1000+'0', n%1000/100+'0', n%100/10+'0', n%10+'0'
-			if n > 999 {
-				j++
-				chars[j] = byte(a)
+			if num > 1 {
+				var tmp []byte
+				for ; num > 0; num /= 10 {
+					tmp = append([]byte{byte(num%10) + '0'}, tmp...)
+				}
+				for _, b := range tmp {
+					low++
+					chars[low] = b
+				}
 			}
-			if n > 99 {
-				j++
-				chars[j] = byte(b)
+			low++
+			if low < len(chars) {
+				chars[low], num = tmp[fast], 1
 			}
-			if n > 9 {
-				j++
-				chars[j] = byte(c)
-			}
-			if n > 1 {
-				j++
-				chars[j] = byte(d)
-			}
-			if i < len(chars) {
-				j++
-				chars[j] = chars[i]
-			}
-			n = 1
 		}
 	}
-	return j + 1
+	return low
 }
