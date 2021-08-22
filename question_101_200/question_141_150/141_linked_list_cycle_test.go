@@ -32,7 +32,7 @@ func Test_hasCycle(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := hasCycle(tt.head); got != tt.want {
+			if got := hasCycle2(tt.head); got != tt.want {
 				t.Errorf("hasCycle() = %v, want %v", got, tt.want)
 			}
 		})

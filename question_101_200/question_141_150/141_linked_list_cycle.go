@@ -19,3 +19,15 @@ func hasCycle(head *ListNode) bool {
 	}
 	return false
 }
+
+func hasCycle2(head *ListNode) bool {
+	if head == nil {
+		return false
+	}
+	for low, fast := head, head.Next; fast != nil && fast.Next != nil; low, fast = low.Next, fast.Next.Next {
+		if fast == low {
+			return true
+		}
+	}
+	return false
+}
