@@ -8,14 +8,11 @@ func wordBreak(s string, wordDict []string) bool {
 	var l = len(s)
 	var res = make([]bool, l+1)
 	res[0] = true
-	for i := 1; i <= l; i++ {
+	for i := 0; i <= l; i++ {
 		for _, word := range wordDict {
 			wl := len(word)
-			if i >= wl {
-				if s[i-wl:i] == word && res[i-wl] {
-					res[i] = true
-					break
-				}
+			if i+wl <= l && s[i:i+wl] == word && res[i] {
+				res[i+wl] = true
 			}
 		}
 	}
