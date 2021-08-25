@@ -5,5 +5,19 @@ package question_791_800
 // Topics:
 
 func allPathsSourceTarget(graph [][]int) [][]int {
-	return nil
+	return allPathsSourceTargetHelper(graph, 0, len(graph)-1)
+}
+
+func allPathsSourceTargetHelper(graph [][]int, src, dst int) [][]int {
+	if src == dst {
+		return [][]int{{dst}}
+	}
+	var res [][]int
+	for _, n := range graph[src] {
+		tmp := allPathsSourceTargetHelper(graph, n, dst)
+		for _, f := range tmp {
+			res = append(res, append([]int{src}, f...))
+		}
+	}
+	return res
 }
