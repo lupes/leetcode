@@ -8,26 +8,18 @@ import . "github.com/lupes/leetcode/common"
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	res := &ListNode{}
-
-	next := res
-	height := 0
-	for l1 != nil || l2 != nil {
+	for next := res; l1 != nil || l2 != nil; next = next.Next {
 		v1, v2 := 0, 0
 		if l1 != nil {
-			v1 = l1.Val
-			l1 = l1.Next
+			v1, l1 = l1.Val, l1.Next
 		}
 		if l2 != nil {
-			v2 = l2.Val
-			l2 = l2.Next
+			v2, l2 = l2.Val, l2.Next
 		}
-		val := (v1 + v2 + height) % 10
-		height = (v1 + v2 + height) / 10
-		next.Next = &ListNode{Val: val}
-		next = next.Next
+		if l1 != nil || l2 != nil || (v1+v2+next.Val)/10 != 0 {
+			next.Next = &ListNode{Val: (v1 + v2 + next.Val) / 10}
+		}
+		next.Val = (v1 + v2 + next.Val) % 10
 	}
-	if height != 0 {
-		next.Next = &ListNode{Val: 1}
-	}
-	return res.Next
+	return res
 }
