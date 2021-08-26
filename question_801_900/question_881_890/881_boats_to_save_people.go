@@ -12,17 +12,10 @@ func numRescueBoats(people []int, limit int) int {
 	sort.Ints(people)
 	var res = 0
 	for left, right := 0, len(people)-1; right >= left; {
-		if left == right {
-			res++
+		if people[left]+people[right] <= limit {
 			left++
-		} else if people[left]+people[right] > limit {
-			res++
-			right--
-		} else if people[left]+people[right] <= limit {
-			res++
-			left++
-			right--
 		}
+		right, res = right-1, res+1
 	}
 	return res
 }
