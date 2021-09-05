@@ -15,9 +15,11 @@ func rand7() int {
 }
 
 func rand10() int {
-	a, b := rand7(), rand7()
-	if a > 4 && b < 4 {
-		return rand10()
+	for {
+		a, b := rand7(), rand7()
+		tmp := a + (b-1)*7
+		if tmp <= 40 {
+			return 1 + (tmp-1)%10
+		}
 	}
-	return (a+b)%10 + 1
 }
