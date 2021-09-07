@@ -5,5 +5,17 @@ package question_1221_1230
 // Topics: 贪心算法 字符串
 
 func balancedStringSplit(s string) int {
-	return 0
+	var t, r = 0, 0
+	for _, c := range s {
+		switch c {
+		case 'L':
+			t++
+		case 'R':
+			t--
+		}
+		if t == 0 {
+			r++
+		}
+	}
+	return r
 }
