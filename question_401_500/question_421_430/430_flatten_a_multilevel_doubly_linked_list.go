@@ -12,5 +12,25 @@ type Node3 struct {
 }
 
 func flatten(root *Node3) *Node3 {
-	return nil
+	head, _ := flattenHelper(root)
+	return head
+}
+
+func flattenHelper(root *Node3) (*Node3, *Node3) {
+	var next, end = root, root
+	for next != nil {
+		if next.Child != nil {
+			head, end := flattenHelper(next.Child)
+			end.Next = next.Next
+			if next.Next != nil {
+				next.Next.Prev = end
+			}
+			next.Next = head
+			head.Prev = next
+			next.Child = nil
+		}
+		end = next
+		next = next.Next
+	}
+	return root, end
 }
