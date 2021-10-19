@@ -5,21 +5,36 @@ package question_211_220
 // Topics: 设计 字典树 回溯算法
 
 type WordDictionary struct {
+	words map[int][]string
 }
 
 /** Initialize your data structure here. */
 func Constructor() WordDictionary {
-
+	return WordDictionary{
+		words: make(map[int][]string, 0),
+	}
 }
 
 /** Adds a word into the data structure. */
 func (this *WordDictionary) AddWord(word string) {
-
+	this.words[len(word)] = append(this.words[len(word)], word)
 }
 
 /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
 func (this *WordDictionary) Search(word string) bool {
-
+	for _, tmp := range this.words[len(word)] {
+		var res = true
+		for i := range tmp {
+			if !(tmp[i] == word[i] || tmp[i] == '.' || word[i] == '.') {
+				res = false
+				break
+			}
+		}
+		if res {
+			return true
+		}
+	}
+	return false
 }
 
 /**
