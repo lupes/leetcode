@@ -7,30 +7,29 @@ import (
 
 // 506. 相对名次
 // https://leetcode-cn.com/problems/relative-ranks/
-// Topics:
+// Topics: 数组 排序 堆
 
 func findRelativeRanks(nums []int) []string {
-	var tmp = make([]int, len(nums))
-	copy(tmp, nums)
-	sort.Slice(tmp, func(i, j int) bool {
-		return tmp[i] > tmp[j]
+	var flag = make([][2]int, len(nums))
+	for i, n := range nums {
+		flag[i] = [2]int{i, n}
+	}
+
+	sort.Slice(flag, func(i, j int) bool {
+		return flag[i][1] > flag[j][1]
 	})
-	var res []string
-	for _, n := range nums {
-		for i, t := range tmp {
-			if t == n {
-				switch i {
-				case 0:
-					res = append(res, "Gold Medal")
-				case 1:
-					res = append(res, "Silver Medal")
-				case 2:
-					res = append(res, "Bronze Medal")
-				default:
-					res = append(res, strconv.Itoa(i+1))
-				}
-				break
-			}
+
+	var res = make([]string, len(nums))
+	for i, n := range flag {
+		switch i {
+		case 0:
+			res[n[0]] = "Gold Medal"
+		case 1:
+			res[n[0]] = "Silver Medal"
+		case 2:
+			res[n[0]] = "Bronze Medal"
+		default:
+			res[n[0]] = strconv.Itoa(i + 1)
 		}
 	}
 	return res
