@@ -14,7 +14,7 @@ func dayOfYear(date string) int {
 	month := int(date[5]-'0')*10 + int(date[6]-'0')
 	day := int(date[8]-'0')*10 + int(date[9]-'0')
 	res, flag := day, 0
-	if year%4 == 0 && year%100 != 0 {
+	if (year%4 == 0 && year%100 != 0) || year%400 == 0 {
 		flag = 1
 	}
 	for i := 0; i < month-1; i++ {
