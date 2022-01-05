@@ -1,10 +1,5 @@
 package question_631_640
 
-import (
-	"strconv"
-	"strings"
-)
-
 // 636. 函数的独占时间
 // https://leetcode-cn.com/problems/exclusive-time-of-functions
 // Topics: 栈
@@ -16,14 +11,20 @@ type Fun struct {
 }
 
 func New(log string) Fun {
-	arr := strings.Split(log, ":")
-	id, _ := strconv.Atoi(arr[0])
-	t, _ := strconv.Atoi(arr[2])
-	return Fun{
-		Id:   id,
-		Type: arr[1] == "start",
-		Time: t,
+	var f, n = Fun{}, 0
+	for _, c := range log {
+		switch {
+		case c == ':':
+			n++
+		case n == 0:
+			f.Id = f.Id*10 + int(c) - '0'
+		case n == 1 && c == 't':
+			f.Type = true
+		case n == 2:
+			f.Time = f.Time*10 + int(c) - '0'
+		}
 	}
+	return f
 }
 
 func exclusiveTime(n int, logs []string) []int {
