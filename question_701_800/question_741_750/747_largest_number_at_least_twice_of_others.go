@@ -5,17 +5,16 @@ package question_741_750
 // Topics: 数组
 
 func dominantIndex(nums []int) int {
-	max1, index1, max2 := -1, -1, -1
-	for i, n := range nums {
-		if n > max1 {
-			max1, max2 = n, max1
-			index1 = i
-		} else if n > max2 {
-			max2 = n
+	a, b, i := -1, -1, 0
+	for j, n := range nums {
+		if n > a {
+			a, b, i = n, a, j
+		} else if n > b {
+			b = n
 		}
 	}
-	if (max2 == 0 && max1 > 0) || (max2 > 0 && max1/max2 >= 2) || (len(nums) == 1) {
-		return index1
+	if b*2 <= a {
+		return i
 	}
 	return -1
 }
