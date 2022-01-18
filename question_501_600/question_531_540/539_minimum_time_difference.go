@@ -1,23 +1,31 @@
 package question_531_540
 
-import "sort"
-
 // 539. 最小时间差
 // https://leetcode-cn.com/problems/mnimum-time-difference/
 // Topics: 字符串
 
 func findMinDifference(timePoints []string) int {
-	sort.Strings(timePoints)
-	var tmp = make([]int, len(timePoints)+1)
-	for i, time := range timePoints {
-		t := []byte(time)
-		tmp[i] = (int(t[0]-'0')*10+int(t[1]-'0'))*60 + int(t[3]-'0')*10 + int(t[4]-'0')
+	var times = make([]bool, 1440)
+	var left, min = 1441, 1441
+	for _, time := range timePoints {
+		i := int((time[0]-'0')*10+time[1]-'0')*60 + int(time[3]-'0')*10 + int(time[4]-'0')
+		if times[i] {
+			return 0
+		}
+		times[i] = true
+		if i < left {
+			left = i
+		}
 	}
-	tmp[len(timePoints)] = 1440 + tmp[0]
-	min := 1440
-	for i, _ := range timePoints {
-		if min > tmp[i+1]-tmp[i] {
-			min = tmp[i+1] - tmp[i]
+	times = append(times[left:], times[:left+1]...)
+
+	left = 0
+	for i := left + 1; i < len(times); i++ {
+		if times[i] {
+			if i-left < min {
+				min = i - left
+			}
+			left = i
 		}
 	}
 	return min
