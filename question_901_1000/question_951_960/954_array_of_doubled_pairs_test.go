@@ -9,13 +9,14 @@ func Test_canReorderDoubled(t *testing.T) {
 		A    []int
 		want bool
 	}{
-		{[]int{3, 1, 3, 6}, false},
-		{[]int{2, 1, 2, 6}, false},
-		{[]int{2, 1, 3, 6}, true},
-		{[]int{4, -2, 2, -4}, true},
-		{[]int{1, 2, 4, 16, 8, 4}, false},
-		{[]int{1, 2, 4, 16, 8, 8}, true},
-		{[]int{1, 2, 2, 4, 16, 8}, true},
+		//{[]int{3, 1, 3, 6}, false},
+		//{[]int{2, 1, 2, 6}, false},
+		//{[]int{2, 1, 3, 6}, true},
+		//{[]int{4, -2, 2, -4}, true},
+		//{[]int{1, 2, 4, 16, 8, 4}, false},
+		//{[]int{1, 2, 4, 16, 8, 8}, true},
+		//{[]int{1, 2, 2, 4, 16, 8}, true},
+		{[]int{-5, -2}, false},
 	}
 	for _, tt := range tests {
 		t.Run("test", func(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 
 func canReorderDoubled(A []int) bool {
 	var flag = make(map[int]int)
-	var tmp []int
+	var tmp = make([]int, 0, len(A)/4)
 	for _, n := range A {
 		if _, ok := flag[n]; !ok {
 			tmp = append(tmp, n)
@@ -19,23 +19,21 @@ func canReorderDoubled(A []int) bool {
 	}
 	sort.Ints(tmp)
 
-	for i := 0; i < len(tmp); {
-		n := tmp[i]
+	for _, n := range tmp {
 		if flag[n] == 0 {
-			i++
 			continue
 		}
-		n2 := n * 2
+		t := n * 2
 		if n < 0 {
-			n2 = n / 2
+			if n%2 == -1 {
+				return false
+			}
+			t = n / 2
 		}
-		t, ok := flag[n2]
-		if ok && t > 0 {
-			flag[n2]--
-			flag[n]--
-		} else {
+		if flag[n] > flag[t] {
 			return false
 		}
+		flag[t] -= flag[n]
 	}
 	return true
 }
