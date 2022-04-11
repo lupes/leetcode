@@ -5,5 +5,15 @@ package question_351_360
 // Topics: 数学 动态规划 回溯算法
 
 func countNumbersWithUniqueDigits(n int) int {
-	return 0
+	if n == 0 {
+		return 1
+	} else if n == 1 {
+		return 10
+	}
+	var sum, same = 10, 9
+	for i := 0; i < n-1; i++ {
+		same *= 9 - i
+		sum += same
+	}
+	return sum
 }
